@@ -20,14 +20,13 @@ h2 {
   padding: 10px 0px;
   margin: 0 auto;
   width: 100%;
-  /* border-bottom: black 1px solid; */
   border-top: lightgray 1px solid;
 }
 
 
 
 
-/* Header */
+/* === Header === */
 
 header {
   background-color: blue;
@@ -52,8 +51,7 @@ header .bio {
 
 
 
-/* Portfolio */
-
+/* === Portfolio === */
 
 .portfolio h3 {
   text-align: left;
@@ -73,12 +71,36 @@ header .bio {
   border: black 1px solid;
 }
 
+.portfolio h4 {
+  background-color: red;
+  font-size: 22px;
+
+  
+}
+
+.portfolio .portfolio-item .item-description {
+  background-color: cyan;
+}
+
+.portfolio .portfolio-item .item-description p {
+  background-color: green;
+}
+
+.portfolio .portfolio-item .item-technologies {
+  background-color: purple;
+}
+
+.portfolio .portfolio-item .item-contributions {
+  background-color: lightsalmon;
+}
+
+.portfolio .portfolio-item .item-samples {
+  background-color: lightseagreen;
+}
 
 
 
-
-
-/* Work and Education  */
+/* === Work and Education === */
 
 .history {
   margin: 0 auto;
@@ -87,7 +109,6 @@ header .bio {
 
 .work-experience {
   /* background-color: lightgray; */
-
   font-size: 16px;
 }
 
@@ -95,47 +116,27 @@ header .bio {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: center; */
   align-items: top;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 10px;
-  
-  /* height: 300px; */
-
-  /* border: black 1px solid; */
-
-
-  /* background-color: lightgreen; */
-
-
 }
 
 .work-item .work-header, .education-item .education-header {
   width: 100%;
   max-width: 300px;
   border-radius: 0px;
-
-  /* justify-content: center; */
-
   padding-left: 20px;
   padding-right: 20px;
 
-
   border-top-left-radius: 35px;
-
 
   /* background-color: aquamarine; */
 
   background-image: linear-gradient(110deg, #eeeeeeee, #ffffff00);
-  /* background-image: linear-gradient(100deg, lightgray, white); */
 
   border-left: black 10px solid;
   border-top: black 1.5px solid;
-
-
-  /* box-shadow: 10px 10px 5px gray; */
-
 
 }
 
@@ -167,14 +168,7 @@ header .bio {
   padding-right: 20px;
   padding-left: 10px;
 
-  /* border: black 5px double; */
-
   border-left: black 10px solid;
-
-
-  /* box-shadow: 10px 10px 10px gray; */
-
-
 }
 
 
@@ -189,46 +183,22 @@ header .bio {
   width: 100%;
   max-width: 700px;
   border-left: black 10px solid;
-
-  /* padding-right: 20px;
-  padding-left: 10px;
-  padding-bottom: 20px; */
-
   padding: 0px 20px 20px 10px;
 }
 
-/* .education-item .education-details h3 {
-  padding-left: 20px;
-  font-size: 18px;
-} */
-
 .education-item .education-details .course {
-  /* line-height: 28px; */
-  padding-left: 20px;
-  /* padding-bottom: 0; */
   font-size: 16px;
   font-weight: 700;
-
+  padding-left: 20px;
   margin-bottom: 0px;
   margin-top: 20px;
 }
 
 .education-item .education-details .course-details {
-  /* line-height: 28px; */
+  font-size: 14px;
   padding-left: 50px;
   padding-top: 0;
-  font-size: 14px;
-
-
 }
-
-
-
-/* .work-item::after {
-  content: "";
-  width: 350px;
-} */
-
 
 
 
