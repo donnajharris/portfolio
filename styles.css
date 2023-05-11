@@ -49,6 +49,20 @@ header .bio {
   line-height: 28px;
 }
 
+header nav li {
+  display: inline;
+  align-content: right;
+}
+
+header nav a {
+  color: white;
+  text-decoration: underline;
+}
+
+header nav a:hover {
+  color: white;
+  text-decoration: none;
+}
 
 
 /* === Portfolio === */
@@ -268,7 +282,55 @@ header .bio {
 }
 
 
+/* === References === */
 
+.references .reference-item {
+  border: black 1px solid;
+  background-color: pink;
+
+  border-radius: 10px;
+  padding: 20px 30px;
+
+  width: 80%;
+
+  margin: 30px;
+}
+
+.reference-item .reference-provider {
+  border: black 1px solid;
+  background-color: salmon;
+  width: 30%;
+
+  border-radius: 10px;
+
+
+  margin-top: -50px;
+  padding: 20px 30px;
+
+  display: block;
+}
+
+.reference-item .reference-provider .name {
+  color: green;
+}
+
+.reference-item .reference-provider .position {
+  color: red;
+}
+
+.reference-item .reference-provider .company {
+  color: white;
+}
+
+
+
+footer .contact {
+  color: blue;
+}
+footer li {
+  display: inline;
+  text-align: center;
+}
 
 
 /* Reference: https://stackoverflow.com/questions/65179019/how-to-change-page-content-or-division-content-on-button-click

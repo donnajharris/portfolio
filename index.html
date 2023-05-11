@@ -18,13 +18,36 @@
     <body>
       <header>
         <h1>Donna J. Harris</h1>
+
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#portfolio">Portfolio</a></li>
+            <li>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#education">Education</a>
+            </li>
+            <li>
+              <a href="#references">References</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
         <p class="bio">A well-rounded, quality-driven, aspiring codehead with a recently completed Master of Computer Science degree and a decade of experience in software testing, quality assurance, and business analysis. Passionate about infusing quality into every aspect of both product and process. Even more passionate about understanding user problems before rushing to implement solutions.</p>
+
       </header>
 
       <main>
 
         <!-- ====== Technical Portfolio ====== -->
 
+        <a name="portfolio"></a>
         <section class="portfolio">
           <h2>Technical Portfolio</h2>
           <h3>Coding</h3>
@@ -256,6 +279,7 @@
 
         <!-- ====== Work Experience ====== -->
 
+        <a name="work"></a>
         <section class="work-experience">
 
           <h2>Work Experience</h2>
@@ -317,6 +341,7 @@
 
         <!-- ====== Education ====== -->
 
+        <a name="education"></a>
         <section class="education">
           <h2>Education</h2>
           <section class="education-item">
@@ -382,53 +407,67 @@
         </section>
 
 
+        <a name="references"></a>
         <section class="references">
 
           <h2>What Others Have Said...</h2>
 
-
-
-        <!-- Reference: https://stackoverflow.com/questions/65179019/how-to-change-page-content-or-division-content-on-button-click -->
-        <div class="container">
+<!-- 
           <div class="menu">
             <button class="button_active">Kristin Smithberger<br/><small>Manager, Publishing Operations Group<br/>Bloomberg BNA</small></button>
             <button>Lauren Colandreo<br/><small>State Tax Law Editor<br/>Bloomberg BNA</small></button>
             <button>Julia S. Lennen<br/><small>Project Manager<br/>Bloomberg BNA/Bloomberg Industry Group<br/>(Retired)</small></button>
+          </div> -->
+          
+          <div class="reference-item">
+            <!-- <div class="reference-provider">
+              <p class="name">Kristin Smithberger</p>
+              <p class="position">Manager, Publishing Operations Group</p>
+              <p class="company">Bloomberg BNA</p>
+            </div> -->
+            <div class="reference-provider">
+              <p>Kristin Smithberger | Manager, Publishing Operations Group | Bloomberg BNA</p>
+            </div>
+            
+            <p>Donna is one of the most <span class="punch-up">intentionally collaborative</span> people I've ever worked with. She's never too busy to talk through requirements or walk through the steps to troubleshoot a problem or software bug. When we were colleagues on a project I could always count on her methodical and thorough evaluation of the issue and implementation of requirements.</p>
           </div>
-          <div class="content">
-            <div class="content_inside content_inside_active">
-              <p>Donna is one of the most <span class="punch-up">intentionally collaborative</span> people I've ever worked with. She's never too busy to talk through requirements or walk through the steps to troubleshoot a problem or software bug. When we were colleagues on a project I could always count on her methodical and thorough evaluation of the issue and implementation of requirements.</p>
+
+          <div class="reference-item">
+            <div class="reference-provider">
+              <p class="name">Lauren Colandreo</p>
+              <p class="position">State Tax Law Editor</p>
+              <p class="company">Bloomberg BNA</p>
             </div>
-            <div class="content_inside">
-              <p>Donna and I worked together on a series of technical projects where she was the [business analyst] and I was the subject matter expert. She was instrumental in helping us transition over 110,000 data points from Excel into our proprietary software to help make our annual updating process more efficient.</p>
-              <p>Besides being a technical wizard who made IT magic happen, Donna was a <span class="punch-up">great collaborator, teacher, and problem solver</span>. With Donna's help, I was able to help the editorial team translate error messages from the database quickly to make sure that any issues were addressed as soon as possible - often within minutes of their discovery.</p>
-              <p>Donna's <span class="punch-up">innovative solutions</span> saved my team weeks of manual labor! Not only was she a joy to work with on a professional level, she was also incredibly kind and thoughtful. She went out of her way to stop by and say hello whenever her team travelled to our office and always brought us some fun Canadian candy or snacks to try. I would highly recommend Donna for any position and can only hope to work with her again some day.</p>
-            </div>
-            <div class="content_inside">
-              <p>As a Project Manager at a major U.S. legal publishing company, I was assigned to a suite of products developed and maintained with an IT contractor. Donna Harris was one of my principal contacts over a multi-year period.</p>
-              <p>Donna was responsible for analysis and testing on several complex web-based products. She was <span class="punch-up">both thorough and thoughtful</span> in her work. She <span class="punch-up">took the initiative to learn</span> the complexities of U.S. Federal and state laws and regulations and the workflows critical to their update cycles, often displaying an understanding beyond her American clients. Donna worked diligently to ensure the "use cases" and test scenarios were valid and provided meaningful results.</p>
-              <p>As with many IT projects, software updates were scheduled for weekends, overnight or early morning hours. Donna made herself available for the updates and post-update testing, always delivering comprehensive results and alerting team members to possible issues.</p>
-              <p>Donna took it upon herself to <span class="punch-up">ease communication and language barriers that occasionally complicated the work of a distributed team</span>. Donna was always the consummate professional - focusing on the work at hand without compromising product or personal integrity.</p>
-            </div>
+            <p>Donna and I worked together on a series of technical projects where she was the [business analyst] and I was the subject matter expert. She was instrumental in helping us transition over 110,000 data points from Excel into our proprietary software to help make our annual updating process more efficient.</p>
+            <p>Besides being a technical wizard who made IT magic happen, Donna was a <span class="punch-up">great collaborator, teacher, and problem solver</span>. With Donna's help, I was able to help the editorial team translate error messages from the database quickly to make sure that any issues were addressed as soon as possible - often within minutes of their discovery.</p>
+            <p>Donna's <span class="punch-up">innovative solutions</span> saved my team weeks of manual labor! Not only was she a joy to work with on a professional level, she was also incredibly kind and thoughtful. She went out of her way to stop by and say hello whenever her team travelled to our office and always brought us some fun Canadian candy or snacks to try. I would highly recommend Donna for any position and can only hope to work with her again some day.</p>
           </div>
-        </div>
+
+          <div class="reference-item">
+            <div class="reference-provider">
+              <p class="name">Julia S. Lennen</p>
+              <p class="position">Project Manager (Retired)</p>
+              <p class="company">Bloomberg BNA/Bloomberg Industry Group</p>
+            </div>
+            <p>As a Project Manager at a major U.S. legal publishing company, I was assigned to a suite of products developed and maintained with an IT contractor. Donna Harris was one of my principal contacts over a multi-year period.</p>
+            <p>Donna was responsible for analysis and testing on several complex web-based products. She was <span class="punch-up">both thorough and thoughtful</span> in her work. She <span class="punch-up">took the initiative to learn</span> the complexities of U.S. Federal and state laws and regulations and the workflows critical to their update cycles, often displaying an understanding beyond her American clients. Donna worked diligently to ensure the "use cases" and test scenarios were valid and provided meaningful results.</p>
+            <p>As with many IT projects, software updates were scheduled for weekends, overnight or early morning hours. Donna made herself available for the updates and post-update testing, always delivering comprehensive results and alerting team members to possible issues.</p>
+            <p>Donna took it upon herself to <span class="punch-up">ease communication and language barriers that occasionally complicated the work of a distributed team</span>. Donna was always the consummate professional - focusing on the work at hand without compromising product or personal integrity.</p>
+          </div>
 
         </section>
 
 
         <footer>
-          <div class="details">
-            <h2>Let's Keep in Touch!</h2>
+          <a name="contact"></a>
+          <h2 class="contact">Contact</h2>
 
             <ul>
-              <li><a href="mailto:hello@donnajharris.xyz">hello@donnajharris.xyz</a></li>
-              <li><a href="https://donnajharris.xyz" target="_blank">donnajharris.xyz</a></li>
-              <li><a href="https://www.github.com/donnajharris" target="_blank">GitHub (Personal Account)</a></li>
-              <li><a href="https://www.github.com/harr2890" target="_blank">GitHub (School Account)</a></li>
+              <li><a href="mailto:hello@donnajharris.xyz">Email</a></li>
+              <li><a href="https://www.github.com/donnajharris" target="_blank">GitHub</a></li>
               <li><a href="https://www.linkedin.com/in/donnajharris" target="_blank">LinkedIn</a></li>
             </ul>
 
-          </div>
         </footer>
 
 
