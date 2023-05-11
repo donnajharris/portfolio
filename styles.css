@@ -90,13 +90,15 @@ header nav {
   flex-direction: row;
   flex-wrap: wrap;
 
-  background-color: green;
+  /* background-color: green; */
 
 }
 
 header nav > .flex-nav  {
   background-color: #f1f1f1;
   width: 20%;
+
+  min-width: 150px;
   /* margin: 12px; */
 
 }
@@ -105,7 +107,7 @@ header nav > .flex-nav a {
   /* background-color: #f8f8f8; */
   /* color: navy; */
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 500;
 
   border: navy 2px solid;
   /* border-radius: 10px; */
@@ -119,7 +121,7 @@ header nav > .flex-nav a {
   display: block;
 
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 
 
 }
@@ -132,7 +134,7 @@ header nav  > .flex-nav a:hover {
   border: navy 2px dashed;
 
   display: block;
-  font-weight: 600;
+  font-weight: 500;
 
 }
 
