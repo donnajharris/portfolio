@@ -197,7 +197,7 @@ header nav  > .flex-nav a:hover {
 .portfolio-item .portfolio-header h4, 
 .work-item .work-header h3, 
 .education-item .education-header h3 {
-  font-size: 22px;
+  font-size: 24px;
   border-bottom: gray 0.5px solid;
   padding-bottom: 20px;
 }
