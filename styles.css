@@ -245,19 +245,37 @@ header nav  > .flex-nav a:hover {
 .work-item .work-details ul, 
 .education-item .education-details ul {
   margin: 0;
+  padding-left: 60px;
+  padding-right: 20px;
+
 }
 
 .portfolio-item .portfolio-details li, 
 .work-item .work-details li, 
 .education-item .education-details li {
   line-height: 18px;
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 16px;
   list-style-type: square;
+
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .portfolio-item .portfolio-details p {
   padding-left: 20px;
+}
+
+.portfolio-details .contributions {
+  background-color: lightcyan;
+
+  border: navy 0.5px dotted;
+  border-radius: 10px;
+
+  margin: 20px;
+
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 .portfolio-item .portfolio-details .portfolio-samples {
@@ -274,6 +292,28 @@ header nav  > .flex-nav a:hover {
   text-decoration: none;
 }
 
+
+/* .contact-container  {
+  background-color: lightcyan;
+  padding-bottom: 25px;
+} */
+
+
+.portfolio-samples {
+  /* max-width: 600px; */
+  /* background-color: lightcyan; */
+  /* border: black 0.5px dotted; */
+  /* border-radius: 10px; */
+  /* padding: 20px 10px 20px 10px; */
+
+  text-align: left;
+  /* margin: 0 auto; */
+
+  font-size: 14px;
+  padding: 10px;
+
+  margin: 20px auto;
+}
 
 
 
