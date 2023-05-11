@@ -287,7 +287,9 @@ header nav a:hover {
 
 .references .reference-item {
   border: black 1px solid;
-  background-color: pink;
+  background-color: white;
+
+  line-height: 30px;
 
   border-radius: 10px;
   padding: 20px 30px;
@@ -297,30 +299,39 @@ header nav a:hover {
   margin: 30px;
 }
 
+.references .reference-item p {
+  padding: 5px;
+}
+
+
 .reference-item .reference-provider {
-  border: black 1px solid;
-  background-color: salmon;
-  width: 30%;
+  border-top: lightgrey 1px solid;
+  background-color: white;
+  /* width: 30%; */
+  text-align: right;
 
-  border-radius: 10px;
 
+  padding: 10px 20px;
 
-  margin-top: -50px;
-  padding: 20px 30px;
+  /* display: block; */
 
-  display: block;
+  /* vertical-align: center; */
+
 }
 
 .reference-item .reference-provider .name {
-  color: green;
+  /* color: green; */
+  font-size: 18px;
+  font-weight: bold;
+  /* letter-spacing: 4px; */
 }
 
 .reference-item .reference-provider .position {
-  color: red;
+  color: black;
 }
 
 .reference-item .reference-provider .company {
-  color: white;
+  color: black;
 }
 
 
@@ -332,60 +343,3 @@ footer li {
   display: inline;
   text-align: center;
 }
-
-
-/* Reference: https://stackoverflow.com/questions/65179019/how-to-change-page-content-or-division-content-on-button-click
- */
-
-.menu {
-  display: flex;
-}
-
-.menu button {
-  margin: 10px;
-  cursor: pointer;
-
-  line-height: 30px;
-  font-size: large;
-
-  font-family: overlock;
-
-  letter-spacing: 2px;
-  border-style: dotted;
-  border-width: thick;
-
-
-  
-  padding: 15px;
-  border-radius: 5px;
-}
-
-.menu button small {
-  font-size: x-small;
-}
-
-.menu button:hover {
-  background-color: red;
-  font: green;
-}
-
-.button_active {
-  color: white;
-  background-color: teal;
-  border-color: black;
-  border-style: groove;
-  border-width: thick;
-
-}
-
-.content_inside {
-  display: none;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.content_inside_active {
-  display: block;
-}
-
