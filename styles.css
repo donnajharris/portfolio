@@ -241,13 +241,19 @@ header nav  > .flex-nav a:hover {
   border-left: black 10px solid;
 }
 
+.portfolio-item .portfolio-details ul, 
+.work-item .work-details ul, 
+.education-item .education-details ul {
+  margin: 0;
+}
 
 .portfolio-item .portfolio-details li, 
 .work-item .work-details li, 
 .education-item .education-details li {
-  line-height: 28px;
+  line-height: 18px;
   padding: 10px;
   font-size: 16px;
+  list-style-type: square;
 }
 
 .portfolio-item .portfolio-details p {
@@ -256,16 +262,15 @@ header nav  > .flex-nav a:hover {
 
 .portfolio-item .portfolio-details .portfolio-samples {
   padding-left: 20px;
-  /* line-height: 40px; */
 }
 
 .portfolio-item .portfolio-details .portfolio-samples a {
-  color: red;
+  color: navy;
   text-decoration: underline;
 }
 
 .portfolio-item .portfolio-details .portfolio-samples a:hover {
-  color: red;
+  color: navy;
   text-decoration: none;
 }
 
