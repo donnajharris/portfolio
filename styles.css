@@ -38,7 +38,9 @@ h2 {
   border-top: lightgray 1px dotted;
 }
 
-
+main {
+  margin: auto;
+}
 .main-wrapper {
   /* background-color: green; */
 
@@ -169,7 +171,7 @@ header nav  > .flex-nav a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: top;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px 10px;
 }
