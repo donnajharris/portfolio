@@ -65,17 +65,36 @@ header .bio {
 
 }
 
+.portfolio h3::before, .portfolio h3::after  {
+  content: '-';
+}
+
 .portfolio-item {
   background-color: lightgoldenrodyellow;
 
-  border: black 1px solid;
+  /* border: black 1px solid; */
+
+  margin: 16px 0px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px lightgray;
 }
 
 .portfolio h4 {
-  background-color: red;
+  /* background-color: red; */
   font-size: 22px;
 
-  
+  padding: 30px;
+}
+
+.portfolio .item-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+  max-width: 1200px;
+
+  /* margin: 0 auto; */
+  /* padding: 20px 10px; */
 }
 
 .portfolio .portfolio-item .item-description {
@@ -90,8 +109,16 @@ header .bio {
   background-color: purple;
 }
 
+.portfolio .portfolio-item .item-technologies::before {
+  content: "Technologies used: "
+}
+
 .portfolio .portfolio-item .item-contributions {
   background-color: lightsalmon;
+}
+
+.portfolio .portfolio-item .item-contributions ul::before {
+  content: "Key Contributions: "
 }
 
 .portfolio .portfolio-item .item-samples {
