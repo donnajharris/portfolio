@@ -96,7 +96,7 @@ header nav {
 header nav > .flex-nav  {
   background-color: #f1f1f1;
   width: 20%;
-  min-width: 210px;
+  min-width: 180px;
 }
 
 header nav > .flex-nav a {
