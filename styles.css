@@ -426,6 +426,10 @@ footer a:hover {
   letter-spacing: 5px;
 }
 
+.dinearound p {
+  line-height: 28px;
+}
+
 .dinearound img {
   border-radius: 10px;
 }
