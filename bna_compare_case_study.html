@@ -65,7 +65,6 @@
             <p>Because of the nature of the implementation, the most important tests could not be reliably confirmed with an assertion at the end of the automated steps.</p>
 
             <h4>Long-term benefits</h4>
-            <p>It became possible to hand over the review of the resultant screenshot to a junior team member, who could flag issues.</p>
             <p>Learning how to drive the UI from CSV and to take screenshots of results was a technique I returned to time and again for several years to come.</p>
           </div>
 
@@ -85,7 +84,7 @@
               <li>Studied the existing NUnit test code, identifying what needed to change to test different cases -- then created one new test manually</li>
               <li>Created a Ruby script for generating the text of a single C# test case for provided parameters</li>
               <li>Used Excel/CSV to list parameters for the C# tests to generate in bulk</li> 
-              <li>Added the generated C# tests to the codebase/li>
+              <li>Added the generated C# tests to the codebase</li>
             </ol>
 
             <h4>Advantages</h4>
@@ -105,6 +104,7 @@
             <h3>Analysis of XML Dataset</h3>
 
             <h4>The Problem to Solve</h4>
+            <p>There was a large amount of archived data versions that were loaded into the initial database. The files were in an XML format and provided many insights into the kind of data we were dealing with.</p>
             <p></p>
 
             <h4>The Journey</h4>
@@ -112,46 +112,48 @@
             <p>Using Ruby, I...</p>
 
             <ol>
-              <li>Ruby script to interrogate the XML to identify all elements and attributes in existing data</li>
-              <li>Used this information to find REAL examples of various differences between versions, location of specific elements, etc.</li>
-              <li>Helped us to dig deeper</li> 
+              <li>Wrote various scripts to interrogate the XML to identify all elements and attributes in existing data</li>
+              <li>Created an index of element information to help find real examples of different situtaions</li>
             </ol>
 
             <h4>Advantages</h4>
-            <p></p>
+            <p>I learned so much about the data by living with it in this way. </p>
+            <p>Learned much more about the data than a schema alone could show.</p>
 
             <h4>Disadvantages</h4>
-            <p></p>
+            <p>Even at the time (2010+), there may have been more efficient ways to interrogate the data than I currently understood.</p>
 
             <h4>Long-term benefits</h4>
-            <p></p>
+            <p>I was able to take the scripts and skills and apply them with all of the future XML-based datasets. I was also better positioned to ask better questions every time around.</p>
           </div>
 
           <div class="case-study-stage">
             <h3>Creation of XML Test Data</h3>
 
             <h4>The Problem to Solve</h4>
-            <p></p>
+            <p>Even with the analysis of the existing data, there were elements and changes between versions that did not exist in the data we had. (The nature of the application meant it was necessary to address elements individually.)</p>
+            <p>As a result, we would sometimes find defects in production as new data was added going forward. There would be unhandled situations and unexpected elements. We needed to find more robust ways to avoid this.</p>
 
             <h4>The Journey</h4>
-            <p></p>
+            <p>Schema in hand, we needed a recipe for tests that would evaluate all possibilities of how an element could be viewed or changed.</p>
             <p>Using Ruby, I...</p>
 
             <ol>
-              <li>studied the XML data files and determined the smallest possible structure for creating test data</li>
-              <li>created a list of tests in a Excel/CSV document, identifying the element under test</li>
-              <li>created a Ruby script to generate test files and scenarios</li> 
-              <li>leveraged the UI Test automation code and could run a series of tests (with screenshots), after loading the data to a test server</li>
+              <li>Studied the XML data files and determined the smallest possible structure for creating test data -- then created a test file manually</li>
+              <li>Created a script to generate test files and scenarios for a provided element</li> 
+              <li>Used Excel/CSV to list elements and tests to generate in bulk</li>
+              <li>Leveraged the UI test automation code to run a series of tests (with screenshots taken), after loading the generated data to a test server</li>
             </ol>
 
             <h4>Advantages</h4>
-            <p></p>
+            <p>This was a tremendous help. It became easier to test, faster to test, more thorough, and also trusted by the developers.</p>
+            <p>It became possible to hand over the review of the resultant screenshot to a junior team member, who could flag issues.</p>
 
             <h4>Disadvantages</h4>
-            <p></p>
+            <p>Other than those moments of doubt and anxiety when attmpeting to implement -- "will this be worth it?" ("YES!!") -- there really weren't any.</p>
 
             <h4>Long-term benefits</h4>
-            <p></p>
+            <p>I was able to take the scripts and skills and apply them with all of the future XML-based dataset testing.</p>
           </div>
 
 
@@ -160,26 +162,27 @@
             <h3>New Datasets</h3>
 
             <h4>The Problem to Solve</h4>
-            <p></p>
+            <p>Following the initial building of BNA Compare and its initial dataset, the tool was rapidly expanded to include other -- differently stuctured -- datasets that needed to be used by the tool.</p>
+            <p>The timeline to build was always shorter than desired and the data was always full of new challenges.</p>
 
             <h4>The Journey</h4>
-            <p></p>
-            <p>Using Ruby, I...</p>
+            <p>Every new dataset became an adventure into unfamiliar territory but with reliable methods and knowledge to guide us.</p>
+            <p>Using Ruby and armed with previous experiences, I...</p>
 
             <ol>
-              <li>Leveraged and improved on techniques of analysis and testing for three more Compare Tool datasets</li>
+              <li>Leveraged and improved on techniques of analysis and testing for several more BNA Compare datasets</li>
               <li>Leveraged data analysis and test data generation experiences for a totally different XML-like dataset, with good success</li>
-          
             </ol>
 
             <h4>Advantages</h4>
-            <p></p>
+            <p>It actually got easier to do everytime, and all of the lessons learned from previous experience carried forward.</p>
+            <p>It saved so much time and became a trusted approach by the project team.</p>
 
             <h4>Disadvantages</h4>
-            <p></p>
+            <p>It was easy for some to assume that something would be unreasonably quick to turnaround because of how refined this, and other aspects of development, had become. We still had to do the work of each individual dataset and it could be hard to convince some folk on occasion.</p>
 
             <h4>Long-term benefits</h4>
-            <p></p>
+            <p>Not only did I use these approaches successfully with BNA Compare, but I also used it with another dataset that was XML-based. It took quite a bit of reworking, but the principles were the same -- as was the end result: Success!</p>
           </div>
 
 
