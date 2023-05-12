@@ -196,10 +196,15 @@ header nav  > .flex-nav a:hover {
   font-weight: 600;
 }
 
+.geo-location {
+  margin-top: -15px;
+}
+
 .portfolio-item .portfolio-header p, 
 .work-item .work-header p, 
 .education-item .education-header p {
   font-size: 14px;
+  line-height: 24px;
 }
 
 .portfolio-item .portfolio-header .portfolio-item-description {
@@ -234,7 +239,7 @@ header nav  > .flex-nav a:hover {
   margin: 0;
   padding-left: 60px;
   padding-right: 20px;
-
+  padding-top: 20px;
 }
 
 .portfolio-item .portfolio-details li, 
@@ -285,7 +290,7 @@ header nav  > .flex-nav a:hover {
 
   text-align: left;
 
-  font-size: 14px;
+  font-size: 15px;
   padding: 10px;
 
   margin: 20px auto;
@@ -303,7 +308,7 @@ header nav  > .flex-nav a:hover {
 }
 
 .education-item .education-details .course {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   padding-left: 20px;
   margin-bottom: 0px;
@@ -311,7 +316,8 @@ header nav  > .flex-nav a:hover {
 }
 
 .education-item .education-details .course-details {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 28px;
   padding-left: 50px;
   padding-top: 0;
 }
@@ -435,7 +441,7 @@ footer a:hover {
 
 
 
-/* === Case Study === */
+/* === BNA Compare Case Study === */
 
 .case-study {
   margin: 0 auto;
@@ -451,8 +457,8 @@ footer a:hover {
   line-height: 28px;
 }
 
-.case-study-stage {
-  /* background-color: green; */
+.case-study-stage,
+.img-displayer {
   padding: 10px 30px;
 
   border: navy 0.5px dotted;
@@ -464,4 +470,107 @@ footer a:hover {
 
 .case-study-stage li {
   line-height: 28px;
+}
+
+/* === Dine Around === */
+
+
+.dinearound {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.dinearound h3 {
+  padding-top: 10px;
+  border-top: navy 0.5px dotted;
+
+  font-size: 30px;
+  font-family: 'Alkatra', sans-serif;
+  letter-spacing: 5px;
+}
+
+
+.dinearound img {
+  border-radius: 10px;
+}
+
+.dinearound .logo {
+  border-radius: 10px;
+  margin-right: 30px;
+
+  max-width: 200px;
+  min-width: 150px;
+
+  float: left;
+}
+
+.dinearound .logo-wrapper {
+
+}
+
+.dinearound-code,
+.dinearound-test {
+
+}
+
+
+.code-container  {
+  padding-bottom: 25px;
+  vertical-align: center;
+}
+
+.code-example {
+  max-width: 70%;
+  border: navy 0.5px dotted;
+  background-color: lightcyan;
+
+  border-radius: 10px;
+  padding: 20px 10px 20px 10px;
+
+  text-align: center;
+  margin: 0 auto;
+}
+
+.code-example li {
+  display: inline;
+  padding: 10px;
+}
+
+
+.app-img-container {
+  display: flex;
+  justify-content: center;
+
+  margin: 10px;
+}
+
+.app-img-container img {
+  margin: 20px;
+  border-radius: 10px;
+
+  width: 280px;
+}
+
+.vs-code-img-container {
+  display: flex;
+  justify-content: center;
+
+  margin: 10px;
+}
+
+.vs-code-img-container img {
+
+  margin: 20px;
+  border-radius: 10px;
+
+  width: 100%;
+  min-width: 500px;
+}
+
+.center-description {
+  text-align: center;
+  /* border-top: navy 0.5px dotted;
+  padding-top: 20px; */
+  border-bottom: navy 0.5px dotted;
+  padding-bottom: 20px;
 }

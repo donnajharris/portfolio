@@ -10,7 +10,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Oxygen:wght@300;600;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/styles.css">
 
-      <title>Donna J. Harris ~ DineAround summary</title>
+      <title>Donna J. Harris ~ Dine Around Development Summary</title>
 
     </head>
     <body>
@@ -27,28 +27,57 @@
 
 
       <main>
-        <h1>All About DineAround</h1>
+        <section class="dinearound">
+          <div class="dinearound-code">
 
-        <img src="./cp670s21fp/DineAroundAppIcon.jpg" width="20%">
+        <h2>Developing Dine Around</h2>
+        <div class="logo-wrapper">
+          <img class="logo" src="./cp670s21fp/DineAroundAppIcon.jpg" width="20%"><p><span class="punch-up">Dine Around</span> was built as an Android development course final project. Our team of five built an app for tracking favourite restaurants, coffee shops, and bars.</p>
+          <p>My responsibilities and my confidence grew throughout the duration of the project.</p>
+          <p>I volunteered to take care of the app logo (created by combining and editing two Ballicon icons), which proved to be a precursor to handling the design and implementation of the app's lists of "Places" and "Favourite Places".</p>
+          <p>With guidance from a professionally experiened developer on the team, I got my feet wet with developing the main list of places. And then, I was able to really make both the design layout and the implementation my own, with regular feedback from the team.</p>
+          <p>I was able to successfully build out my features with the knowledge of other components that needed to integrate. We were able to work together to connect pieces and troubleshoot issues.</p>
+        </div>
 
 
-        <a name="android-summary-code"><h2>Coding</h2></a>
+        <h3>PlacesListAdapter</h3>
 
-        <p>PlacesListAdapter</p>
+
+        <div class="code-container">
+          <ul class="code-example">Code Examples:
+            <li><a href="./cp670s21fp/PlacesListAdapter.java" target="_blank">PlacesListAdapter.java</a></li>
+            <li><a href="./cp670s21fp/place_item.xml" target="_blank">place_item.xml</a></li>
+          </ul>
+        </div>
+
+        <div class="img-displayer">
+          <p class="center-description"><span class="punch-up">All Places:</span> These sample &quot;All Places&quot; lists show restaurants, coffee shops, and bars with various metadata, including ratings and favourites, open status and distance, if nearby.</p>
+
+          <div class="app-img-container">
+            <img src="./cp670s21fp/all_places_ui_1.png" alt="An example of the Dine Around places list, showing three places, including one to avoid, one 5-star rating, one unrated, one marked as a favourite, two closing soon, and one closed.">
+            <img src="./cp670s21fp/all_places_ui_2.png" alt="An example of the Dine Around places list, showing three places, including one nearby, one 4.5-star rating, one 5-star rating, one unrated, two marked as a favourite, two closing soon, and one open now.">
+          </div>
+          
+        </div>
+
+        <div class="img-displayer">
+          <p class="center-description"><span class="punch-up">place_item.xml</span> defines the card layout for the All Places and Favourite Places lists. This screenshot of VS Code shows the XML file and resulting card layout using sample text.</p>
+          <div class="vs-code-img-container">
+            <img src="./cp670s21fp/place_item_xml_VSCode.png" alt="VS Code open to show the place_item.xml file and the resulting layout, with sample text">
+          </div>
+        </div>
+
+
         <p>
 
-        <img src="./cp670s21fp/all_places_ui_1.png" width="280px">
-        <img src="./cp670s21fp/all_places_ui_2.png" width="280px">
         <img src="./cp670s21fp/no_places_to_display_ui.png" width="280px">
         <img src="./cp670s21fp/no_faves_to_display_ui.png" width="280px">
-        <img src="./cp670s21fp/place_item_xml_VSCode.png" width="100%">
 
         </p>
 
         <p>
+
         
-        <a href="./cp670s21fp/PlacesListAdapter.java" target="_blank">[ PlacesListAdapter.java ]</a> | 
-        <a href="./cp670s21fp/place_item.xml" target="_blank">[ place_item.xml ]</a>
 
 
       </p>
@@ -77,15 +106,13 @@
           <img src="./cp670s21fp/French_strings_xml_commit_history_2.png" width="40%">
   
         </p>
-
-        <hr/>
-
      
 
 
 
-
-        <a name="android-summary-test"><h2>Testing</h2></a>
+        </div>
+        <div class="dinearound-test">
+          <h2>Testing Dine Around</h2>
 
 
           <p>
@@ -115,7 +142,18 @@
             <img src="./cp670s21fp/PlaceDayHourIntegrationTests_commit_history_1.png" width="40%">
             <img src="./cp670s21fp/PlaceDayHourIntegrationTests_commit_history_2.png" width="40%">
           </p>
-    
+        </div>
+
+        </section>
       </main>
+
+      <footer>
+        <p><a href="mailto:hello@donnajharris.xyz">Email</a> | <a href="https://www.github.com/donnajharris" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/donnajharris" target="_blank">LinkedIn</a>
+        </p>
+
+        <p>Website created by Donna J. Harris. &copy; 2023.</p>
+      </footer>
+
+
     </body>
 </html>
