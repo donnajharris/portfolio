@@ -504,14 +504,14 @@ footer a:hover {
   float: left;
 }
 
-.dinearound .logo-wrapper {
+/* .dinearound .logo-wrapper {
 
 }
 
 .dinearound-code,
 .dinearound-test {
 
-}
+} */
 
 
 .code-container  {
@@ -551,16 +551,16 @@ footer a:hover {
   width: 280px;
 }
 
-.vs-code-img-container {
+.code-img-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-
-  margin: 10px;
+  align-items: center;
 }
 
-.vs-code-img-container img {
-
-  margin: 20px;
+.code-img-container img {
+  margin: 10px;
   border-radius: 10px;
 
   width: 100%;
@@ -573,4 +573,6 @@ footer a:hover {
   padding-top: 20px; */
   border-bottom: navy 0.5px dotted;
   padding-bottom: 20px;
+
+  line-height: 28px;
 }

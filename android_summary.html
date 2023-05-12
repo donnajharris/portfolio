@@ -28,121 +28,167 @@
 
       <main>
         <section class="dinearound">
-          <div class="dinearound-code">
 
-        <h2>Developing Dine Around</h2>
-        <div class="logo-wrapper">
+          <h2>Developing Dine Around</h2>
           <img class="logo" src="./cp670s21fp/DineAroundAppIcon.jpg" width="20%"><p><span class="punch-up">Dine Around</span> was built as an Android development course final project. Our team of five built an app for tracking favourite restaurants, coffee shops, and bars.</p>
           <p>My responsibilities and my confidence grew throughout the duration of the project.</p>
           <p>I volunteered to take care of the app logo (created by combining and editing two Ballicon icons), which proved to be a precursor to handling the design and implementation of the app's lists of "Places" and "Favourite Places".</p>
           <p>With guidance from a professionally experiened developer on the team, I got my feet wet with developing the main list of places. And then, I was able to really make both the design layout and the implementation my own, with regular feedback from the team.</p>
           <p>I was able to successfully build out my features with the knowledge of other components that needed to integrate. We were able to work together to connect pieces and troubleshoot issues.</p>
-        </div>
 
+          <p>Unfortunately, <span class="punch-up">the repository is not public at this time</span>. What follows provides some insights into the app as well as my involvmenet in development and testing.</p>
 
-        <h3>PlacesListAdapter</h3>
+          <h3>Places Lists</h3>
 
-
-        <div class="code-container">
-          <ul class="code-example">Code Examples:
-            <li><a href="./cp670s21fp/PlacesListAdapter.java" target="_blank">PlacesListAdapter.java</a></li>
-            <li><a href="./cp670s21fp/place_item.xml" target="_blank">place_item.xml</a></li>
-          </ul>
-        </div>
-
-        <div class="img-displayer">
-          <p class="center-description"><span class="punch-up">All Places:</span> These sample &quot;All Places&quot; lists show restaurants, coffee shops, and bars with various metadata, including ratings and favourites, open status and distance, if nearby.</p>
-
-          <div class="app-img-container">
-            <img src="./cp670s21fp/all_places_ui_1.png" alt="An example of the Dine Around places list, showing three places, including one to avoid, one 5-star rating, one unrated, one marked as a favourite, two closing soon, and one closed.">
-            <img src="./cp670s21fp/all_places_ui_2.png" alt="An example of the Dine Around places list, showing three places, including one nearby, one 4.5-star rating, one 5-star rating, one unrated, two marked as a favourite, two closing soon, and one open now.">
+          <div class="code-container">
+            <ul class="code-example">Code Examples:
+              <li><a href="./cp670s21fp/PlacesListAdapter.java" target="_blank">PlacesListAdapter.java</a></li>
+              <li><a href="./cp670s21fp/place_item.xml" target="_blank">place_item.xml</a></li>
+            </ul>
           </div>
-          
-        </div>
 
-        <div class="img-displayer">
-          <p class="center-description"><span class="punch-up">place_item.xml</span> defines the card layout for the All Places and Favourite Places lists. This screenshot of VS Code shows the XML file and resulting card layout using sample text.</p>
-          <div class="vs-code-img-container">
-            <img src="./cp670s21fp/place_item_xml_VSCode.png" alt="VS Code open to show the place_item.xml file and the resulting layout, with sample text">
+          <div class="img-displayer">
+            <p class="center-description"><span class="punch-up">All Places:</span> These sample &quot;All Places&quot; lists show restaurants, coffee shops, and bars with various metadata, including ratings and favourites, open status and distance, if nearby.</p>
+
+            <div class="app-img-container">
+              <img src="./cp670s21fp/all_places_ui_1.png" alt="An example of the Dine Around places list, showing three places, including one to avoid, one 5-star rating, one unrated, one marked as a favourite, two closing soon, and one closed.">
+              <img src="./cp670s21fp/all_places_ui_2.png" alt="An example of the Dine Around places list, showing three places, including one nearby, one 4.5-star rating, one 5-star rating, one unrated, two marked as a favourite, two closing soon, and one open now.">
+            </div>
           </div>
-        </div>
 
+          <div class="img-displayer">
+            <p class="center-description"><span class="punch-up">place_item.xml</span> defines the card layout for the All Places and Favourite Places lists. This screenshot of VS Code shows the XML file and resulting card layout using sample text.</p>
+            <div class="code-img-container">
+              <img src="./cp670s21fp/place_item_xml_VSCode.png" alt="VS Code open to show the place_item.xml file and the resulting layout, with sample text">
+            </div>
+          </div>
 
-        <p>
+          <div class="img-displayer">
+            <p class="center-description">The <span class="punch-up">All Places</span> and <span class="punch-up">Favourite Places</span> lists provide guidance by default whenever there are no results to display in the list.</p>
+            <div class="app-img-container">
+              <img src="./cp670s21fp/no_places_to_display_ui.png" alt="The Dine Around All Places list as it appears when empty. There are suggestions regarding why there are no items in the list.">
+              <img src="./cp670s21fp/no_faves_to_display_ui.png" alt="The Dine Around Favourite Places list as it appears when empty. There are suggestions regarding why there are no items in the list.">
+            </div>
+          </div>
 
-        <img src="./cp670s21fp/no_places_to_display_ui.png" width="280px">
-        <img src="./cp670s21fp/no_faves_to_display_ui.png" width="280px">
+      
+          <h3>Language Support</h3>
 
-        </p>
+          <div class="code-container">
+            <ul class="code-example">Code Example:
+              <li><a href="./cp670s21fp/strings.xml" target="_blank">strings.xml (French)</a></li>
+            </ul>
+          </div>
 
-        <p>
+          <p>Our application supported three languages: English, French, and Portugese. (It was a required element to support multiple languages.</p>
 
-        
+          <p>My role was to ensure that all strings were labelled and translated accordingly. I provided the French for the app and much of the English.</p>
 
+          <p>The different languages impacted the UI layout, as some languages have longer or shorter words or phrases than others. It was an interesting challenge to update the layout for this purpose. The VS Code image of the place_item.xml layout shows the test strings used late in the project, including the longest words and phrases explicitly used by the application.</p>
 
-      </p>
-      <p>
-        
-        <img src="./cp670s21fp/PlacesListAdapter_commit_history_1.png" width="40%">
-        <img src="./cp670s21fp/PlacesListAdapter_commit_history_2.png" width="40%">
-        <img src="./cp670s21fp/PlacesListAdapter_commit_history_3.png" width="40%">
-        <img src="./cp670s21fp/PlacesListAdapter_commit_history_4.png" width="40%">
-        <img src="./cp670s21fp/PlacesListAdapter_commit_history_5.png" width="40%">
-        <img src="./cp670s21fp/PlacesListAdapter_commit_history_6.png" width="40%">
-      </p>
-
-      <p>
-        <img src="./cp670s21fp/place_item_xml_commit_history_1.png" width="40%">
-        <img src="./cp670s21fp/place_item_xml_commit_history_2.png" width="40%">
-
-      </p>
-
-
-      <p><a href="./cp670s21fp/strings.xml" target="_blank">[ strings.xml (French) ]</a>
-        </p>
-
-        <p>
-          <img src="./cp670s21fp/French_strings_xml_commit_history_1.png" width="40%">
-          <img src="./cp670s21fp/French_strings_xml_commit_history_2.png" width="40%">
-  
-        </p>
-     
-
-
-
-        </div>
-        <div class="dinearound-test">
           <h2>Testing Dine Around</h2>
 
+          <p>While there was much manual regression and feature testing all throughout the project, there was a requirement to provide unit testing in the codebase.</p>
 
-          <p>
-            <a href="./cp670s21fp/TimeHelper.java" target="_blank">[ TimeHelper.java ]</a> | 
-            <a href="./cp670s21fp/TimeHelperUnitTests.java" target="_blank">[ TimeHelperUnitTests.java ]
-          </p>
-          <p>
-            <img src="./cp670s21fp/TimeHelper_commit_history.png" width="40%">
-            <img src="./cp670s21fp/TimeHelperUnitTests_commit_history_1.png" width="40%">
-            <img src="./cp670s21fp/TimeHelperUnitTests_commit_history_2.png" width="40%">
-          </p>
+          <p>A number of helper classes containing business logic were relatively well isolated. As a result, these could be tested directly, making them good candidates for code-level test automation.</p>
 
-          <p>
-            <a href="./cp670s21fp/PlaceDayHourHelper.java" target="_blank">[ PlaceDayHourHelper.java ]</a> | 
-            <a href="./cp670s21fp/PlaceDayHourHelperUnitTests.java" target="_blank">[ PlaceDayHourHelperUnitTests.java ]</a> | 
-            <a href="./cp670s21fp/PlaceDayHourHelperIntegrationTests.java" target="_blank">[ PlaceDayHourHelperIntegrationTests.java ]</a> 
-          </p>
-    
-          <p>
-            <img src="./cp670s21fp/PlaceDayHourHelper_commit_history_1.png" width="40%">
-            <img src="./cp670s21fp/PlaceDayHourHelper_commit_history_2.png" width="40%">
-          </p>
+          <p>I provided tests for the code I wrote, as well as some other helper classes. Below, I include test code and the file under test for these instances.</p>
 
-          <p>
-            <img src="./cp670s21fp/PlaceDayHourHelperUnitTests_commit_history_1.png" width="40%">
-            <img src="./cp670s21fp/PlaceDayHourHelperUnitTests_commit_history_2.png" width="40%">
-            <img src="./cp670s21fp/PlaceDayHourIntegrationTests_commit_history_1.png" width="40%">
-            <img src="./cp670s21fp/PlaceDayHourIntegrationTests_commit_history_2.png" width="40%">
-          </p>
-        </div>
+          <h4>Testing TimeHelper.java</h4>
+          <div class="code-container">
+            <ul class="code-example">
+              <li><a href="./cp670s21fp/TimeHelperUnitTests.java" target="_blank">TimeHelperUnitTests.java</a></li>
+              <li> &gt;&gt; tests &gt;&gt; </li>
+              <li><a href="./cp670s21fp/TimeHelper.java" target="_blank">TimeHelper.java</a></li>
+            </ul>
+          </div>
+
+
+          <h4>Testing PlaceDayHourHelper.java</h4>
+          <div class="code-container">
+            <ul class="code-example">
+              <li><a href="./cp670s21fp/PlaceDayHourHelperUnitTests.java" target="_blank">PlaceDayHourHelperUnitTests.java</a></li>
+              <li>and</li>
+              <li><a href="./cp670s21fp/PlaceDayHourHelperIntegrationTests.java" target="_blank">PlaceDayHourHelperIntegrationTests.java</a></li>
+              <li> &gt;&gt; tests &gt;&gt; </li>
+              <li><a href="./cp670s21fp/PlaceDayHourHelper.java" target="_blank">PlaceDayHourHelper.java</a></li>
+            </ul>
+          </div>
+              
+
+
+          <h3>Related Commit History</h3>
+
+          <p>Screenshots from GitHub of the commit history for the project files mentioned here are included below. These screenshots provide evidence of my ongoing project development activity throughout the duration of the project and show some indication of my activities.</p>
+
+          <div class="img-displayer">
+            <p class="center-description">Commit History for <span class="punch-up">PlacesListAdapter.java</span></p>
+            <div class="code-img-container">
+              <img src="./cp670s21fp/PlacesListAdapter_commit_history_1.png" alt="Page 1 of 6: Commit history for PlacesListAdapter.java">
+              <img src="./cp670s21fp/PlacesListAdapter_commit_history_2.png" alt="Page 2 of 6: Commit history for PlacesListAdapter.java">
+              <img src="./cp670s21fp/PlacesListAdapter_commit_history_3.png" alt="Page 3 of 6: Commit history for PlacesListAdapter.java">
+              <img src="./cp670s21fp/PlacesListAdapter_commit_history_4.png" alt="Page 4 of 6: Commit history for PlacesListAdapter.java">
+              <img src="./cp670s21fp/PlacesListAdapter_commit_history_5.png" alt="Page 5 of 6: Commit history for PlacesListAdapter.java">
+              <img src="./cp670s21fp/PlacesListAdapter_commit_history_6.png" alt="Page 6 of 6: Commit history for PlacesListAdapter.java">
+            </div>
+          </div>
+
+          <div class="img-displayer">
+            <p class="center-description">Commit History for <span class="punch-up">place_item.xml</span></p>
+            <div class="code-img-container">
+              <img src="./cp670s21fp/place_item_xml_commit_history_1.png" alt="Page 1 of 2: Commit history for place_item.xml">
+              <img src="./cp670s21fp/place_item_xml_commit_history_2.png" alt="Page 2 of 2: Commit history for place_item.xml">
+            </div>
+          </div>
+
+
+          <div class="img-displayer">
+            <p class="center-description">Commit History for <span class="punch-up">strings.xml (French)</span></p>
+            <div class="code-img-container">          
+              <img src="./cp670s21fp/French_strings_xml_commit_history_1.png" alt="Page 1 of 2: Commit history for strings.xml">
+              <img src="./cp670s21fp/French_strings_xml_commit_history_2.png" alt="Page 2 of 2: Commit history for strings.xml">
+            </div>
+          </div>
+
+          <div class="img-displayer">
+            <p class="center-description">Commit History for <span class="punch-up">TimeHelper.java</span></p>
+            <div class="code-img-container">
+              <img src="./cp670s21fp/TimeHelper_commit_history.png" alt="Page 1 of 1: Commit history for TimeHelper.java">
+            </div>
+          </div>
+
+
+          <div class="img-displayer">
+            <p class="center-description">Commit History for <span class="punch-up">TimeHelperUnitTests.java</span></p>
+            <div class="code-img-container">
+              <img src="./cp670s21fp/TimeHelperUnitTests_commit_history_1.png" alt="Page 1 of 2: Commit history for TimeHelperUnitTests.java">
+              <img src="./cp670s21fp/TimeHelperUnitTests_commit_history_2.png" alt="Page 2 of 2: Commit history for TimeHelperUnitTests.java">
+            </div>
+          </div>
+
+          <div class="img-displayer">
+            <p class="center-description">Commit History for <span class="punch-up">PlaceDayHourHelper.java</span></p>
+            <div class="code-img-container">
+              <img src="./cp670s21fp/PlaceDayHourHelper_commit_history_1.png" alt="Page 1 of 2: Commit history for PlaceDayHourHelper.java">
+              <img src="./cp670s21fp/PlaceDayHourHelper_commit_history_2.png" alt="Page 1 of 2: Commit history for PlaceDayHourHelper.java">
+            </div>
+          </div>
+
+          <div class="img-displayer">
+            <p class="center-description">Commit History for <span class="punch-up">PlaceDayHourHelperUnitTests.java</span></p>
+            <div class="code-img-container">
+              <img src="./cp670s21fp/PlaceDayHourHelperUnitTests_commit_history_1.png" alt="Page 1 of 2: Commit history for PlaceDayHourHelperUnitTests.java">
+              <img src="./cp670s21fp/PlaceDayHourHelperUnitTests_commit_history_2.png" alt="Page 2 of 2: Commit history for PlaceDayHourHelperUnitTests.java">
+            </div>
+          </div>
+
+          <div class="img-displayer">
+            <p class="center-description">Commit History for <span class="punch-up">PlaceDayHourIntegrationTests.java</span></p>
+            <div class="code-img-container">
+              <img src="./cp670s21fp/PlaceDayHourIntegrationTests_commit_history_1.png" alt="Page 1 of 2: Commit history for PlaceDayHourIntegrationTests.java">
+              <img src="./cp670s21fp/PlaceDayHourIntegrationTests_commit_history_2.png" alt="Page 2 of 2: Commit history for PlaceDayHourIntegrationTests.java">
+            </div>
+          </div>
 
         </section>
       </main>
