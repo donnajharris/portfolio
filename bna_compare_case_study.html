@@ -24,9 +24,8 @@
       <main>
         <section class="case-study">
           <h2>BNA Compare Case Study</h2>
-          <p>While working as a <span class="punch-up">Business Systems Analyst/QA Analyst</span> at Innosphere SDG Ltd., I took the initiative to leverage my technical skills to automate various aspects analysis and testing over the course of multiple years and multiple projects, starting with BNA Compare.</p>
-          <p>The BNA Compare utility was created to integrate into existing regulatory library tools. <a href="https://www.prnewswire.com/news-releases/bna-ehs-products-add-new-tool-for-verifying-amendment-updates-125770028.html" target="_blank">Used to verify amendment updates</a> by comparing archived versions of regulatory and legal text.</p>
-          <p>In short, the tool could show the differences between two different versions of the same regulation or law, underlining added text and striking out removed text.</p>
+          <p>While working as a <span class="punch-up">Business Systems Analyst/QA Analyst</span> at Innosphere SDG Ltd., I took the initiative to leverage my technical skills to automate various aspects of analysis and testing. This was accomplished over the course of several years and multiple projects, all starting with the origin of the <span class="punch-up">BNA Compare</span> project and its US federal regulations dataset.</p>
+          <p>The BNA Compare utility was created to integrate into existing regulatory library tools. <a href="https://www.prnewswire.com/news-releases/bna-ehs-products-add-new-tool-for-verifying-amendment-updates-125770028.html" target="_blank">Used to verify amendment updates</a>, the tool could show the differences between two different versions of the same regulation or law, underlining added text and striking out removed text.</p>
 
           <div class="case-study-stage">
             <h3>UI Test Automation - Visual Testing</h3>
@@ -34,9 +33,9 @@
             <h4>The Problem to Solve</h4>
             <p>Initially, the problem was finding ways to avoid boredom. :)</p>
             <p>I also wanted to find appropriate and useful ways to use test automation -- not just do automation for the sake of automating tests.</p>
-            <p>The BNA Compare tool had a very basic UI, and made a perfect candidate for exploring UI automation.</p>
 
             <h4>The Journey</h4>
+            <p>The BNA Compare tool had a very basic UI, and made a perfect candidate for exploring UI automation.</p>
             <p>While I had more experience with other languages, I decided to try learning Ruby.</p>
             <p>Using Ruby, I...</p>
             <ol>
@@ -51,7 +50,8 @@
             <p>There was a season in the early development where I would need to regress many times in a day. It was awesome to have this effective, time-saving option.</p>
 
             <h4>Disadvantages</h4>
-            <p>Because of the nature of the implementation, the most important tests could not be reliably confirmed with an assertion at the end of the automated steps.</p>
+            <p>Because of the nature of the implementation, the most important tests could not be reliably confirmed with an assertion at the end of the automated steps. Comparison testing still required a quick glance at a screenshot.</p>
+            <p>(The design of the test data that evolved over time made this increasingly efficient.)</p>
 
             <h4>Long-term benefits</h4>
             <p>Learning how to drive the UI from CSV and to take screenshots of results was a technique I returned to time and again for several years to come.</p>
@@ -61,20 +61,20 @@
 
             <h4>The Problem to Solve</h4>
             <p>Our original team was small -- just me and one developer -- and the demands on his time were huge.</p>
-            <p>He was a huge advocate for adding code-level testing and he wanted to add more, but wasn't finding the time.</p>
+            <p>He was a huge advocate for adding code-level testing and he wanted to add more, but wasn't finding the time to increase coverage in the way he envisioned.</p>
 
             <h4>The Journey</h4>
             <p>Knowing I was technically-inclined, developers often walked through their code with me. On this occasion, he suggested I try adding integration tests based on the one sample he had, testing between intermediary layers of translation.</p>
-            <p>Using C#, I...</p>
+            <p>Using C# and Ruby, I...</p>
             <ol>
-              <li>Studied the existing NUnit test code, identifying what needed to change to test different cases -- then created one new test manually</li>
+              <li>Studied the existing C# and NUnit test code, identifying what needed to change to test different cases -- then created one new test manually</li>
               <li>Created a Ruby script for generating the text of a single C# test case for provided parameters</li>
-              <li>Used Excel/CSV to list parameters for the C# tests to generate in bulk</li> 
+              <li>Used Excel/CSV to list parameters for the C# tests to generate in bulk using the Ruby script</li> 
               <li>Added the generated C# tests to the codebase</li>
             </ol>
 
             <h4>Advantages</h4>
-            <p>Even with only a loose grasp of C#, I could create test cases and test code far quicker than the developer could, even if he had the time.</p>
+            <p>Even with only a loose grasp of C#, I could create valuable test cases and the corresponding test code far quicker than the developer could, even if he had the time.</p>
             <p>With the initial dataset in particular, this caught a number of regressions before it even got to me to take a look at.</p>
             <p>I was exposed to the main codebase.</p>
 
@@ -82,7 +82,7 @@
             <p>It only covered one aspect (although, it was a helpful one!) and had limited value after the code stabilized.</p>
 
             <h4>Long-term benefits</h4>
-            <p>As far as I recall, this specific kind of testing did not carry forward into datasets after the original one -- but its legacy of getting so many of the growing pains of the development approach sorted early definitely carried forward.</p>
+            <p>As far as I recall, this specific kind of testing did not carry forward into datasets after the original one. But its legacy of working through so many of the growing pains of the development approach resonated into the future.</p>
             <p>* Note: There would have been other code-level tests in the codebase. I just wasn't involved with creating, running, or maintaining those.</p>
           </div>
           <div class="case-study-stage">
@@ -90,10 +90,10 @@
 
             <h4>The Problem to Solve</h4>
             <p>A large amount of archived data versions were loaded into the initial database.</p>
-            <p>There was no way to guess what data had examples of any particular element or what surprises or secrets awaited within</p>
+            <p>There was no way to guess what data had examples of any particular element or what surprises or secrets awaited within.</p>
 
             <h4>The Journey</h4>
-            <p>Instead of solely relying on schema documents and the recommendations of subject matter experts to provide insights into things to look for within the data, I dug deeper into the data on my own.</p>
+            <p>Instead of solely relying on schema documents and the recommendations of subject matter experts to provide insights, I also dug deeper into the data independently.</p>
             <p>Using Ruby, I...</p>
             <ol>
               <li>Wrote various scripts to interrogate the XML in order to identify all elements and attributes in existing data</li>
@@ -128,7 +128,7 @@
 
             <h4>Advantages</h4>
             <p>This was a tremendous help. It became easier to test, faster to test, more thorough, and also trusted by the developers.</p>
-            <p>It became possible to hand over the review of the resultant screenshot to a junior team member, who could flag issues.</p>
+            <p>It became possible to hand over the review of the resultant screenshots to a junior team member, who could flag issues.</p>
 
             <h4>Disadvantages</h4>
             <p>Other than those moments of doubt and anxiety when attmpeting to implement -- "will this be worth it?" ("YES!!") -- there really weren't any.</p>
@@ -140,26 +140,26 @@
             <h3>New Datasets</h3>
 
             <h4>The Problem to Solve</h4>
-            <p>Following the initial building of BNA Compare and its initial dataset, the tool was rapidly expanded to include other -- differently stuctured -- datasets that needed to be used by the tool.</p>
+            <p>Following the initial building of BNA Compare and its first dataset, the tool was rapidly expanded to include other (differently stuctured) datasets.</p>
             <p>The timeline to build was always shorter than desired and the data was always full of new challenges.</p>
 
             <h4>The Journey</h4>
             <p>Every new dataset became an adventure into unfamiliar territory but with reliable methods and knowledge to guide us.</p>
             <p>Using Ruby and armed with previous experiences, I...</p>
             <ol>
-              <li>Leveraged and improved on techniques of analysis and testing for several more BNA Compare datasets</li>
-              <li>Leveraged data analysis and test data generation experiences for a totally different XML-like dataset, with good success</li>
+              <li>Leveraged and improved on the previously discussed techniques of analysis and testing for several more BNA Compare datasets</li>
+              <li>Leveraged data analysis and test data generation experiences for a non-Compare application with an XML-based dataset</li>
             </ol>
 
             <h4>Advantages</h4>
-            <p>It actually got easier to do everytime, and all of the lessons learned from previous experience carried forward.</p>
-            <p>It saved so much time and became a trusted approach by the project team.</p>
+            <p>Expanding to inlucde new datasets did become easier to do, and all of the lessons learned from previous experience carried forward.</p>
+            <p>These techniques saved so much time and became a trusted approach by the project team.</p>
 
             <h4>Disadvantages</h4>
-            <p>It was easy for some to assume that something would be unreasonably quick to turnaround because of how refined this, and other aspects of development, had become. We still had to do the work of each individual dataset and it could be hard to convince some folk on occasion.</p>
+            <p>It was easy for some to assume that new data would be unreasonably quick to turnaround because of how refined this, and other aspects of development, had become. We still had to do the work of each individual dataset and it could be hard to convince some folk on occasion.</p>
 
             <h4>Long-term benefits</h4>
-            <p>Not only did I use these approaches successfully with BNA Compare, but I also used it with another dataset that was XML-based. It took quite a bit of reworking, but the principles were the same -- as was the end result: Success!</p>
+            <p>As mentioned, not only did I use these approaches successfully with BNA Compare, I also used them with aan unrelated web application which had an XML-based dataset. It took quite a bit of reworking, but the principles were the same -- as was the end result: Success!</p>
           </div>
         </section>
       </main>
