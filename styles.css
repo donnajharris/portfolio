@@ -3,8 +3,6 @@
   letter-spacing: 2px;
 
   scroll-behavior: smooth;
-
-
 }
 
 body {
@@ -42,12 +40,8 @@ main {
   margin: auto;
 }
 .main-wrapper {
-  /* background-color: green; */
-
   margin: 0 auto;
-
   width: 95%;
-
   padding-bottom: 40px;
 }
 
@@ -56,14 +50,8 @@ main {
 header {
 
   background-color: lightcyan;
-
-  /* background-color: white; */
   color: navy;
-
-  padding: 0px 40px;
-
-  /* border-radius: 30px; */
-  
+  padding: 0px 40px;  
 }
 
 header h1 {
@@ -77,8 +65,6 @@ header h1 {
   margin-top: 0;
 
   padding-top: 10px;
-
-  /* border-bottom: navy 2px solid; */
   line-height: 80px;
 
 }
@@ -121,7 +107,7 @@ header nav {
 header nav > .flex-nav  {
   background-color: #f1f1f1;
   width: 20%;
-  min-width: 250px;
+  min-width: 210px;
 }
 
 header nav > .flex-nav a {
@@ -254,7 +240,6 @@ header nav  > .flex-nav a:hover {
 .work-item .work-details li, 
 .education-item .education-details li {
   line-height: 28px;
-  /* padding: 10px; */
   font-size: 16px;
   list-style-type: square;
 
@@ -294,21 +279,10 @@ header nav  > .flex-nav a:hover {
 }
 
 
-/* .contact-container  {
-  background-color: lightcyan;
-  padding-bottom: 25px;
-} */
-
 
 .portfolio-samples {
-  /* max-width: 600px; */
-  /* background-color: lightcyan; */
-  /* border: black 0.5px dotted; */
-  /* border-radius: 10px; */
-  /* padding: 20px 10px 20px 10px; */
 
   text-align: left;
-  /* margin: 0 auto; */
 
   font-size: 14px;
   padding: 10px;
@@ -456,4 +430,34 @@ footer a, footer a:hover, footer a:visited, footer a:active {
 
 footer a:hover {
   text-decoration: none;
+}
+
+
+
+/* === Case Study === */
+
+.case-study {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.case-study h3 {
+  padding-bottom: 10px;
+  border-bottom: navy 0.5px dotted;
+}
+
+.case-study p {
+  line-height: 28px;
+}
+
+.case-study-stage {
+  /* background-color: green; */
+  padding: 10px 30px;
+
+  border: navy 0.5px dotted;
+  border-radius: 10px;
+}
+
+.case-study-stage li {
+  line-height: 28px;
 }

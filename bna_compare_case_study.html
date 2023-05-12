@@ -14,41 +14,84 @@
 
     </head>
     <body>
-        <h1>All About BNA Compare</h1>
 
-        <p>What problem(s) were you trying to solve?
+      <header>
+        <h1>Donna J. Harris</h1>
+        <nav>
+          <div class="flex-nav"><a href="index.html#code-portfolio">Coding</a></div>
+          <div class="flex-nav"><a href="index.html#test-portfolio">Testing</a></div>
+          <div class="flex-nav"><a href="index.html#work">Work</a></div>
+          <div class="flex-nav"><a href="index.html#education">Education</a></div>
+          <div class="flex-nav"><a href="index.html#references">References</a></div>
+        </nav>
 
-          What advantages did you discover?
-          
-          What disadvantages?
-          
-          What benefits were discovered long-term?
-          
-          </p>
+      </header>
 
-          <p>UI Automation - visual testing
-            1) Watir page objects with Ruby
-            2) Excel/CSV to drive comparisons and login/regression tests
-            3) Selenium Grid with Ruby to test in different browsers/environments (virtual machines)
-            4) get screenshots to visually examine the results/comparisons</p>
-            <p>Code-level testing - support to dev
-            1) discussions about what benefits and how; what already existed
-            2) dev showed me the integration tests he had, between intermediary layers of translation; invited me to add more based on test ideas I had
-            3) I studied the C# NUnit test code, manually identified what needed to change to test different cases, created a new test manually
-            4) I created a list of tests in a Excel/CSV document, with the parts of the test cases that needed to change – and wrote a script that generated the corresponding C# tests
-            5) added them to the codebase</p>
-            <p>Analysis of XML dataset
-            1) Ruby script to interrogate the XML to identify all elements and attributes in existing data
-            2) Used this information to find REAL examples of various differences between versions, location of specific elements, etc.
-            3) Helped us to dig deeper</p>
-            <p>Creation of XML test data
-            1) I studied the XML data files and determined the smallest possible structure for creating test data.
-            2) I created a list of tests in a Excel/CSV document, identifying the element under test.
-            3) I created a Ruby script to generate test files and scenarios
-            4) I leveraged the UI Test automation code and could run a series of tests (with screenshots), after loading the data to a test server</p>
-            <p>New Datasets
-            1) Leveraged and improved on techniques of analysis and testing for three more Compare Tool datasets
-            2) Leveraged data analysis and test data generation experiences for a totally different XML-like dataset, with good success
-            </p>
+
+      <main>
+        <section class="case-study">
+          <h2>BNA Compare Case Study</h2>
+
+          <p>While working as a <span class="punch-up">Business Systems Analyst/QA Analyst</span> at Innosphere SDG Ltd., I took the initiative to leverage my technical skills to automate various aspects analysis and testing over the course of multiple years and multiple projects, starting with BNA Compare.</p>
+
+          <p>The BNA Compare utility was created to integrate into existing regulatory library tools. <a href="https://www.prnewswire.com/news-releases/bna-ehs-products-add-new-tool-for-verifying-amendment-updates-125770028.html" target="_blank">Used to verify amendment updates</a> by comparing archived versions of regulatory and legal text.</p>
+
+          <p>In short, the tool could show the differences between two different versions of the same regulation or law, underlining added text and striking out removed text.</p>
+
+          <div class="case-study-stage">
+            <h3>UI Test Automation - Visual Testing</h3>
+
+            <h4>The Problem to Solve</h4>
+            <p>Initially, the problem was finding ways to avoid boredom. :)</p>
+            <p>I also wanted to find appropriate and useful ways to use test automation -- not just do automation for the sake of automating tests.</p>
+            <p>The BNA Compare tool had a very basic UI, and made a perfect candidate for exploring UI automation.</p>
+
+            <h4>The Journey</h4>
+            <p>While I had more experience with other languages, I decided to try learning Ruby.</p>
+            <p></p>
+
+            <ol>
+              <li>Used Watir page objects with Ruby to automate login and basic version comparisons</li>
+              <li>Used Excel/CSV to drive login/regression and version comparison tests</li>
+              <li>Setup Selenium Grid with virtual machines to test in different browsers/environments</li>
+              <li>Took a screenshot at the end of every test to visually examine the results of the comparison test</li>
+            </ol>
+
+            <h4>Advantages</h4>
+            <p>I could setup many tests, on many browsers, press a button and walk away and do other things. Then check back on the results later.</p>
+            <p>There was a season in the early development where I would need to regress many times in a day. It was awesome to have this effective, time-saving option.</p>
+
+            <h4>Disadvantages</h4>
+            <p>Because of the nature of the implementation, the most important tests could not be reliably confirmed with an assertion at the end of the automated steps.</p>
+
+            <h4>Long-term benefits</h4>
+            <p>It became possible to hand over the review of the resultant screenshot to a junior team member, who could flag issues.</p>
+            <p>Learning how to drive the UI from CSV and to take screenshots of results was a technique I returned to time and again for several years to come.</p>
+          </div>
+
+
+
+
+              <p>Code-level testing - support to dev
+              1) discussions about what benefits and how; what already existed
+              2) dev showed me the integration tests he had, between intermediary layers of translation; invited me to add more based on test ideas I had
+              3) I studied the C# NUnit test code, manually identified what needed to change to test different cases, created a new test manually
+              4) I created a list of tests in a Excel/CSV document, with the parts of the test cases that needed to change – and wrote a script that generated the corresponding C# tests
+              5) added them to the codebase</p>
+              <p>Analysis of XML dataset
+              1) Ruby script to interrogate the XML to identify all elements and attributes in existing data
+              2) Used this information to find REAL examples of various differences between versions, location of specific elements, etc.
+              3) Helped us to dig deeper</p>
+              <p>Creation of XML test data
+              1) I studied the XML data files and determined the smallest possible structure for creating test data.
+              2) I created a list of tests in a Excel/CSV document, identifying the element under test.
+              3) I created a Ruby script to generate test files and scenarios
+              4) I leveraged the UI Test automation code and could run a series of tests (with screenshots), after loading the data to a test server</p>
+              <p>New Datasets
+              1) Leveraged and improved on techniques of analysis and testing for three more Compare Tool datasets
+              2) Leveraged data analysis and test data generation experiences for a totally different XML-like dataset, with good success
+              </p>
+        </section>
+      </main>
     </body>
 </html>
