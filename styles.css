@@ -91,13 +91,29 @@ header nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
 
 header nav > .flex-nav  {
-  background-color: #f1f1f1;
   width: 20%;
   min-width: 180px;
 }
+
+@media screen and (max-width: 1000px) {
+  header nav > .flex-nav {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header nav > .flex-nav {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
 
 header nav > .flex-nav a {
   text-decoration: none;
