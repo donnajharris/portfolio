@@ -1,0 +1,99 @@
+* {
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f8f8;
+  margin: 0 auto;
+}
+
+.top-level-category {
+  background: pink;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 25px;
+  border: 11px solid green;
+}
+
+.top-level-category h2 {
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+.sub-category {
+  background: lightblue;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 25px;
+  border: 1px solid black;
+
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub-category h3 {
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.category-example {
+  background: lightgoldenrodyellow;
+
+  padding: 50px;
+
+  border-radius: 10px;
+
+  margin: 10px auto;
+
+  width: 590px;
+
+}
+
+.polaroid {
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+
+  border-radius: 5px;
+}
+
+/* @media screen and (max-width: 1000px) {
+  .polaroid  {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .polaroid  {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+} */
+
+
+
+.polaroid > .youtube > iframe {
+  margin-top: 35px;
+  border: 0px;
+
+  aspect-ratio: 16 / 9;
+  width: 90%;
+}
+
+
+
+.polaroid-caption {
+  background: #fff;
+  padding: 10px;
+}
+
+.polaroid-caption p {
+  font-size: 22px;
+  color: #000;
+  font-family: 'Alkatra', sans-serif;
+  font-weight: 800;
+}
