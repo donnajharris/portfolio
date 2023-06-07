@@ -76,15 +76,22 @@ body {
 
 
 
-.polaroid > .youtube > iframe {
+.polaroid > .youtube > iframe,
+.polaroid > .raw-video > video,
+.polaroid > .raw-audio > audio {
   margin-top: 35px;
   border: 0px;
-
   aspect-ratio: 16 / 9;
   width: 90%;
 }
 
+.polaroid > .soundcloud > iframe,
+.polaroid > .static-image > img {
+  margin-top:35px;
+  border: 1px lightslategray dotted;
+  width: 90%;
 
+}
 
 .polaroid-caption {
   background: #fff;
