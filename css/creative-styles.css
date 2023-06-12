@@ -73,8 +73,15 @@ body {
   object-position: center;
   width: 40%;
   line-height: 30px;
+}
 
+.example-description a {
+  text-decoration: underline;
+  color: green;
+}
 
+.example-description a:hover {
+  text-decoration: none;
 }
 
 .polaroid {
@@ -122,6 +129,16 @@ body {
   border: 1px lightslategray dotted;
   /* aspect-ratio: 16 / 9; */
   width: 90%;
+}
+
+.polaroid > .pdf > a > img {
+  width: 60%;
+  border: 1px transparent solid;
+}
+
+.polaroid > .pdf > a > img:hover {
+  width: 60%;
+  border: 1px red solid;
 }
 
 .polaroid-caption {
