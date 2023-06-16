@@ -92,38 +92,81 @@ body {
   border-radius: 5px;
 
   width: 50%;
-
+  height: fit-content;
 
   display: block;
+
+  margin: 1em 0.5em;
 }
 
-/* @media screen and (max-width: 1000px) {
-  .polaroid  {
-    width: 50%;
-  }
-}
+/* @media screen and (max-width: 1400px) {
 
-@media screen and (max-width: 600px) {
-  .polaroid  {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
 } */
 
+@media screen and (max-width: 1000px) {
+  .polaroid  {
+    width: 100%;
+  }
+
+  .polaroid-caption {
+    display: none;
+  }
+
+  .example-description {  
+    display: block;
+  
+    margin: 0px 30px;
+    /* margin-top: 10px; */
+    object-position: center;
+    width: 100%;
+    line-height: 30px;
+    border: 1px red solid;
+  }
+}
+
+
+
+.polaroid > .inner {
+  /* height:  300px;
+  background-color: black;
+  border: 2px red solid;
+  padding: 30px !important;
+  margin: 2em 2em 0em 2em; */
+
+  height: fit-content;
+
+  padding: 1em 1em 0em 1em !important;
+}
+
+.polaroid > .inner > .raw-audio {
+
+  background-color: black;
+  height: 300px;
+  padding: 30px;
+  
+}
+
+.polaroid > .inner > .soundcloud {
+  background-color: black;
+  height: 300px;
+  padding: 30px;
+}
+
+.polaroid  > .inner > .soundcloud-playlist {
+  border: 3px red solid;
+}
 
 
 .polaroid > .youtube > iframe,
-.polaroid > .raw-video > video,
-.polaroid > .raw-audio > audio {
+.polaroid > .raw-video > video {
   margin-top: 35px;
+  padding-right: 35px;
   border: 0px;
   aspect-ratio: 16 / 9;
-  width: 90%;
+  width: 100%;
 }
 
-.polaroid > .soundcloud > iframe,
+/* .polaroid > .soundcloud > iframe, */
 .polaroid > .static-image > img {
   margin-top: 35px;
   border: 1px lightslategray dotted;
@@ -143,10 +186,10 @@ body {
 
 .polaroid-caption {
   background: #fff;
-  padding: 20px;
+  padding: 0px;
 }
 
-.polaroid-caption p{
+.polaroid-caption p {
   font-size: 22px;
   color: #000;
   font-family: 'Alkatra', sans-serif;
