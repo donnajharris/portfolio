@@ -91,7 +91,7 @@ body {
 
   border-radius: 5px;
 
-  width: 50%;
+  width: 45%;
   height: fit-content;
 
   display: block;
@@ -112,6 +112,12 @@ body {
     display: none;
   }
 
+  .mobile-caption {
+    display: block;
+    float: top;
+    border: green 3px solid;
+  }
+
   .example-description {  
     display: block;
   
@@ -120,7 +126,7 @@ body {
     object-position: center;
     width: 100%;
     line-height: 30px;
-    border: 1px red solid;
+    /* border: 1px red solid; */
   }
 }
 
@@ -134,8 +140,23 @@ body {
   margin: 2em 2em 0em 2em; */
 
   height: fit-content;
-
   padding: 1em 1em 0em 1em !important;
+}
+
+
+.polaroid > .inner > .youtube {
+  /* background-color: black; */
+  border: 0;
+  /* padding: 30px; */
+}
+
+.polaroid > .inner > .youtube > iframe {
+  /* aspect-ratio: 16 / 9;
+  height: 300px; */
+  width: 100%;
+  border: 0;
+  height: 300px;
+
 }
 
 .polaroid > .inner > .raw-audio {
@@ -153,12 +174,16 @@ body {
 }
 
 .polaroid  > .inner > .soundcloud-playlist {
-  border: 3px red solid;
+  border: 0.5px darkslategray solid;
 }
 
 
-.polaroid > .youtube > iframe,
-.polaroid > .raw-video > video {
+.polaroid > .inner > .raw-video {
+  background-color: black;
+  /* height: 300px; */
+}
+
+.polaroid > .inner > .raw-video > video {
   margin-top: 35px;
   padding-right: 35px;
   border: 0px;
@@ -166,20 +191,27 @@ body {
   width: 100%;
 }
 
-/* .polaroid > .soundcloud > iframe, */
-.polaroid > .static-image > img {
-  margin-top: 35px;
-  border: 1px lightslategray dotted;
-  /* aspect-ratio: 16 / 9; */
-  width: 90%;
+/* .polaroid > .inner .double > .static-image {
+  border: 3px pink solid;
+  padding: 1em !important;
+} */
+
+.polaroid > .inner > .static-image > img {
+  border: 0.5px grey solid;
+  
 }
 
-.polaroid > .pdf > a > img {
+.polaroid > .inner > .pdf {
+  border: 1px darkslategrey solid;
+}
+
+.polaroid > .inner > .pdf > a > img {
   width: 60%;
   border: 1px transparent solid;
+  margin: 1em;
 }
 
-.polaroid > .pdf > a > img:hover {
+.polaroid > .inner > .pdf > a > img:hover {
   width: 60%;
   border: 1px red solid;
 }
