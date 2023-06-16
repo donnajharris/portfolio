@@ -37,15 +37,6 @@ body {
   margin: 0 auto;
 }
 
-.example-container {
-  /* margin: 40px;
-  padding: 50px;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; */
-}
-
 .category-example {
   background: whitesmoke;
 
@@ -64,12 +55,9 @@ body {
 }
 
 .example-description {
-  /* background: lightgreen; */
-
   display: block;
 
   margin: 0px 30px;
-  /* margin-top: 10px; */
   object-position: center;
   width: 40%;
   line-height: 30px;
@@ -122,41 +110,28 @@ body {
     display: block;
   
     margin: 0px 30px;
-    /* margin-top: 10px; */
     object-position: center;
     width: 100%;
     line-height: 30px;
-    /* border: 1px red solid; */
   }
 }
 
 
-
 .polaroid > .inner {
-  /* height:  300px;
-  background-color: black;
-  border: 2px red solid;
-  padding: 30px !important;
-  margin: 2em 2em 0em 2em; */
-
   height: fit-content;
   padding: 1em 1em 0em 1em !important;
 }
 
 
 .polaroid > .inner > .youtube {
-  /* background-color: black; */
   border: 0;
-  /* padding: 30px; */
 }
 
 .polaroid > .inner > .youtube > iframe {
-  /* aspect-ratio: 16 / 9;
-  height: 300px; */
   width: 100%;
   border: 0;
   height: 300px;
-
+  aspect-ratio: 16 / 9;
 }
 
 .polaroid > .inner > .raw-audio {
@@ -165,12 +140,19 @@ body {
   height: 300px;
   padding: 30px;
   
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .polaroid > .inner > .soundcloud {
   background-color: black;
   height: 300px;
   padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .polaroid  > .inner > .soundcloud-playlist {
@@ -180,7 +162,7 @@ body {
 
 .polaroid > .inner > .raw-video {
   background-color: black;
-  /* height: 300px; */
+  aspect-ratio: 16 / 9;
 }
 
 .polaroid > .inner > .raw-video > video {
@@ -190,11 +172,6 @@ body {
   aspect-ratio: 16 / 9;
   width: 100%;
 }
-
-/* .polaroid > .inner .double > .static-image {
-  border: 3px pink solid;
-  padding: 1em !important;
-} */
 
 .polaroid > .inner > .static-image > img {
   border: 0.5px grey solid;
@@ -218,11 +195,11 @@ body {
 
 .polaroid-caption {
   background: #fff;
-  padding: 0px;
+  padding: 0em 1em;
 }
 
 .polaroid-caption p {
-  font-size: 22px;
+  font-size: 20px;
   color: #000;
   font-family: 'Alkatra', sans-serif;
   font-weight: 800;
