@@ -9,6 +9,54 @@ body {
   margin: 0 auto;
 }
 
+header {
+  background-color: #1d2951;
+  /* margin: 30px; */
+  padding: 5px 10px;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 80px;
+  font-family: 'Alkatra', sans-serif;
+  font-weight: 400;
+  /* margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 10px;
+  line-height: 80px; */
+  display:flex;
+  justify-content: center;
+}
+
+header a, a:visited, a:active {
+  color: white;
+}
+
+header a:hover {
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header nav > .flex-nav  {
+  width: 20%;
+  min-width: 180px;
+}
+
+header .bio {
+  background-color: white;
+  color: #1d2951;
+}
+
+/*  ====  */
+
+
 .top-level-category {
   background: pink;
   margin: 20px;
@@ -44,6 +92,10 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
 
   
   padding: 5px;
@@ -93,17 +145,35 @@ body {
 
 @media screen and (max-width: 1000px) {
   .polaroid  {
-    width: 100%;
-  }
-
-  .polaroid-caption {
     display: none;
   }
 
-  .mobile-caption {
+  .mobile {
     display: block;
-    float: top;
     border: green 3px solid;
+    height: fit-content;
+    width: 100%;
+    /* min-width: 300px; */
+    padding: 1em 1em 0em 1em !important;
+  }
+
+  .mobile > .inner {
+    height: fit-content;
+    padding: 1em 1em 0em 1em !important;
+  }
+
+  .mobile > .inner > .soundcloud {
+    background-color: black;
+    height: 300px;
+    padding: 30px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mobile  > .inner > .soundcloud-playlist {
+    border: 0.5px darkslategray solid;
   }
 
   .example-description {  
