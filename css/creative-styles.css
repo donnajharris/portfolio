@@ -22,35 +22,115 @@ header h1 {
   font-size: 80px;
   font-family: 'Alkatra', sans-serif;
   font-weight: 400;
+  margin-bottom: -20px;
   /* margin-bottom: 0;
   margin-top: 0;
   padding-top: 10px;
   line-height: 80px; */
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
-header a, a:visited, a:active {
+header a, 
+header a:visited, 
+header a:active {
   color: white;
 }
 
-header a:hover {
+header a:hover,
+header .bio a:hover {
   text-decoration: none;
 }
 
 header nav {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  /* border: pink 1px solid; */
+
+
+  /* align-items: center; */
+  justify-content: center;
+
+
 }
 
 header nav > .flex-nav  {
-  width: 20%;
-  min-width: 180px;
+  /* width: 20%; */
+  /* min-width: 180px; */
+
+  text-align: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  line-height: 40px;
+
+  align-items: center;
+
+
+  /* border: pink 1px solid; */
+
+
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    margin: 0 auto;
+    font-size: 60px;
+    border-bottom: 5px pink double;
+  }
+  
+
+  header nav > .flex-nav {
+    /* float: none; */
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
+
+  header nav > .flex-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    border: #1d2951 2px solid;
+    background-color: #1d2951;
+    color: #f8f8f8;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+
+  header nav > .flex-nav a:hover {
+    display: block;
+    background-color: pink;
+    color: #1d2951;
+    text-decoration: underline;
+  }
 }
 
 header .bio {
   background-color: white;
+  color: #1d2951;
+
+  padding: 10px 25px;
+  margin: 10px 25px;
+
+  line-height: 30px;
+  border-radius: 25px;
+
+  text-align: center;
+}
+
+header .bio a, 
+header .bio a:visited, 
+header .bio a:active {
   color: #1d2951;
 }
 
