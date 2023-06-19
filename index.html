@@ -12,6 +12,9 @@
     <body>
       <header>
         <h1>Donna J. Harris</h1>
+        <div class="button-container">
+          <a href="creative.html" target="_blank"><span class="creative-portfolio-button">View my Creative Portfolio</span></a>
+        </div>
         <nav>
           <div class="flex-nav"><a href="#code-portfolio">Coding</a></div>
           <div class="flex-nav"><a href="#test-portfolio">Testing</a></div>
@@ -38,7 +41,7 @@
             <div class="portfolio-item">
               <div class="portfolio-header">
                 <a name="android-code"></a>
-                <h4>Android Application Programming Course (MCS)</h4>
+                <h4>Android Application Programming Course <span class="abbrev">(MCS Coursework)</span></h4>
                 <p class="portfolio-item-type">Collaborative Final Project</p>
                 <p class="portfolio-item-description"><b>Dine Around</b>: An Android Restaurant Tracker App</p>
                 <p>using Java, JUnit, Room, XML, Android Studio</p>
@@ -61,7 +64,7 @@
             <div class="portfolio-item">
               <div class="portfolio-header">
                 <a name="enterprise-code"></a>
-                <h4>Enterprise Computing Course (MCS)</h4>
+                <h4>Enterprise Computing Course <span class="abbrev">(MCS Coursework)</span></h4>
                 <p class="portfolio-item-type">Collaborative Final Project</p>
                 <p class="portfolio-item-description"><b>Inventory Management Analytics Dashboard (IMAD)</b>:<br/>A high-level, no-input inventory dashboard</p>
                 <p>using Java (JEE), Maven, MySQL, JBoss, Wildfly, RESTful web services, SAPUI5, VS Code</p>
@@ -84,7 +87,7 @@
             <div class="portfolio-item">
               <div class="portfolio-header">
                 <a name="ml-code"></a>
-                <h4>Machine Learning Course (MCS)</h4>
+                <h4>Machine Learning Course <span class="abbrev">(MCS Coursework)</span></h4>
                 <p class="portfolio-item-type">Independent Final Project</p>
                 <p class="portfolio-item-description">"Using Historical Data to Predict Batting Success"</p>
                 <p>using Python, Numpy, Pandas, SciKit, Jupyter Notebook, Google Colab</p>
@@ -104,7 +107,7 @@
             <div class="portfolio-item">
               <div class="portfolio-header">
                 <a name="ios-code"></a>
-                <h4>iOS Application Programming Course (MCS)</h4>
+                <h4>iOS Application Programming Course <span class="abbrev">(MCS Coursework)</span></h4>
                 <p class="portfolio-item-type">Collaborative Final Project</p>
                 <p class="portfolio-item-description"><b>Due Not Forget</b>: An iOS Personal Reminder App</p>
                 <p>using Swift, XCTest, SQLite, XCode</p>
@@ -127,7 +130,7 @@
             <div class="portfolio-item">
               <div class="portfolio-header">
                 <a name="parallel-code"></a>
-                <h4>Parallel Programming Course (MCS)</h4>
+                <h4>Parallel Programming Course <span class="abbrev">(MCS Coursework)</span></h4>
                 <p class="portfolio-item-type">Collaborative Final Project</p>
                 <p class="portfolio-item-description"><b>HPC Password Cracker</b>:<br/> High performance computing experiments for cracking passwords</p>
                 <p>using C, VS Code</p>
@@ -176,7 +179,7 @@
             <div class="portfolio-item">
               <div class="portfolio-header">
                 <a name="android-test"></a>
-                <h4>Android Application Programming Course (MCS)</h4>
+                <h4>Android Application Programming Course <span class="abbrev">(MCS Coursework)</span></h4>
                 <p class="portfolio-item-type">Collaborative Final Project</p>
                 <p class="portfolio-item-description"><b>Dine Around</b>: An Android Restaurant Tracker App</p>
                 <p>using Java, JUnit, Room, XML, Android Studio</p>
@@ -217,7 +220,7 @@
             <div class="portfolio-item">
               <div class="portfolio-header">
                 <a name="ios-test"></a>
-                <h4>iOS Application Programming Course (MCS)</h4>
+                <h4>iOS Application Programming Course <span class="abbrev">(MCS Coursework)</span></h4>
                 <p class="portfolio-item-type">Independent Final Project</p>
                 <p class="portfolio-item-description"><b>Due Not Forget</b>: An iOS Personal Reminder App</p>
                 <p>using Swift, XCTest, SQLite, XCode</p>
@@ -244,25 +247,41 @@
             <section class="work-item">
               <div class="work-header">
                 <h3>Part-Time Professor & Course Developer</h3>
-                <p class="location">Conestoga College</p>
+                <p class="location"><a href="https://www.conestogac.on.ca/" target="_blank">Conestoga College</a></p>
+                <p><a href="https://www.conestogac.on.ca/applied-computer-science-and-information-technology" target="_blank">School of Applied Computer Science & Information Technology</a></p>
                 <p class="geo-location">Kitchener-Waterloo,<br/>Ontario, Canada</p>
                 <p>Dec 2018 - Apr 2019 &<br/>Aug 2019 - Aug 2021</p>
               </div>
               <div class="work-details">
                 <ul>
-                  <li>Created and taught the "Software Quality and Usability" course, emphasizing software quality and testing throughout all phases of development.</li>
-                  <li>After delivering the course three times, successfully transitioned "Software Quality and Usability" to a new instructor who has furthered the vision.</li>
-                  <li>Taught other courses as requested.</li>
+                  <li>Created and taught the <b>Software Quality and Usability</b> <span class="course-id">(PROG2400)</span> Level 4 course as part of the <a href="https://www.conestogac.on.ca/fulltime/it-innovation-and-design/courses?id=26646" target="_blank">IT Innovation and Design program</a> (ITID). The course emphasizes software quality and testing throughout all phases of development.</li>
+                  <li>After delivering the course three times, intentionally and successfully transitioned <b>Software Quality and Usability</b> to a new instructor, who furthered the vision.</li>
+                  <li>Taught other courses as requested:
+                    <ul>
+                      <li><b>Developing Quality Applications</b> <span class="course-id">(PROG8601)</span><div class="program"><a href="https://www.conestogac.on.ca/fulltime/software-quality-assurance-and-test-engineering/courses?id=26905" target="_blank">Software Quality Assurance and Test Engineering</a> (Level 2)</div></li>
+                      <li><b>Information Technology Service Management Fundamentals</b> <span class="course-id">(MGMT2205)</span><div class="program"><a href="https://www.conestogac.on.ca/fulltime/computer-systems-technician-information-technology-infrastructure-and-services/courses?id=22089" target="_blank">Computer Systems Technician - Information Technology Infrastructure and Services</a> (Level 3)</div>
+                      <li><b>User Experience</b> <span class="course-id">(INFO1265)</span><div class="program"><a href="https://www.conestogac.on.ca/fulltime/it-innovation-and-design/courses?id=26646" target="_target">ITID</a> / <a href="https://www.conestogac.on.ca/fulltime/computer-programming-and-analysis/courses?id=26628" target="_blank">Computer Programming and Analysis</a> (Level 1)</div></li>
+                    </ul>
+                  </li>
                   <li>Designed and evaluated student assessments to measure progress, providing constructive feedback to improve future performance.</li>
                   <li>Maintained open communication channels with students by providing regular updates, guidance, and support throughout their learning process.</li>
                   <li>Carried out administrative duties such as online course setup, scheduling, and data entry to ensure seamless operations.</li>
-                </ul>   
+                </ul>  
+                <div class="achievements">
+                  <p>Professional Development Opportunities</p>
+                  <ul>
+                    <li><a href="https://mentalhealthcommission.ca/training/mhfa/" target="_blank">Mental Health First Aid - Basic</a> (Mental Health Commission of Canada)</li>
+                    <li>Certificate of Learning: <a href="https://cms.conestogac.on.ca/sites/corporate-websites/professional-development/Open%20Access/Workshops/Intercultural%20Teaching%20Practices.pdf" target="_blank">Intercultural Teaching Practices</a></li>
+                    <li>Certificate of Learning: <a href="https://tlconestoga.ca/wp-content/uploads/2021/01/Faculty-Orientation-Program-Handbook.pdf" target="_blank">Faculty Orientation</a></li>
+                  </ul>
+                  
+                </div> 
               </div>
             </section>
             <section class="work-item">
               <div class="work-header">
                 <h3>Business Systems Analyst & QA Analyst</h3>
-                <p class="location">Innosphere SDG Ltd.</p>
+                <p class="location"><a href="https://www.innosphere.ca/" target="_blank">Innosphere SDG Ltd.</a></p>
                 <p class="geo-location">Guelph, Ontario, Canada</p>
                 <p>May 2010 - Apr 2017</p>
               </div>
@@ -275,12 +294,18 @@
                   <li>Influential in sprint grooming, planning, and scheduling project work.</li>
                   <li>Skilled at following code, understanding system infrastructure, and working closely with developers.</li>
                 </ul>
+                <div class="achievements">
+                  <p>Professional Development Opportunities</p>
+                  <ul>
+                    <li><a href="https://bbst.courses/bbst-foundations/" target="_blank">Black Box Software Testing Foundations Course 101-F</a> (Association for Software Testing)</li>
+                  </ul>
+                </div>
               </div>
             </section>
             <section class="work-item">
               <div class="work-header">
                 <h3>Software QA Tester</h3>
-                <p class="location">Innosphere SDG Ltd.</p>
+                <p class="location"><a href="https://www.innosphere.ca/" target="_blank">Innosphere SDG Ltd.</a></p>
                 <p class="geo-location">Guelph, Ontario, Canada</p>
                 <p>Sep 2007 - May 2010</p>
               </div>
@@ -290,6 +315,13 @@
                   <li>Created and maintained test and instructional documentation, presented product demonstrations, and mentored new team members.</li>
                   <li>Provided on-site testing and troubleshooting support for client's critical migration project.</li>
                 </ul>
+                <div class="achievements">
+                  <p>Professional Development Opportunities</p>
+                  <ul>
+                    <li>Quality Assurance Analyst qualification exam (internal qualification)</li>
+                    <li><a href="https://social.technet.microsoft.com/wiki/contents/articles/8231.exam-70-620-ts-configuring-microsoft-windows-vista-client.aspx" target="_blank">Microsoft Certified Technology Specialist (MCTS): Windows Vista, Configuration</a></li>
+                  </ul>
+                </div>
               </div>
             </section>
           </section>
@@ -300,11 +332,11 @@
             <h2>Education</h2>
             <section class="education-item">
               <div class="education-header">
-                <h3>Master of Computer Science (MCS)</h3>
-                <p class="location">Wilfrid Laurier University</p>
+                <h3>Master of Computer Science <span class="abbrev">(MCS)</span></h3>
+                <p class="location"><a href="https://wlu.ca/" target="_blank">Wilfrid Laurier University</a></p>
                 <p class="geo-location">Waterloo, Ontario, Canada</p>
+                <p><b>Major:</b> <a href="https://academic-calendar.wlu.ca/program.php?cal=3&d=2659&p=5917&s=1050&y=86" target="_blank">Computing</a></p>
                 <p>Graduated June 2023</p>
-                <!-- <p>2020-2023</p> -->
               </div>
               <div class="education-details">
                 <div class="course">Advanced Parallel Programming</div>
@@ -331,18 +363,18 @@
             </section>
             <section class="education-item">
               <div class="education-header">
-                <h3>Bachelor of Science Honours</h3>
-                <p class="location">University of Guelph</p>
+                <h3>Bachelor of Science Honours <span class="abbrev">(BSc Hons.)</span></h3>
+                <p class="location"><a href="https://www.uoguelph.ca/" target="_blank">University of Guelph</a></p>
                 <p class="geo-location">Guelph, Ontario, Canada</p>
-                <p><b>Major:</b> <a href="https://www.uoguelph.ca/registrar/calendars/undergraduate/1999-2000/pg-cis.htm" target="_blank">Computing &<br/>Information Sciences</a></p>
-                <p>Graduated with Distinction, 2004</p>
+                <p><b>Major:</b> <a href="https://www.uoguelph.ca/registrar/calendars/undergraduate/1999-2000/pg-cis.htm" target="_blank">Computing &<br/>Information Science</a></p>
+                <p>Graduated with Distinction<br/>June 2004</p>
               </div>
               <div class="education-details">
                 <ul>
                   <li>Skills developed and practiced include: Java (J2SE: including applets, Swing, RMI, JDBC, servlets), HTML/CSS, PHP, SQL, C</li>
                   <li>Coursework included: software and web development (primarily in Linux), distributed and enterprise systems, databases</li>
-                  <li>Worked as a Supported Learning Group leader for six semesters</li>
-                  <li>Worked as an Undergraduate Teaching Assistant for three semesters</li>
+                  <li>Worked as a <a href="https://www.lib.uoguelph.ca/writing-studying/studying-resources-workshops/slgs" target="_blank">Supported Learning Group</a> leader for first year programming courses (six semesters)</li>
+                  <li>Worked as an Undergraduate Teaching Assistant for computer science courses (three semesters)</li>
                 </ul>
               </div>              
             </section>

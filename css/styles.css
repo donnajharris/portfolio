@@ -141,6 +141,7 @@ header nav  > .flex-nav a:hover {
 
 .history {
   margin: 0 auto;
+  padding-bottom: 20px;
   padding-left: 30px;
 }
 
@@ -174,7 +175,6 @@ header nav  > .flex-nav a:hover {
   background-image: linear-gradient(111deg, #eeeeeeee, #ffffff00);
   border-left: #1b1b1b 10px solid;
   border-top: #1b1b1b 1.5px solid;
-
 }
 
 .portfolio-item .portfolio-header h4, 
@@ -183,6 +183,17 @@ header nav  > .flex-nav a:hover {
   font-size: 24px;
   border-bottom: #708090 0.5px solid;
   padding-bottom: 20px;
+}
+
+.portfolio-item .portfolio-header h4 .abbrev, 
+.education-item .education-header h3 .abbrev  {
+  font-size: 18px;
+}
+
+.work-details > ul > li > .course-id,
+.work-details > ul > li > ul > li > .course-id,
+.work-details > ul > li > ul > li > .program { 
+  font-size: 14px;
 }
 
 .portfolio-item .portfolio-header .portfolio-item-type, 
@@ -249,13 +260,18 @@ header nav  > .flex-nav a:hover {
   line-height: 28px;
 }
 
-.portfolio-details .contributions {
+.portfolio-details .contributions,
+.work-item .achievements {
   background-color: #e7feff;
   border: #1d2951 0.5px dotted;
   border-radius: 10px;
   margin: 20px;
   padding-top: 5px;
   padding-bottom: 20px;
+}
+
+.work-item .achievements p {
+  margin-left: 20px;
 }
 
 .portfolio-item .portfolio-details .portfolio-samples {
@@ -524,3 +540,68 @@ footer a:hover {
   padding-bottom: 20px;
   line-height: 28px;
 }
+
+
+/* === Creative Portfolio Link === */
+/* References: https://codepen.io/bhautikbharadava/pen/OdPzdW */
+
+.button-container {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.creative-portfolio-button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+
+  color: #1d2951;
+  background-color: #e7feff;
+  rotate: calc(5deg);
+
+  transition: all 1s;
+
+  &:after,
+  &:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 3px solid transparent;
+    transition: all 1s;  
+  }
+  &:after {
+    top: -3px;
+    left: -3px;
+    border-top: 3px dotted pink;
+    border-left: 3px dotted pink;
+  }
+  &:before {
+    bottom: -3px;
+    right: -3px;
+    border-bottom: 3px dotted #1d2951;
+    border-right: 3px dotted #1d2951;
+  }
+  &:hover {
+    rotate: calc(0deg);
+
+    &:before,
+    &:after {  
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+header a .creative-portfolio-button {
+  text-decoration: underline dotted;
+  letter-spacing: 4px;
+}
+
+header a:hover .creative-portfolio-button {
+  background-color: white;
+  text-decoration: none;
+}
+
