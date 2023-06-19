@@ -62,6 +62,14 @@ header h1 {
   line-height: 80px;
 }
 
+header h1 a,
+header h1 a:hover,
+header h1 a:visited,
+header h1 a:active {
+  text-decoration: none;
+  font-family: 'Alkatra', sans-serif;
+}
+
 header .bio {
   padding: 0;
   line-height: 28px;
@@ -290,12 +298,56 @@ header nav  > .flex-nav a:hover {
   text-decoration: none;
 }
 
+.portfolio .to-top,
+.work-experience .to-top,
+.education .to-top,
+.references .to-top {
+  position: relative;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.portfolio .to-top a,
+.portfolio .to-top a:visited,
+.work-experience .to-top a,
+.work-experience .to-top a:visited,
+.education .to-top a,
+.education .to-top a:visited,
+.references .to-top a,
+.references .to-top a:visited {
+  color: #1d2951;
+  background-color: transparent;
+  padding: 12px;
+  border: 1px transparent solid;
+}
+
+.portfolio .to-top a:hover,
+.portfolio .to-top a:active,
+.work-experience .to-top a:hover,
+.work-experience .to-top a:active,
+.education .to-top a:hover,
+.education .to-top a:active,
+.references .to-top a:hover,
+.references .to-top a:active {
+  text-decoration: none;
+  background-color: white;
+  padding: 12px;
+  border: 1px #1d2951 solid;
+  border-radius: 5px;
+}
+
+
+
 .portfolio-samples {
   text-align: left;
   font-size: 15px;
   padding: 10px;
   margin: 20px auto;
   line-height: 30px;
+}
+
+.portfolio-samples::before {
+  content: "🔗 ";
 }
 
 .education-item .education-details  {
@@ -370,6 +422,14 @@ header nav  > .flex-nav a:hover {
   display: inline;
   font-weight: 700;
   color: #1d2951;
+}
+
+.see-also::before {
+  content: "⏩ ";
+}
+
+.note {
+  font-size: 75%;
 }
 
 .reference-item .punch-up {
