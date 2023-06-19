@@ -7,11 +7,13 @@
 body {
   background-color: #f8f8f8;
   margin: 0 auto;
+  color: #1d2951;
 }
 
 a,
 a:visited {
   text-decoration: underline;
+  color: #1d2951;
 }
 
 a:hover,
@@ -74,7 +76,6 @@ header nav > .flex-nav  {
 
 header nav > .flex-nav a,
 header nav > .flex-nav a:visited {
-  /* color: #1d2951; */
   background-color: transparent;
   padding: 12px;
   border: 1px transparent solid;
@@ -83,10 +84,10 @@ header nav > .flex-nav a:visited {
 header nav > .flex-nav a:hover,
 header nav > .flex-nav a:active {
   text-decoration: none;
-  background-color: pink;
+  background-color: white;
   color: #1d2951;
   padding: 12px;
-  border: 1px white solid;
+  border: 1px pink solid;
   border-radius: 5px;
 }
 
@@ -192,10 +193,15 @@ header .bio a:active {
   color: #1d2951;
 }
 
-hr.dotted-line-reference,
 hr.dotted-line-category {
   border-top: 5px pink dotted;
   width: 50%;
+}
+
+hr.dotted-line-reference {
+  border-top: 5px #1d2951 dotted;
+  width: 50%;
+  opacity: 0.5;
 }
 
 hr.dotted-line-category {
@@ -203,8 +209,9 @@ hr.dotted-line-category {
 }
 
 hr.dotted-line-example {
-  border-top: 5px green dotted;
+  border-top: 5px #1d2951 dotted;
   width: 50%;
+  opacity: 0.5;
 }
 
 /* ===Top-Level Category === */
@@ -262,9 +269,11 @@ hr.dotted-line-example {
 .top-level-category nav .flex-nav a:active
 {
   text-decoration: none;
-  background-color: pink;
+  /* background-color: pink; */
+  background-color: white;
   padding: 12px;
-  border: 1px #1d2951 solid;
+  /* border: 1px #1d2951 solid; */
+  border: 1px pink solid;
   border-radius: 5px;
 }
 
@@ -289,7 +298,7 @@ hr.dotted-line-example {
 
 .top-level-category-summary figcaption,
 .top-level-category-summary cite {
-  color: black;
+  color: #1d2951;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 14px;
   letter-spacing: 2px;
@@ -322,7 +331,7 @@ hr.dotted-line-example {
   margin: 20px auto;
   /* padding: 30px; */
   border-radius: 25px;
-  border: 1px solid black;
+  border: 1px solid #1d2951;
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -349,9 +358,11 @@ hr.dotted-line-example {
 .references .to-top a:hover,
 .references .to-top a:active {
   text-decoration: none;
-  background-color: pink;
+  /* background-color: pink; */
+  background-color: white;
   padding: 12px;
-  border: 1px #1d2951 solid;
+  /* border: 1px #1d2951 solid; */
+  border:  1px pink solid;
   border-radius: 5px;
 }
 
@@ -441,7 +452,7 @@ hr.dotted-line-example {
 .sub-category-summary  > .text-container {
   background-color: #f8f8f8;
   opacity: 0.9;
-  color: black;
+  color: #1d2951;
 
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -455,12 +466,11 @@ hr.dotted-line-example {
   margin: 20px auto;
 }
 
-.sub-category-summary .text-container a {
-/* ,
+.sub-category-summary .text-container a,
 .sub-category-summary .text-container a:visited,
 .sub-category-summary .text-container a:active,
-.sub-category-summary .text-container a:hover { */
-  color: green;
+.sub-category-summary .text-container a:hover {
+  color: #1d2951;
 }
 
 .sub-category-summary h3 {
@@ -470,7 +480,7 @@ hr.dotted-line-example {
 
   margin: 0 auto;
   padding-bottom: 25px;
-  border-bottom: black 0.5px solid;
+  border-bottom: #1d2951 0.5px solid;
 
   text-align: center;
 }
@@ -518,7 +528,7 @@ hr.dotted-line-example {
 
 .example-description a {
   text-decoration: underline;
-  color: green;
+  /* color: green; */
 }
 
 .example-description a:hover {
@@ -618,7 +628,7 @@ hr.dotted-line-example {
 
 .polaroid > .inner > .pdf > a > img:hover {
   width: 60%;
-  border: 1px red solid;
+  border: 1px #000f89 solid;
 }
 
 .polaroid-caption {
@@ -646,7 +656,7 @@ hr.dotted-line-example {
 
   .mobile {
     display: block;
-    border: green 3px solid;
+    border: slategrey 3px solid;
     height: fit-content;
     width: 100%;
     /* min-width: 300px; */
@@ -753,6 +763,7 @@ div.wordart-attribution.tagul-attribution {
   display: inline;
   font-weight: 700;
   color: #1d2951;
+  /* color: #000f89; */
 }
 
 .reference-item .punch-up {
