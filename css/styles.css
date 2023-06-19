@@ -62,6 +62,14 @@ header h1 {
   line-height: 80px;
 }
 
+header h1 a,
+header h1 a:hover,
+header h1 a:visited,
+header h1 a:active {
+  text-decoration: none;
+  font-family: 'Alkatra', sans-serif;
+}
+
 header .bio {
   padding: 0;
   line-height: 28px;
@@ -92,7 +100,6 @@ header nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
 }
 
 header nav > .flex-nav  {
@@ -142,6 +149,7 @@ header nav  > .flex-nav a:hover {
 
 .history {
   margin: 0 auto;
+  padding-bottom: 20px;
   padding-left: 30px;
 }
 
@@ -175,7 +183,6 @@ header nav  > .flex-nav a:hover {
   background-image: linear-gradient(111deg, #eeeeeeee, #ffffff00);
   border-left: #1b1b1b 10px solid;
   border-top: #1b1b1b 1.5px solid;
-
 }
 
 .portfolio-item .portfolio-header h4, 
@@ -184,6 +191,17 @@ header nav  > .flex-nav a:hover {
   font-size: 24px;
   border-bottom: #708090 0.5px solid;
   padding-bottom: 20px;
+}
+
+.portfolio-item .portfolio-header h4 .abbrev, 
+.education-item .education-header h3 .abbrev  {
+  font-size: 18px;
+}
+
+.work-details > ul > li > .course-id,
+.work-details > ul > li > ul > li > .course-id,
+.work-details > ul > li > ul > li > .program { 
+  font-size: 14px;
 }
 
 .portfolio-item .portfolio-header .portfolio-item-type, 
@@ -250,13 +268,18 @@ header nav  > .flex-nav a:hover {
   line-height: 28px;
 }
 
-.portfolio-details .contributions {
+.portfolio-details .contributions,
+.work-item .achievements {
   background-color: #e7feff;
   border: #1d2951 0.5px dotted;
   border-radius: 10px;
   margin: 20px;
   padding-top: 5px;
   padding-bottom: 20px;
+}
+
+.work-item .achievements p {
+  margin-left: 20px;
 }
 
 .portfolio-item .portfolio-details .portfolio-samples {
@@ -275,12 +298,56 @@ header nav  > .flex-nav a:hover {
   text-decoration: none;
 }
 
+.portfolio .to-top,
+.work-experience .to-top,
+.education .to-top,
+.references .to-top {
+  position: relative;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.portfolio .to-top a,
+.portfolio .to-top a:visited,
+.work-experience .to-top a,
+.work-experience .to-top a:visited,
+.education .to-top a,
+.education .to-top a:visited,
+.references .to-top a,
+.references .to-top a:visited {
+  color: #1d2951;
+  background-color: transparent;
+  padding: 12px;
+  border: 1px transparent solid;
+}
+
+.portfolio .to-top a:hover,
+.portfolio .to-top a:active,
+.work-experience .to-top a:hover,
+.work-experience .to-top a:active,
+.education .to-top a:hover,
+.education .to-top a:active,
+.references .to-top a:hover,
+.references .to-top a:active {
+  text-decoration: none;
+  background-color: white;
+  padding: 12px;
+  border: 1px #1d2951 solid;
+  border-radius: 5px;
+}
+
+
+
 .portfolio-samples {
   text-align: left;
   font-size: 15px;
   padding: 10px;
   margin: 20px auto;
   line-height: 30px;
+}
+
+.portfolio-samples::before {
+  content: "🔗 ";
 }
 
 .education-item .education-details  {
@@ -355,6 +422,14 @@ header nav  > .flex-nav a:hover {
   display: inline;
   font-weight: 700;
   color: #1d2951;
+}
+
+.see-also::before {
+  content: "⏩ ";
+}
+
+.note {
+  font-size: 75%;
 }
 
 .reference-item .punch-up {
@@ -525,3 +600,68 @@ footer a:hover {
   padding-bottom: 20px;
   line-height: 28px;
 }
+
+
+/* === Creative Portfolio Link === */
+/* References: https://codepen.io/bhautikbharadava/pen/OdPzdW */
+
+.button-container {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.creative-portfolio-button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+
+  color: #1d2951;
+  background-color: #e7feff;
+  rotate: calc(5deg);
+
+  transition: all 1s;
+
+  &:after,
+  &:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 3px solid transparent;
+    transition: all 1s;  
+  }
+  &:after {
+    top: -3px;
+    left: -3px;
+    border-top: 3px dotted pink;
+    border-left: 3px dotted pink;
+  }
+  &:before {
+    bottom: -3px;
+    right: -3px;
+    border-bottom: 3px dotted #1d2951;
+    border-right: 3px dotted #1d2951;
+  }
+  &:hover {
+    rotate: calc(0deg);
+
+    &:before,
+    &:after {  
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+header a .creative-portfolio-button {
+  text-decoration: underline dotted;
+  letter-spacing: 4px;
+}
+
+header a:hover .creative-portfolio-button {
+  background-color: white;
+  text-decoration: none;
+}
+
