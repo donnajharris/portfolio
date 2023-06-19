@@ -198,6 +198,10 @@ hr.dotted-line-category {
   width: 50%;
 }
 
+hr.dotted-line-category {
+  margin-top: 50px;
+}
+
 hr.dotted-line-example {
   border-top: 5px green dotted;
   width: 50%;
@@ -266,28 +270,32 @@ hr.dotted-line-example {
 
 .top-level-category-summary blockquote {
   color: #1d2951;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 3px;
   line-height: 32px;
 
-  margin-top: 18px;
-  margin-bottom: 5px;
-
   width: 75%;
   margin: 0 auto;
+  margin-top: 18px;
+  margin-bottom: 10px;
 
   text-align: center;
   margin-top: 20px;
+
+  opacity: 0.75;
 }
 
 .top-level-category-summary figcaption,
 .top-level-category-summary cite {
   color: black;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
   letter-spacing: 2px;
   text-align: center;
+
+  opacity: 0.75;
 }
 
 .top-level-category-summary {
@@ -495,6 +503,17 @@ hr.dotted-line-example {
   line-height: 30px;
 
   text-align: left;
+}
+
+.example-description p.example-heading {
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.example-description p.video-name {
+  /* font-style: italic; */
+  font-weight: 600;
+  font-size: 90%;
 }
 
 .example-description a {
@@ -792,13 +811,18 @@ footer a:hover {
 
 /* ===== Technical Portfolio ===== */
 
-.technical-portfolio-link {
+a .technical-portfolio-link {
+  display: inline-block;
+
+  text-decoration: underline;
+
   transition: all 1s;
 
   &:hover {
     transition: all 1s;
 
     background-color: black;
+    text-decoration: none;
     color: limegreen;
     font-family: monospace;
     font-size: 18px;
