@@ -91,12 +91,8 @@ header nav > .flex-nav a:active {
   border-radius: 5px;
 }
 
-/* @media screen and (max-width: 300px) {
-  header h1 {
-    font-size: 32px;
-  }
-}
 
+/*
 @media screen and (max-width: 450px) {
   header h1 {
     font-size: 48px;
@@ -187,11 +183,15 @@ header .bio img {
   shape-outside: circle();
 }
 
+
 header .bio a, 
 header .bio a:visited, 
 header .bio a:active {
   color: #1d2951;
 }
+
+
+
 
 hr.dotted-line-category {
   border-top: 5px pink dotted;
@@ -280,18 +280,17 @@ hr.dotted-line-example {
 .top-level-category-summary blockquote {
   color: #1d2951;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 3px;
   line-height: 32px;
 
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
-  margin-top: 18px;
+  margin-top: 20px;
   margin-bottom: 10px;
 
   text-align: center;
-  margin-top: 20px;
 
   opacity: 0.75;
 }
@@ -300,7 +299,7 @@ hr.dotted-line-example {
 .top-level-category-summary cite {
   color: #1d2951;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 2px;
   text-align: center;
 
@@ -839,4 +838,42 @@ a .technical-portfolio-link {
     font-size: 18px;
     padding: 5px 8px;
   }
+}
+
+
+
+
+@media screen and (max-width: 720px) {
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header .bio {
+    margin: 0 auto;
+  }
+
+
+  header .bio img {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+
+    float: none;
+  }
+
+  header .bio .text-wrapper {
+    font-size: 12px;
+    margin: 0 auto;
+    line-height: 18px;
+    letter-spacing: normal;
+  }
+
+
+  .category-example .polaroid  {
+    width: 100px;
+    border: pink 5px solid;
+    
+  }
+
 }
