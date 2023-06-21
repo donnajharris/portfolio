@@ -57,7 +57,7 @@ p {
 }
 
 
-.link-box {
+.link-box a {
   width: 300px;
   height: 300px;
   border-radius: 20px;
@@ -72,24 +72,19 @@ p {
   justify-content: center;
   align-items: center;
 
+
   font-family: 'Alkatra', sans-serif;
   font-size: 40px;
-}
 
-.link-wrapper a {
   text-decoration: none;
+
 }
 
-.link-wrapper a:hover {
-  color: #1d2951;
-}
-
-.link-box:hover {
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
+.link-box:hover a:hover{
   border: 3px #fff solid;
   background-color: #87cefa;
+
+  color: #1d2951;
 }
 
 
@@ -119,4 +114,33 @@ footer a, footer a:hover, footer a:visited, footer a:active {
 
 footer a:hover {
   text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+  header h1 {
+    font-size: 70px;
+  }
+
+  .link-box {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
+
+  .link-box:hover {
+    background-color: #87cefa;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  header h1 {
+    font-size: 40px;
+    color: green;
+  }
 }
