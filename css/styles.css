@@ -1,6 +1,7 @@
+/* Mobile-First: default styles */
+
 * {
   font-family: 'Oxygen', sans-serif;
-  letter-spacing: 2px;
   scroll-behavior: smooth;
 }
 
@@ -8,6 +9,7 @@ body {
   background-color: #1d2951;
   margin: 0 auto;
   color: #f8f8f8;
+  letter-spacing: 2px;
 }
 
 a,
@@ -30,10 +32,13 @@ header {
 header h1 {
   margin: 0 auto;
   padding: 0;
-  font-size: 100px;
+
+  margin-top: 35px;
+
+  font-size: 40px;
   font-family: 'Alkatra', sans-serif;
   font-weight: 400;
-  margin-top: 50px;
+
   display: flex;
   justify-content: center;
   text-align: center;
@@ -41,8 +46,9 @@ header h1 {
 
 main p {
   text-align: center;
+  font-size: 18px;
+  line-height: 28px;
   letter-spacing: 3px;
-  font-size: 20px;
 }
 
 .link-wrapper {
@@ -58,12 +64,9 @@ main p {
 }
 
 .link-box a {
-  width: 300px;
-  height: 300px;
   border-radius: 20px;
   border: 3px lightskyblue solid;
   background-color: #f8f8f8;
-  margin: 30px;
 
   position: relative;
   display: flex;
@@ -73,16 +76,19 @@ main p {
   align-items: center;
 
   font-family: 'Alkatra', sans-serif;
-  font-size: 40px;
+  font-size: 20px;
+
+  margin: 15px;
+
+  width: 150px;
+  height: 150px;
 
   text-decoration: none;
-
 }
 
 .link-box:hover a:hover {
   border: 3px #fff solid;
   background-color: #87cefa;
-
   color: #1d2951;
 }
 
@@ -96,7 +102,7 @@ footer {
 
 footer p {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 footer li {
@@ -105,7 +111,10 @@ footer li {
   text-align: center;
 }
 
-footer a, footer a:hover, footer a:visited, footer a:active {
+footer a, 
+footer a:hover, 
+footer a:visited, 
+footer a:active {
   color: #f8f8ff;
 }
 
@@ -113,8 +122,8 @@ footer a:hover {
   text-decoration: none;
 }
 
-
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 600px) {
+  /* Tablet */
 
   header h1 {
     font-size: 70px;
@@ -131,20 +140,26 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 900px) {
+  /* Desktop */
 
   header h1 {
-    font-size: 40px;
-    line-height: 60px;
-    margin-top: 35px;
+    font-size: 100px;
+    margin-top: 50px;
   }
 
   main p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
   }
 
   .link-box a {
-    margin: 15px;
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    font-size: 40px;
+  }
+
+  footer p {
+    font-size: 14px;
   }
 }
