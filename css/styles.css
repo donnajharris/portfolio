@@ -39,7 +39,7 @@ header h1 {
   text-align: center;
 }
 
-p {
+main p {
   text-align: center;
   letter-spacing: 3px;
   font-size: 20px;
@@ -54,8 +54,8 @@ p {
   flex-wrap: wrap;
 
   justify-content: center;
+  align-items: center;
 }
-
 
 .link-box a {
   width: 300px;
@@ -72,7 +72,6 @@ p {
   justify-content: center;
   align-items: center;
 
-
   font-family: 'Alkatra', sans-serif;
   font-size: 40px;
 
@@ -80,14 +79,12 @@ p {
 
 }
 
-.link-box:hover a:hover{
+.link-box:hover a:hover {
   border: 3px #fff solid;
   background-color: #87cefa;
 
   color: #1d2951;
 }
-
-
 
 footer {
   background-color: #1d2951;
@@ -99,7 +96,7 @@ footer {
 
 footer p {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 footer li {
@@ -117,30 +114,37 @@ footer a:hover {
 }
 
 
-
-
 @media screen and (max-width: 700px) {
 
   header h1 {
     font-size: 70px;
   }
 
-  .link-box {
+  .link-box a {
     width: 150px;
     height: 150px;
     font-size: 20px;
   }
 
-  .link-box:hover {
-    background-color: #87cefa;
+  footer p {
+    font-size: 12px;
   }
-
 }
 
 @media screen and (max-width: 500px) {
 
   header h1 {
     font-size: 40px;
-    color: green;
+    line-height: 60px;
+    margin-top: 35px;
+  }
+
+  main p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .link-box a {
+    margin: 15px;
   }
 }
