@@ -1,3 +1,5 @@
+/* Mobile-First: default styles */
+
 * {
   font-family: 'Oxygen', sans-serif;
   letter-spacing: 2px;
@@ -25,19 +27,19 @@ a:active {
 
 header {
   background-color: #1d2951;
-  padding: 5px 10px;
+  /* padding: 5px 30px; */
   color: #fff;
 }
 
 header h1 {
   margin: 0 auto;
   padding: 0;
-  font-size: 80px;
   font-family: 'Alkatra', sans-serif;
   font-weight: 400;
-  margin-bottom: -20px;
   display: flex;
   justify-content: center;
+  margin-top: 5px;
+  font-size: 40px;
 }
 
 header h1 a,
@@ -91,98 +93,30 @@ header nav > .flex-nav a:active {
   border-radius: 5px;
 }
 
-
-/*
-@media screen and (max-width: 450px) {
-  header h1 {
-    font-size: 48px;
-  }
-} */
-
-/* 
-@media screen and (max-width: 720px) {
-  header h1 {
-    margin: 0 auto;
-    font-size: 60px;
-    text-align: center;
-  }
-  
-  header nav > .flex-nav {
-    display: block;
-    width: 100%;
-    text-align: center;
-
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  header nav > .flex-nav a {
-    text-decoration: none;
-    font-weight: 500;
-    border: #1d2951 2px solid;
-    background-color: #1d2951;
-    color: #f8f8f8;
-    padding: 10px;
-    display: block;
-    text-align: center;
-    letter-spacing: 4px;
-    
-    border-top: transparent 5px dotted;
-    border-bottom: transparent 5px dotted;
-  }
-
-  header nav > .flex-nav a:hover {
-    display: block;
-    border-top: pink 5px dotted;
-    border-bottom:  pink 5px dotted;
-    color: pink;
-  }
-
-  header nav > .flex-nav a:hover::before {
-    content: '... ';
-  }
-
-  header nav > .flex-nav a:hover::after {
-    content: ' ...';
-  }
-
-  header .bio {
-    margin-top: 30px !important;
-  }
-} */
-
 header .bio {
-  background-color: white;
+  background-color: #fffffe;
   color: #1d2951;
 
-  padding: 20px 45px;
-  margin: 25px 10% 50px 10%;
+  padding: 20px 20px;
+  /* margin: 25px 10% 50px 10%; */
 
-  border-radius: 25px;
-  border: 2px pink solid;
+  /* border-radius: 25px;
+  border: 2px pink solid; */
 
-  min-height: 300px;
-}
+  overflow: hidden;
 
-
-header .bio .text-wrapper {
-  line-height: 30px;
-  margin-left:  30px;
-  text-align: left;
-  font-size: 18px;
 }
 
 header .bio img {
-  width: 225px;
-  height: 225px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
   float: left;
   margin: 10px 20px 10px 0;
-  padding: 10px;
-  border: pink 5px dotted;
+  padding: 5px;
+  border: pink 2px dotted;
   shape-outside: circle();
 }
-
 
 header .bio a, 
 header .bio a:visited, 
@@ -190,7 +124,12 @@ header .bio a:active {
   color: #1d2951;
 }
 
-
+header .bio .text-wrapper {
+  line-height: 22px;
+  /* margin-left:  30px; */
+  text-align: left;
+  font-size: 12px;
+}
 
 
 hr.dotted-line-category {
@@ -320,7 +259,7 @@ hr.dotted-line-example {
   margin: 0 auto;
   margin-top: 25px;
 
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 /* === Sub-Category === */
@@ -461,7 +400,7 @@ hr.dotted-line-example {
 
 .sub-category-summary > .text-container p {
   width: 90%;
-  text-align: justify;
+  /* text-align: justify; */
   margin: 20px auto;
 }
 
@@ -642,54 +581,7 @@ hr.dotted-line-example {
   font-weight: 800;
 }
 
-/* ======= Polaroid / Examples --- Mobile ====== */
 
-/* @media screen and (max-width: 1400px) {
-
-} */
-
-@media screen and (max-width: 1000px) {
-  .polaroid  {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-    border: slategrey 3px solid;
-    height: fit-content;
-    width: 100%;
-    /* min-width: 300px; */
-    padding: 1em 1em 0em 1em !important;
-  }
-
-  .mobile > .inner {
-    height: fit-content;
-    padding: 1em 1em 0em 1em !important;
-  }
-
-  .mobile > .inner > .soundcloud {
-    background-color: black;
-    height: 300px;
-    padding: 30px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .mobile  > .inner > .soundcloud-playlist {
-    border: 0.5px darkslategray solid;
-  }
-
-  .example-description {  
-    display: block;
-  
-    margin: 0px 30px;
-    object-position: center;
-    width: 100%;
-    line-height: 30px;
-  }
-}
 
 
 /* === References === */
@@ -842,31 +734,67 @@ a .technical-portfolio-link {
 
 
 
+@media screen and (min-width: 600px) {
+  /* Tablet */
 
-@media screen and (max-width: 720px) {
+  header {
+    padding: 5px 30px;
+  }
+
+
 
   header h1 {
-    font-size: 32px;
+    font-size: 80px;
+    margin-bottom: -10px;
   }
+
+  header nav {
+    margin-bottom: 15px;
+  }
+
+  header nav > .flex-nav  {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+  }
+
 
   header .bio {
     margin: 0 auto;
+  
+    /* padding: 20px 45px; */
+    padding: 5px 15px;
+
+    margin: 25px 25px 50px 25px;
+  
+    border-radius: 25px;
+    border: 2px pink solid;
   }
 
 
-  header .bio img {
-    width: 60%;
-    height: 60%;
+  header .bio img {  
+    width: 155px;
+    height: 155px;
+    border-radius: 100%;
+    float: left;
+    margin: 10px 20px 10px 0;
+    padding: 10px;
+    border: green 5px dotted;
+    shape-outside: circle();
+  }
+
+  /* header .bio .text-wrapper {
+    font-size: 14px;
     margin: 0 auto;
-
-    float: none;
-  }
+    line-height: 20px;
+    letter-spacing: normal;
+  } */
 
   header .bio .text-wrapper {
     font-size: 12px;
-    margin: 0 auto;
     line-height: 18px;
-    letter-spacing: normal;
+    /* margin-left:  30px; */
+    text-align: left;
   }
 
 
@@ -877,3 +805,160 @@ a .technical-portfolio-link {
   }
 
 }
+
+
+@media screen and (min-width: 900px) {
+  /* Desktop */
+
+  header h1 {
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: -20px;
+  }
+
+  header nav > .flex-nav  {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+  }
+
+  header .bio  {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  
+  header .bio img {      
+    width: 225px;
+    height: 225px;
+    border-radius: 100%;
+    float: left;
+    margin: 10px 20px 10px 0;
+    padding: 10px;
+    border: pink 5px dotted;
+    shape-outside: circle();
+  }
+
+  header .bio .text-wrapper {
+    line-height: 30px;
+    /* margin-left:  30px; */
+    text-align: left;
+    font-size: 18px;
+
+    margin-right: 15px;
+    margin-left: 15px;
+    
+  }
+
+}
+
+
+
+
+/* ======= Polaroid / Examples --- Mobile ====== */
+
+
+/* 
+
+@media screen and (max-width: 1000px) {
+  .polaroid  {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    border: slategrey 3px solid;
+    height: fit-content;
+    width: 100%;
+    padding: 1em 1em 0em 1em !important;
+  }
+
+  .mobile > .inner {
+    height: fit-content;
+    padding: 1em 1em 0em 1em !important;
+  }
+
+  .mobile > .inner > .soundcloud {
+    background-color: black;
+    height: 300px;
+    padding: 30px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mobile  > .inner > .soundcloud-playlist {
+    border: 0.5px darkslategray solid;
+  }
+
+  .example-description {  
+    display: block;
+  
+    margin: 0px 30px;
+    object-position: center;
+    width: 100%;
+    line-height: 30px;
+  }
+} */
+
+
+
+
+/*
+@media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 48px;
+  }
+} */
+
+/* 
+@media screen and (max-width: 720px) {
+  header h1 {
+    margin: 0 auto;
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  header nav > .flex-nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  header nav > .flex-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    border: #1d2951 2px solid;
+    background-color: #1d2951;
+    color: #f8f8f8;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    letter-spacing: 4px;
+    
+    border-top: transparent 5px dotted;
+    border-bottom: transparent 5px dotted;
+  }
+
+  header nav > .flex-nav a:hover {
+    display: block;
+    border-top: pink 5px dotted;
+    border-bottom:  pink 5px dotted;
+    color: pink;
+  }
+
+  header nav > .flex-nav a:hover::before {
+    content: '... ';
+  }
+
+  header nav > .flex-nav a:hover::after {
+    content: ' ...';
+  }
+
+  header .bio {
+    margin-top: 30px !important;
+  }
+} */
