@@ -10,17 +10,304 @@ body {
   background-color: #f8f8f8;
   margin: 0 auto;
   color: #1d2951;
+  font-size: 14px;
 }
-  
+
+a,
+a:visited {
+  text-decoration: underline;
+  color: #1d2951;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
   
 .external-link::after {
   font: var(--fa-font-solid);
   content: "  \f08e";
 }
 
+/* === Header === */
+
+header {
+  background-color: #1d2951;
+  color: #f7f7f7;
+}
+
+header h1 {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 15px;
+
+  font-size: 48px;
+  font-family: 'Alkatra', sans-serif;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 300px) {
+  /* Extra Narrow only */
+
+  header h1 {
+    font-size: 28px;
+    padding-bottom: 15px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* Tablet */
+
+  header h1 {
+    font-size: 42px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* Desktop */
+
+}
+
+
+header h1 a,
+header h1 a:hover,
+header h1 a:visited,
+header h1 a:active {
+  text-decoration: none;
+  font-family: 'Alkatra', sans-serif;
+}
+
+header a, 
+header a:visited, 
+header a:active {
+  color: #f7f7f7;
+}
+
+header a:hover,
+header .bio a:hover {
+  text-decoration: none;
+}
+
+
+/* === Header Nav Links === */
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 25px;
+}
+
+header nav > .flex-nav {
+  width: 50%;
+  max-width: 100%;
+  border-top: 0.5px #f8f8f8 solid;
+  border-bottom: 0.5px #f8f8f8 solid;
+}
+
+header nav > .flex-nav.first{
+  border-top: 1px #f8f8f8 solid;
+}
+
+header nav > .flex-nav.last {
+  border-bottom: 1px #f8f8f8 solid;
+}
+
+header nav > .flex-nav a {
+  text-decoration: none;
+  /* font-weight: 500; */
+  background-color: #1d2951;
+  color: #f8f8f8;
+  padding: 18px;
+  display: block;
+  text-align: center;
+}
+
+header nav  > .flex-nav a:hover {
+  color: #1d2951;
+  text-decoration: none;
+  background-color: #f8f8f8;
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  /* Tablet */
+
+  header nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  header nav > .flex-nav,
+  header nav > .flex-nav.first,
+  header nav > .flex-nav.last {
+
+    width: auto;
+    border-top: none;
+    border-bottom: none;
+
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 20px;
+  }
+  
+  header nav > .flex-nav a,
+  header nav > .flex-nav a:visited {
+    background-color: transparent;
+    padding: 12px;
+    border: 1px transparent solid;
+
+    text-decoration: underline;
+  }
+  
+  header nav > .flex-nav a:hover,
+  header nav > .flex-nav a:active {
+    text-decoration: none;
+    background-color: white;
+    color: #1d2951;
+    padding: 12px;
+    border: 1px pink solid;
+    border-radius: 5px;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  /* Desktop */
+
+}
+
+
+/* === Header Bio === */
+
+
+header .bio {
+  background-color: #f7f7f7;
+  color: #1d2951;
+
+  padding: 20px 35px;
+
+  overflow: hidden;
+}
+
+header .bio img {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  float: left;
+  margin: 10px 20px 10px 0;
+  padding: 5px;
+  border: pink 2px dotted;
+  shape-outside: circle();
+}
+
+header .bio a, 
+header .bio a:visited, 
+header .bio a:active {
+  color: #1d2951;
+}
+
+header .bio .text-wrapper {
+  line-height: 26px;
+  text-align: left;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 370px) {
+  /* Extra Narrow only */
+
+  header .bio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .bio img {
+    margin: 0 auto;
+    padding: 8px;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    float: none;
+    justify-content: center;
+    align-items: center;
+    border: pink 3px dotted;
+    shape-outside: circle();
+  }
+}
+
+
+/* Top-Level Category styles */
+
+
+.top-level-category h2,
+.references h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+
+  font-family: 'Alkatra', sans-serif;
+
+  /* margin-bottom: -15px; */
+
+  color: #1d2951;
+
+}
 
 
 
+
+/* Sub-Category Styles */
+
+.sub-category-summary h3 {
+  font-size: 0px;
+  font-family: 'Alkatra', sans-serif;
+
+
+  margin: 0 auto;
+  padding-bottom: 25px;
+  border-bottom: #1d2951 0.5px solid;
+
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* img, */
+canvas {
+  width: 25px !important;
+}
+
+.polaroid {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+/* === Footer === */
 
 footer {
   background-color: #1d2951;
