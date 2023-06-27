@@ -57,41 +57,6 @@ header h1 {
   text-align: center;
 }
 
-@media screen and (max-width: 300px) {
-  /* Extra Narrow only */
-
-  header h1 {
-    font-size: 28px;
-    padding-bottom: 15px;
-    line-height: 36px;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  /* Tablet */
-
-  header {
-    padding-top: 15px;
-  }
-
-  header h1 {
-    font-size: 60px;
-    padding-top: 25px;
-    padding-bottom: 15px;
-    line-height: 36px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  /* Desktop */
-
-  header h1 {
-    font-size: 80px;
-    margin-bottom: 15px;
-  }
-
-}
-
 header h1 a,
 header h1 a:hover,
 header h1 a:visited,
@@ -111,6 +76,41 @@ header .bio a:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 300px) {
+  /* Extra Narrow only */
+
+  header h1 {
+    font-size: 28px;
+    padding-bottom: 15px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  /* Tablet */
+
+  header {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
+  header h1 {
+    font-size: 60px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* Desktop */
+
+  header h1 {
+    font-size: 80px;
+    margin-bottom: 15px;
+  }
+}
+
 
 /* === Header Nav Links === */
 
@@ -118,7 +118,6 @@ header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-bottom: 25px;
 }
 
@@ -130,7 +129,7 @@ header nav > .flex-nav {
   text-align: center;
 }
 
-header nav > .flex-nav.first{
+header nav > .flex-nav.first {
   border-top: 1px #f8f8f8 solid;
 }
 
@@ -250,34 +249,8 @@ header .bio .text-wrapper {
   }
 }
 
-
-/* ===== Technical Portfolio Link ===== */
-
-a .technical-portfolio-link {
-  display: inline-block;
-
-  text-decoration: underline;
-  font-weight: 700;
-
-  transition: all 1s;
-
-
-  &:hover {
-    transition: all 1s;
-
-    background-color: black;
-    text-decoration: none;
-    font-weight: 400;
-    color: limegreen;
-    font-family: monospace;
-    padding: 0px 8px;
-  }
-}
-
 @media screen and (min-width: 700px) {
-  header {
-    padding-bottom: 5px;
-  }
+  /* Tablet */
 
   header .bio {
     background-color: white;
@@ -317,7 +290,61 @@ a .technical-portfolio-link {
 }
 
 
-/* == For the Creative index only == */
+/* ===== Technical Portfolio Link ===== */
+
+a .technical-portfolio-link {
+  display: inline-block;
+
+  text-decoration: underline;
+  font-weight: 700;
+
+  transition: all 1s;
+
+
+  &:hover {
+    transition: all 1s;
+
+    background-color: black;
+    text-decoration: none;
+    font-weight: 400;
+    color: limegreen;
+    font-family: monospace;
+    padding: 0px 8px;
+  }
+}
+
+
+/* === Footer === */
+
+footer {
+  background-color: #1d2951;
+  color: #f8f8ff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+}
+
+footer li {
+  color: #f8f8f8;
+  display: inline;
+  text-align: center;
+}
+
+footer a, footer a:hover, footer a:visited, footer a:active {
+  color: #f8f8f8;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+
+/* ============================ For the Creative index only ============================= */
 
 .choose-sub-portfolio {
   margin-left: 20px;
@@ -418,23 +445,7 @@ a .technical-portfolio-link {
 }
 
 
-
-/* Sub-Category Styles */
-
-/* .sub-category-summary h3 {
-  font-size: 0px;
-  font-family: 'Alkatra', sans-serif;
-
-
-  margin: 0 auto;
-  padding-bottom: 25px;
-  border-bottom: #1d2951 0.5px solid;
-
-  text-align: center;
-} */
-
-
-/* === References -- main index */
+/* === References -- main creative index === */
 
 .references {
   background-color: #f7f7f7;
@@ -557,7 +568,6 @@ hr.dotted-line-reference {
   opacity: 0.5;
 }
 
-
 @media screen and (max-width: 370px) {
   /* Extra Narrow only */
 
@@ -593,31 +603,20 @@ hr.dotted-line-reference {
 }
 
 
-/* === Footer === */
+/* ======================== for creative sub-category pages ====================== */
 
-footer {
-  background-color: #1d2951;
-  color: #f8f8ff;
+
+
+/* Sub-Category Styles */
+
+/* .sub-category-summary h3 {
+  font-size: 0px;
+  font-family: 'Alkatra', sans-serif;
+
+
+  margin: 0 auto;
+  padding-bottom: 25px;
+  border-bottom: #1d2951 0.5px solid;
+
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-footer p {
-  text-align: center;
-  font-size: 12px;
-}
-
-footer li {
-  color: #f8f8f8;
-  display: inline;
-  text-align: center;
-}
-
-footer a, footer a:hover, footer a:visited, footer a:active {
-  color: #f8f8f8;
-}
-
-footer a:hover {
-  text-decoration: none;
-}
+} */
