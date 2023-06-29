@@ -413,7 +413,7 @@ footer a:hover {
 
 @media screen and (min-width: 700px) {
   .main-wrapper {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     background-color: #fff;
   }
 
@@ -425,6 +425,7 @@ footer a:hover {
   .choose-sub-portfolio p {
     font-weight: 600;
     font-size: 22px;
+    padding-top: 80px;
   }
 
   .choose-sub-portfolio nav .flex-nav a {  
@@ -603,15 +604,147 @@ hr.dotted-line-reference {
 }
 
 
-/* ======================== for creative sub-category pages ====================== */
+/* ======================== Creative Category Pages ====================== */
 
+/* Category Page */
 
+.category-summary {
+  text-align: center;
 
-/* Sub-Category Styles */
+}
 
-/* .sub-category-summary h3 {
-  font-size: 0px;
+.category-summary h2 {
+
+  font-size: 40px;
   font-family: 'Alkatra', sans-serif;
+}
+
+
+
+
+/* ===Top-Level Category === */
+/* 
+.top-level-category {
+  margin: 20px;
+
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.top-level-category h2 {
+  font-size: 38px;
+  text-align: center;
+  margin: 0 auto;
+
+  font-family: 'Alkatra', sans-serif;
+
+  margin-bottom: -15px;
+
+  color: #1d2951;
+
+} 
+
+
+
+
+.top-level-category-summary p {
+  width: 95%;
+
+  margin: 0 auto;
+  margin-top: 25px;
+
+  line-height: 22px;
+  text-align: left;
+  font-size: 12px;
+}
+
+*/
+
+
+
+.choose-sub-section {
+  /* margin-left: 20px;
+  margin-right: 20px; */
+
+  /* border: 3px #1d2951 double; */
+  /* border-radius: 15px; */
+
+  background-color: #fff;
+
+  overflow: hidden;
+}
+
+.choose-sub-section p {
+  margin: 0 auto;
+  padding: 30px;
+
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+.choose-sub-section nav {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.choose-sub-section nav .flex-nav {
+  margin: 0;
+  width: 250px;
+}
+
+
+.choose-sub-section nav .flex-nav a {
+  border-radius: 20px;
+  border: 1px #1d2951dd solid;
+  background-color: #f8f8f8;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Alkatra', sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-decoration: none;
+
+  margin: 15px;
+  padding: 15px;
+  /* width: 100%; */
+
+}
+
+.choose-sub-section nav .flex-nav:hover a:hover {
+  border: 1px #f8f8f8 solid;
+  background-color: #1d2951;
+  color: #f8f8f8;
+}
+
+
+
+
+
+/* Sub-Category */
+
+.sub-category-summary h3 {
+  font-size: 30px;
+  font-family: 'Alkatra', sans-serif;
+
 
 
   margin: 0 auto;
@@ -619,4 +752,16 @@ hr.dotted-line-reference {
   border-bottom: #1d2951 0.5px solid;
 
   text-align: center;
-} */
+}
+
+
+
+
+
+
+
+
+.polaroid {
+  display: none;
+
+}
