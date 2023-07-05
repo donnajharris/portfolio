@@ -739,18 +739,18 @@ hr.dotted-line-reference {
 .sub-category-summary {
   background-color: pink;
   line-height: 30px;
-
+/* 
   border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-right-radius: 25px; */
 }
 
 .sub-category-summary  > .text-container {
   background-color: #f8f8f8;
   opacity: 0.9;
   color: #1d2951;
-
+/* 
   border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-right-radius: 25px; */
 
   padding: 30px;
   padding-top: 15px;
@@ -788,21 +788,12 @@ hr.dotted-line-reference {
   background-image: url(../images/steinway_piano.jpeg);
   background-position-y: 550px;
   background-size: 100%;
-
 }
 
 .sub-category-summary.voice {
   background-image: url(../images/sunset.jpeg);
-  /* background-position-x: 0px; */
-  /* background-position-y: 750px;   */
-  /*set to zero  for mobile sizing ? */
-  /* background-size: 100%; */
-
-
   background-position-x: 0;
   background-position-y: -150px;
-
-
   background-size: 250%;
 }
 
@@ -866,8 +857,8 @@ hr.dotted-line-reference {
 
   .sub-category-summary.voice {
     background-position-x: -350px;
-    background-position-y: -350px;
-    background-size: 400%;
+    background-position-y: 0;
+    background-size: 500%;
   }
 
   .sub-category-summary.instrumental {
@@ -884,16 +875,13 @@ hr.dotted-line-reference {
   .sub-category-summary.voice {
     background-position-x: 0;
     background-position-y: -200px;
-
     background-size: 100%;
   }
-
 
   .sub-category-summary.instrumental {
     background-position-x: 0px;
     background-position-y: 750px;  
     background-size: 100%;
-  
   }
 
   .sub-category-summary.composition {
@@ -902,12 +890,23 @@ hr.dotted-line-reference {
     background-size: 200%;
   }
 
-  
+}
 
+@media screen and (min-width: 700px) {
+  /* Tablet Extended */
+  .sub-category-summary.voice {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
 }
 
 @media screen and (min-width: 900px) {
   /* Desktop */
+
+  .sub-category-summary.voice {
+    background-position-x: 0;
+    background-position-y: -150px;
+  }
 
   .sub-category-summary.composition {
     background-position-x: 0px;
@@ -915,8 +914,15 @@ hr.dotted-line-reference {
     background-size: 100%;
   }
 
+}
 
+@media screen and (min-width: 1260px) {
+  /* Desktop Extended */
 
+  .sub-category-summary.voice {
+    background-position-x: 0;
+    background-position-y: -550px;
+  }
 }
 
 /* */
