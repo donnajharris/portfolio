@@ -11,6 +11,7 @@ body {
   margin: 0 auto;
   color: #1d2951;
   font-size: 16px;
+  min-width: 200px;
 }
 
 a,
@@ -76,7 +77,7 @@ header .bio a:hover {
   text-decoration: none;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 370px) {
   /* Extra Narrow only */
 
   header h1 {
@@ -91,7 +92,7 @@ header .bio a:hover {
 
   header {
     padding-top: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 0;
   }
 
   header h1 {
@@ -163,6 +164,7 @@ header nav  > .flex-nav a:hover {
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 0px;
+    margin-bottom: 15px;
   }
   
   header nav > .flex-nav,
@@ -345,6 +347,43 @@ footer a:hover {
 
 
 /* ============================ For the Creative index only ============================= */
+
+/* === Header Overview Area === */
+
+header .overview {
+  background-color: #fff;
+  color: #1d2951;
+  padding: 20px 35px;
+  overflow: hidden;
+}
+
+header .overview h2 {
+  margin: 0 auto;
+  padding-top: 35px;
+}
+
+header .overview .text-wrapper {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+header .overview .text-wrapper p {
+  text-align: center;
+
+}
+
+@media screen and (max-width: 370px) {
+  header .overview h2 {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  /* Tablet */
+
+}
+
+/* ---- */
 
 .choose-sub-portfolio {
   margin-left: 20px;
@@ -610,17 +649,35 @@ hr.dotted-line-reference {
 
 .category-summary {
   text-align: center;
-
 }
 
 .category-summary h2 {
-
   font-size: 40px;
   font-family: 'Alkatra', sans-serif;
-  line-height: 50px;
+  line-height: 36px;
+  margin: 18px auto;
+}
+
+.category-summary p {
+  width: 95%;
+
+  margin: 0 auto;
+  margin-top: 25px;
+
+  /* line-height: 22px; */
+  text-align: left;
+  /* font-size: 12px; */
 }
 
 
+@media screen and (max-width: 370px) {
+  /* Extra Narrow only */
+
+  .category-summary h2 {
+    font-size: 28px;
+  }
+
+}
 
 
 /* ===Top-Level Category === */
@@ -666,6 +723,7 @@ hr.dotted-line-reference {
 .choose-sub-section {
   background-color: #fff;
   overflow: hidden;
+  padding: 0;
 }
 
 .choose-sub-section p {
@@ -696,7 +754,6 @@ hr.dotted-line-reference {
   margin: 0;
   width: 250px;
 }
-
 
 .choose-sub-section nav .flex-nav a {
   border-radius: 20px;
@@ -759,7 +816,6 @@ hr.dotted-line-reference {
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: #1d2951 0.5px solid;
-
   text-align: center;
 }
 
@@ -939,13 +995,13 @@ hr.dotted-line-reference {
 }
 
 .example-description p.example-heading {
-  font-weight: 900;
+  font-weight: 400;
   letter-spacing: 3px;
   font-size: 110%;
 }
 
 .example-description p.video-name {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 90%;
 }
 
@@ -1062,7 +1118,7 @@ hr.dotted-line-reference {
   font-size: 18px;
   color: #000;
   font-family: 'Alkatra', sans-serif;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 
