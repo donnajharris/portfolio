@@ -11,7 +11,6 @@ body {
   margin: 0 auto;
   color: #1d2951;
   font-size: 16px;
-  min-width: 200px;
 }
 
 a,
@@ -680,15 +679,8 @@ hr.dotted-line-reference {
 }
 
 
-/* ===Top-Level Category === */
-/* 
-.top-level-category {
-  margin: 20px;
 
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
+/*
 .top-level-category h2 {
   font-size: 38px;
   text-align: center;
@@ -784,10 +776,27 @@ hr.dotted-line-reference {
 }
 
 
+/* ===Top-Level Category === */
 
+.top-level-category {
+  margin: 20px;
+
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 
 /* Sub-Category */
+
+/* .sub-category {
+  background: lightblue;
+  margin: 20px auto;
+  border-radius: 25px;
+  border: 1px solid #1d2951;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
 
 .sub-category-summary {
   background-color: pink;
@@ -921,6 +930,31 @@ hr.dotted-line-reference {
 @media screen and (min-width: 700px) {
   /* Tablet */
 
+  .text-container {
+    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  .sub-category-summary
+   {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  .sub-category {
+    /* background: lightblue; */
+    margin: 0 auto;
+    margin: 50px;
+    border-radius: 25px;
+    border: 1px solid #1d2951;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
   .sub-category-summary.voice {
     background-position-x: 0;
     background-position-y: -200px;
@@ -976,8 +1010,12 @@ hr.dotted-line-reference {
 
 /* ===== Category examples ===== */
 
-.category-example {
+.example-container {
   background-color: whitesmoke;
+}
+
+.category-example {
+  /* background-color: whitesmoke; */
 
   display: flex;
   flex-direction: row;
@@ -992,10 +1030,18 @@ hr.dotted-line-reference {
 
 .example-description {
   line-height: 30px;
+
+
+  margin: 0px 30px;
+  object-position: center;
+  width: 80%;
+  line-height: 30px;
+
+  text-align: left;
 }
 
 .example-description p.example-heading {
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 3px;
   font-size: 110%;
 }
@@ -1032,7 +1078,7 @@ hr.dotted-line-reference {
 
   width: 100%;
   height: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .polaroid > .inner {
@@ -1050,17 +1096,6 @@ hr.dotted-line-reference {
   border: 0;
   height: 300px;
   aspect-ratio: 16 / 9;
-}
-
-.polaroid > .inner > .raw-audio {
-
-  background-color: black;
-  height: 300px;
-  padding: 30px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .polaroid > .inner > .soundcloud {
@@ -1122,6 +1157,18 @@ hr.dotted-line-reference {
 }
 
 
+.raw-audio {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.raw-audio > .custom-controls {
+  display: none;
+}
+
+
 @media screen and (max-width: 370px) {
   /* Extra Narrow only */
 
@@ -1129,39 +1176,113 @@ hr.dotted-line-reference {
     box-shadow: none;
     margin: 0;
 
-    border: 3px red double;
+    /* border: 3px red double; */
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0;
   }
 
   .polaroid .inner {
     padding: 1em !important;
     height: 100%;
+    border-radius: 5px;
+
+    background-color: #fff;
+    border: 0.5px solid lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
   }
 
   .polaroid-caption {
-    display: none;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%; 
   }
 
-
-  /* .polaroid-caption {
-    display: block;
-    background-color: green;
-    
-    margin: 0 auto;
-
-    padding: 10px;
-    width: 100%;
-
-  }*/
-
-  /*
-  .polaroid-caption  p {
+  .polaroid-caption p {
     font-size: 16px;
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     color: #1d2951;
     letter-spacing: 3px;
     line-height: 26px;
-  } */
+  }
+
+  .raw-audio > audio {
+    display: none;
+  }
+
+  .raw-audio > .custom-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color: #f2f2f2;
+    padding: 5px;
+  }
+  
+  .play-button {
+    background-color: pink;
+    color: #1d2951;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .progress-bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #ccc;
+    margin: 0 10px;
+  }
+
+  .regular-caption {
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%; 
+  }
+
+  .regular-caption p {
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    color: #1d2951;
+    letter-spacing: 3px;
+    line-height: 26px;
+  }
+
+}
+
+
+@media screen and (min-width: 700px) {
+  .category-example {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+  
+  
+    padding: 5px;
+  
+    border-radius: 10px;
+  
+    margin: 40px;
+  }
+}
+
+
+hr.dotted-line-example {
+  border-top: 5px #1d2951 dotted;
+  width: 50%;
+  opacity: 0.5;
 }
 
 /* To top.... */
