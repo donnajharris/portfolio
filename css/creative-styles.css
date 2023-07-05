@@ -663,14 +663,7 @@ hr.dotted-line-reference {
 
 
 .choose-sub-section {
-  /* margin-left: 20px;
-  margin-right: 20px; */
-
-  /* border: 3px #1d2951 double; */
-  /* border-radius: 15px; */
-
   background-color: #fff;
-
   overflow: hidden;
 }
 
@@ -696,7 +689,6 @@ hr.dotted-line-reference {
 
   justify-content: center;
   align-items: center;
-
 }
 
 .choose-sub-section nav .flex-nav {
@@ -725,8 +717,6 @@ hr.dotted-line-reference {
 
   margin: 15px;
   padding: 15px;
-  /* width: 100%; */
-
 }
 
 .choose-sub-section nav .flex-nav:hover a:hover {
@@ -741,20 +731,195 @@ hr.dotted-line-reference {
 
 /* Sub-Category */
 
+
+
+
+
+
+.sub-category-summary {
+  background-color: pink;
+  line-height: 30px;
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.sub-category-summary  > .text-container {
+  background-color: #f8f8f8;
+  opacity: 0.9;
+  color: #1d2951;
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  padding: 30px;
+  padding-top: 15px;
+}
+
 .sub-category-summary h3 {
   font-size: 30px;
   font-family: 'Alkatra', sans-serif;
-
-
-
   margin: 0 auto;
+  padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: #1d2951 0.5px solid;
 
   text-align: center;
 }
 
+.sub-category-summary > .text-container p {
+  width: 90%;
+  margin: 20px auto;
+  font-size: 16px;
+}
 
+.sub-category-summary .text-container a,
+.sub-category-summary .text-container a:visited,
+.sub-category-summary .text-container a:active,
+.sub-category-summary .text-container a:hover {
+  color: #1d2951;
+}
+
+
+
+/* background images */
+
+.sub-category-summary.piano {
+  background-image: url(../images/steinway_piano.jpeg);
+  background-position-y: 550px;
+  background-size: 100%;
+
+}
+
+.sub-category-summary.voice {
+  background-image: url(../images/sunset.jpeg);
+  /* background-position-x: 0px; */
+  /* background-position-y: 750px;   */
+  /*set to zero  for mobile sizing ? */
+  /* background-size: 100%; */
+
+
+  background-position-x: 0;
+  background-position-y: -150px;
+
+
+  background-size: 250%;
+}
+
+.sub-category-summary.voice > .text-container {
+  opacity: 0.85;
+}
+
+.sub-category-summary.instrumental {
+  background-image: url(../images/guitar_face.jpeg);
+  background-position-x: 0px;
+  background-position-y: 750px;  
+  background-size: 150%;
+
+}
+
+.sub-category-summary.composition {
+  background-image: url(../images/sheet_music.jpeg);
+  background-position-x: -250px;
+  background-position-y: 0px;  
+  background-size: 500%;
+}
+
+.sub-category-summary.composition > .text-container {
+  opacity: 0.85;
+}
+
+.sub-category-summary.media {
+  background-image: url(../images/reaper.jpeg);
+  /* background-position-x: 0px;
+  background-position-y: 300px;   */
+    /*change for mobile sizing ? */
+
+  background-size: 100%;
+
+}
+
+.sub-category-summary.print {
+  background-image: url(../images/print_card.jpeg);
+  background-position-x: 0px;
+  background-position-y: 500px;  
+    /*change for mobile sizing ? */
+
+  background-size: 100%;
+
+}
+
+.sub-category-summary.teaching {
+  background-image: url(../images/classroom_whiteboard.jpeg);
+  background-position-x: 0px;
+  background-position-y: 800px;  
+    /*change for mobile sizing ? */
+
+  background-size: 110%;
+}
+
+
+
+
+@media screen and (max-width: 370px) {
+  /* Extra Narrow only */
+
+  .sub-category-summary.voice {
+    background-position-x: -350px;
+    background-position-y: -350px;
+    background-size: 400%;
+  }
+
+  .sub-category-summary.instrumental {
+    background-position-x: -180px;
+    background-position-y: 0px;
+    background-size: 320%;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  /* Tablet */
+
+  .sub-category-summary.voice {
+    background-position-x: 0;
+    background-position-y: -200px;
+
+    background-size: 100%;
+  }
+
+
+  .sub-category-summary.instrumental {
+    background-position-x: 0px;
+    background-position-y: 750px;  
+    background-size: 100%;
+  
+  }
+
+  .sub-category-summary.composition {
+    background-position-x: -50px;
+    background-position-y: -100px;  
+    background-size: 200%;
+  }
+
+  
+
+}
+
+@media screen and (min-width: 900px) {
+  /* Desktop */
+
+  .sub-category-summary.composition {
+    background-position-x: 0px;
+    background-position-y: 450px;  
+    background-size: 100%;
+  }
+
+
+
+}
+
+/* */
 
 
 
