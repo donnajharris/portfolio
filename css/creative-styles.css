@@ -617,6 +617,7 @@ hr.dotted-line-reference {
 
   font-size: 40px;
   font-family: 'Alkatra', sans-serif;
+  line-height: 50px;
 }
 
 
@@ -731,11 +732,6 @@ hr.dotted-line-reference {
 
 /* Sub-Category */
 
-
-
-
-
-
 .sub-category-summary {
   background-color: pink;
   line-height: 30px;
@@ -849,9 +845,6 @@ hr.dotted-line-reference {
   background-size: 110%;
 }
 
-
-
-
 @media screen and (max-width: 370px) {
   /* Extra Narrow only */
 
@@ -925,14 +918,220 @@ hr.dotted-line-reference {
   }
 }
 
-/* */
+/* ===== Category examples ===== */
+
+.category-example {
+  background-color: whitesmoke;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.example-description {
+  line-height: 30px;
+}
+
+.example-description p.example-heading {
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 110%;
+}
+
+.example-description p.video-name {
+  font-weight: 600;
+  font-size: 90%;
+}
+
+.example-description a {
+  text-decoration: underline;
+}
+
+.example-description a:hover {
+  text-decoration: none;
+}
 
 
 
-
-
+/* === Polaroid / Examples === */
 
 .polaroid {
-  display: none;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+  border-radius: 5px;
+  /* height: fit-content; */
+
+  display: block;
+
+  margin: 1em 0.5em;
+  text-align: center;
+
+
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+}
+
+.polaroid > .inner {
+  height: fit-content;
+  padding: 1em 1em 0em 1em !important;
+}
+
+.polaroid > .inner > .youtube {
+  border: 0.5px darkslategray solid;
+  background-color: black;
+}
+
+.polaroid > .inner > .youtube > iframe {
+  width: 100%;
+  border: 0;
+  height: 300px;
+  aspect-ratio: 16 / 9;
+}
+
+.polaroid > .inner > .raw-audio {
+
+  background-color: black;
+  height: 300px;
+  padding: 30px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.polaroid > .inner > .soundcloud {
+  background-color: black;
+  height: 300px;
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.polaroid  > .inner > .soundcloud-playlist {
+  border: 0.5px darkslategray solid;
+}
+
+.polaroid > .inner > .raw-video {
+  background-color: black;
+  aspect-ratio: 16 / 9;
+}
+
+.polaroid > .inner > .raw-video > video {
+  margin-top: 35px;
+  padding-right: 35px;
+  border: 0px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.polaroid > .inner > .static-image > img {
+  border: 0.5px grey solid;
+}
+
+.polaroid > .inner > .pdf {
+  border: 1px darkslategrey solid;
+}
+
+.polaroid > .inner > .pdf > a > img {
+  width: 60%;
+  border: 1px transparent solid;
+  margin: 1em;
+}
+
+.polaroid > .inner > .pdf > a > img:hover {
+  width: 60%;
+  border: 1px #000f89 solid;
+}
+
+.polaroid-caption {
+  background: #fff;
+  padding: 0em 1em;
+}
+
+.polaroid-caption p {
+  font-size: 18px;
+  color: #000;
+  font-family: 'Alkatra', sans-serif;
+  font-weight: 800;
+}
+
+
+@media screen and (max-width: 370px) {
+  /* Extra Narrow only */
+
+  .polaroid {
+    box-shadow: none;
+    margin: 0;
+
+    border: 3px red double;
+  }
+
+  .polaroid .inner {
+    padding: 1em !important;
+    height: 100%;
+  }
+
+  .polaroid-caption {
+    display: none;
+  }
+
+
+  /* .polaroid-caption {
+    display: block;
+    background-color: green;
+    
+    margin: 0 auto;
+
+    padding: 10px;
+    width: 100%;
+
+  }*/
+
+  /*
+  .polaroid-caption  p {
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    color: #1d2951;
+    letter-spacing: 3px;
+    line-height: 26px;
+  } */
+}
+
+/* To top.... */
+
+
+.sub-category .to-top {
+  position: relative;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.sub-category .to-top a,
+.sub-category .to-top a:visited {
+  color: #1d2951;
+  background-color: transparent;
+  padding: 12px;
+  border: 1px transparent solid;
+}
+
+.sub-category .to-top a:hover,
+.sub-category .to-top a:active {
+  text-decoration: none;
+  /* background-color: pink; */
+  background-color: #f7f7f7;
+  padding: 12px;
+  /* border: 1px #1d2951 solid; */
+  border:  1px pink solid;
+  border-radius: 5px;
 }
