@@ -46,7 +46,6 @@ main {
 /* === Header === */
 
 header {
-
   background-color: #e7feff;
   color: #1d2951;
   padding: 0px 40px;  
@@ -83,7 +82,6 @@ header .bio {
 }
 
 header .contact {
-  max-width: 400px;
   background-color: #f8f8f8;
   border: #1d2951 0.5px dotted;
   border-radius: 10px;
@@ -97,153 +95,14 @@ header .contact li {
   padding: 10px;
 }
 
-header nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-header nav > .flex-nav  {
-  width: 20%;
-  min-width: 180px;
-}
-
-header nav > .flex-nav-mobile-only {
-  display: none;
-}
-
-@media screen and (max-width: 1000px) {
-  header nav > .flex-nav {
+@media screen and (min-width: 900px) {
+  /* Desktop */
+  
+  header .contact {
+    min-width: 400px;
     width: 50%;
   }
-  header nav > .flex-nav-mobile-only {
-    width: 50%;
-  }
-
-
-
 }
-
-@media screen and (max-width: 600px) {
-
-  .creative-button-container {
-    visibility: hidden;
-  }
-
-  header nav > .flex-nav {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-
-  header nav > .flex-nav-mobile-only {
-    text-decoration: none;
-    font-weight: 500;
-    border: #1d2951 2px solid;
-    background-color: pink;
-    color: #f8f8f8;
-    padding: 10px;
-    display: block;
-    text-align: center;
-    letter-spacing: 4px;
-    width: 100%;
-  }
-
-}
-
-@media screen and (max-width: 800px) {
-
-  .creative-button-container {
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  
-    opacity: 0.8;
-  }
-  
-  .creative-portfolio-button {
-
-    content: "test test";
-
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 12px;
-
-    color: #1d2951;
-    background-color: #e7feff;
-    /* rotate: calc(5deg);
-
-    transition: all 1s;
-
-    &:after,
-    &:before {
-      content: " ";
-      width: 10px;
-      height: 10px;
-      position: absolute;
-      border: 3px solid transparent;
-      transition: all 1s;  
-    }
-    &:after {
-      top: -3px;
-      left: -3px;
-      border-top: 3px dotted pink;
-      border-left: 3px dotted pink;
-    }
-    &:before {
-      bottom: -3px;
-      right: -3px;
-      border-bottom: 3px dotted #1d2951;
-      border-right: 3px dotted #1d2951;
-    }
-    &:hover {
-      rotate: calc(0deg);
-
-      &:before,
-      &:after {  
-        width: 100%;
-        height: 100%;
-      }
-    } */
-  }
-
-  header a .creative-portfolio-button {
-    text-decoration: underline dotted;
-    letter-spacing: 4px;
-  }
-  
-  header a:hover .creative-portfolio-button {
-    background-color: white;
-    text-decoration: none;
-  }
-
-
-}
-
-header nav > .flex-nav a {
-  text-decoration: none;
-  font-weight: 500;
-  border: #1d2951 2px solid;
-  background-color: #1d2951;
-  color: #f8f8f8;
-  padding: 10px;
-  display: block;
-  text-align: center;
-  letter-spacing: 4px;
-}
-
-header nav  > .flex-nav a:hover {
-  color: #1d2951;
-  text-decoration: none;
-  background-color: #f8f8f8;
-  border: #1d2951 2px dashed;
-  display: block;
-  font-weight: 500;
-}
-
 
 /* === Portfolio and Work and Education === */
 
@@ -350,7 +209,6 @@ header nav  > .flex-nav a:hover {
   margin: 0;
   padding-left: 60px;
   padding-right: 20px;
-  /* padding-top: 20px; */
 }
 
 .portfolio-item .portfolio-details li, 
@@ -436,8 +294,6 @@ header nav  > .flex-nav a:hover {
   border-radius: 5px;
 }
 
-
-
 .portfolio-samples {
   text-align: left;
   font-size: 15px;
@@ -477,9 +333,6 @@ header nav  > .flex-nav a:hover {
 }
 
 
-
-
-
 /* === References === */
 
 .references {
@@ -497,7 +350,6 @@ header nav  > .flex-nav a:hover {
   padding-left: 30px;
   padding-right: 0;
   padding-bottom: 0;
-
 }
 
 .references .reference-wrapper {
@@ -555,7 +407,6 @@ header nav  > .flex-nav a:hover {
 .reference-item .reference-provider .company {
   color: #1b1b1b;
 }
-
 
 footer {
   background-color: #1d2951;
@@ -625,7 +476,6 @@ footer a:hover {
 .dinearound h3 {
   padding-top: 10px;
   border-top: #1d2951 0.5px dotted;
-
   font-size: 30px;
   font-family: 'Alkatra', sans-serif;
   letter-spacing: 5px;
@@ -703,68 +553,148 @@ footer a:hover {
 
 
 /* === Creative Portfolio Link === */
-/* References: https://codepen.io/bhautikbharadava/pen/OdPzdW */
+/* Adaprted from: https://codepen.io/bhautikbharadava/pen/OdPzdW */
 
 .creative-button-container {
+  display: none;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header nav > .flex-nav  {
+  width: 50%;
+  min-width: 180px;
+}
+
+header nav > .flex-nav a {
+  text-decoration: none !important;
+  font-weight: 500;
+  border: #1d2951 2px solid;
+  background-color: #1d2951;
+  color: #f8f8f8;
+  padding: 10px;
   display: block;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-
-  opacity: 0.8;
-}
-
-.creative-portfolio-button {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 14px;
-
-  color: #1d2951;
-  background-color: #e7feff;
-  rotate: calc(5deg);
-
-  transition: all 1s;
-
-  &:after,
-  &:before {
-    content: " ";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    border: 3px solid transparent;
-    transition: all 1s;  
-  }
-  &:after {
-    top: -3px;
-    left: -3px;
-    border-top: 3px dotted pink;
-    border-left: 3px dotted pink;
-  }
-  &:before {
-    bottom: -3px;
-    right: -3px;
-    border-bottom: 3px dotted #1d2951;
-    border-right: 3px dotted #1d2951;
-  }
-  &:hover {
-    rotate: calc(0deg);
-
-    &:before,
-    &:after {  
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-
-header a .creative-portfolio-button {
-  text-decoration: underline dotted;
+  text-align: center;
   letter-spacing: 4px;
 }
 
-header a:hover .creative-portfolio-button {
-  background-color: white;
+header nav  > .flex-nav a:hover {
+  color: #1d2951;
   text-decoration: none;
+  background-color: #f8f8f8;
+  border: #1d2951 2px dashed;
+  display: block;
+  font-weight: 500;
 }
 
+header nav > .flex-nav.creative a {
+  background-color: #fff;
+  color: #1d2951;
+  border-color: #1d2951;
+}
+
+header nav > .flex-nav.creative a:hover {
+  background-color: #fff;
+  color: #1d2951;
+  border-color: pink;
+  border-style: dashed;
+}
+
+@media screen and (max-width: 540px) {
+  header nav > .flex-nav {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 735px) {
+  /* Tablet */
+
+  header nav > .flex-nav {
+    width: 50%;
+  }
+
+  header nav > .flex-nav.creative {
+    display: none;
+  }
+ 
+  header .creative-button-container {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0.95;
+  }
+
+  header .creative-portfolio-button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+
+    color: #1d2951;
+    rotate: calc(5deg);
+
+    transition: all 1s;
+
+    &:after,
+    &:before {
+      content: " ";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border: 3px solid transparent;
+      transition: all 1s;
+    }
+    &:after {
+      top: -3px;
+      left: -3px;
+      border-top: 3px dotted pink;
+      border-left: 3px dotted pink;
+    }
+    &:before {
+      bottom: -3px;
+      right: -3px;
+      border-bottom: 3px dotted #1d2951;
+      border-right: 3px dotted #1d2951;
+    }
+    &:hover {
+      rotate: calc(0deg);
+      background-color: #e7feff;
+
+      &:before,
+      &:after {  
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  header a .creative-portfolio-button {
+    text-decoration: underline dotted;
+    letter-spacing: 4px;
+    background-color: transparent;
+  }
+
+  header a:hover .creative-portfolio-button {
+    background-color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* Desktop */
+
+  header nav > .flex-nav {
+    width: 20%;
+  }
+}
+
+.external-link::after {
+  font: var(--fa-font-solid);
+  content: "  \f08e";
+  font-size: 80%;
+}
