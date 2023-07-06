@@ -1406,14 +1406,17 @@ hr.dotted-line-example {
 /* ====== To Top - Links ====== */
 
 
-.sub-category .to-top {
+.sub-category .to-top,
+.references .to-top {
   position: relative;
   text-align: center;
   padding: 30px 20px;
 }
 
 .sub-category .to-top a,
-.sub-category .to-top a:visited {
+.sub-category .to-top a:visited,
+.references .to-top a,
+.references .to-top a:visited {
   color: #1d2951;
   background-color: transparent;
   padding: 12px;
@@ -1421,12 +1424,12 @@ hr.dotted-line-example {
 }
 
 .sub-category .to-top a:hover,
-.sub-category .to-top a:active {
+.sub-category .to-top a:active,
+.references .to-top a:hover,
+.references .to-top a:active {
   text-decoration: none;
-  /* background-color: pink; */
   background-color: #f7f7f7;
   padding: 12px;
-  /* border: 1px #1d2951 solid; */
   border:  1px pink solid;
   border-radius: 5px;
 }
