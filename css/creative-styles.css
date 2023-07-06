@@ -27,6 +27,7 @@ a:active {
 .external-link::after {
   font: var(--fa-font-solid);
   content: "  \f08e";
+  font-size: 80%;
 }
 
 .punch-up {
@@ -899,6 +900,14 @@ hr.dotted-line-reference {
 @media screen and (max-width: 370px) {
   /* Extra Narrow only */
 
+  .sub-category-summary h3 {
+    font-size: 22px;
+  }
+
+  .sub-category {
+    font-size: 14px;
+  }
+
   .sub-category-summary.voice {
     background-position-x: -350px;
     background-position-y: 0;
@@ -1011,6 +1020,7 @@ hr.dotted-line-reference {
 
 .example-container {
   background-color: whitesmoke;
+  margin: 0 auto;
 }
 
 .category-example {
@@ -1047,6 +1057,11 @@ hr.dotted-line-reference {
 .example-description p.video-name {
   font-weight: 400;
   font-size: 90%;
+  font-style: italic;
+}
+
+.example-description p.video-name::before {
+  content: '- ';
 }
 
 .example-description a {
@@ -1162,9 +1177,9 @@ hr.dotted-line-reference {
   justify-content: center;
 }
 
-.raw-audio > .custom-controls {
+/* .raw-audio > .custom-controls {
   display: none;
-}
+} */
 
 
 @media screen and (max-width: 370px) {
@@ -1173,9 +1188,6 @@ hr.dotted-line-reference {
   .polaroid {
     box-shadow: none;
     margin: 0;
-
-    /* border: 3px red double; */
-
     position: relative;
     display: flex;
     flex-direction: row;
@@ -1188,11 +1200,19 @@ hr.dotted-line-reference {
     padding: 1em !important;
     height: 100%;
     border-radius: 5px;
-
-    background-color: #fff;
     border: 0.5px solid lightgrey;
+    background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 
+  .polaroid.mobile {
+    background-color: transparent;
+  }
+  .polaroid.mobile .inner {
+    border-radius: 0px;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
   }
 
   .polaroid-caption {
@@ -1211,7 +1231,39 @@ hr.dotted-line-reference {
     line-height: 26px;
   }
 
+  .raw-audio,
+  .polaroid.mobile .inner {
+    padding: 0 !important;
+  }
   .raw-audio > audio {
+    width: 180px;
+    justify-content: center;
+    -webkit-appearance: none;
+    color: darkgray;
+  }
+
+  audio::-webkit-media-controls-panel {
+    background-color: darkgray;
+  }
+  
+  /* Change the base player color for Firefox */
+  audio::-moz-range-track {
+    background-color: darkgray;
+  }
+  
+  /* Change the base player color for Edge and IE */
+  audio::-ms-fill-lower,
+  audio::-ms-fill-upper {
+    background-color: darkgray;
+  }
+
+  .raw-audio > audio::-webkit-media-controls-time-remaining-display,
+  .raw-audio > audio::-webkit-media-controls-current-time-display,
+  .raw-audio > audio::-webkit-media-controls-elapsed-time-display {
+    display: none;
+  }
+
+  /* .raw-audio > audio {
     display: none;
   }
 
@@ -1238,9 +1290,9 @@ hr.dotted-line-reference {
     height: 10px;
     background-color: #ccc;
     margin: 0 10px;
-  }
+  } */
 
-  .regular-caption {
+  /* .regular-caption {
     background-color: #f5f5f5;
     margin: 0 auto;
     padding: 10px;
@@ -1254,7 +1306,7 @@ hr.dotted-line-reference {
     color: #1d2951;
     letter-spacing: 3px;
     line-height: 26px;
-  }
+  } */
 
 }
 
