@@ -379,7 +379,9 @@ header .overview .text-wrapper p {
 
 @media screen and (min-width: 700px) {
   /* Tablet */
-
+  header .overview {
+    padding: 0;
+  }
 }
 
 /* ---- */
@@ -662,6 +664,7 @@ hr.dotted-line-reference {
 
   margin: 0 auto;
   margin-top: 25px;
+  margin-bottom: 25px;
 
   /* line-height: 22px; */
   text-align: left;
@@ -786,34 +789,17 @@ hr.dotted-line-reference {
 }
 
 
-/* Sub-Category */
-
-/* .sub-category {
-  background: lightblue;
-  margin: 20px auto;
-  border-radius: 25px;
-  border: 1px solid #1d2951;
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
-
+/* ==== Sub-Category ==== */
 
 .sub-category-summary {
   background-color: pink;
   line-height: 30px;
-/* 
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px; */
 }
 
 .sub-category-summary  > .text-container {
   background-color: #f8f8f8;
   opacity: 0.9;
   color: #1d2951;
-/* 
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px; */
-
   padding: 30px;
   padding-top: 15px;
 }
@@ -924,35 +910,41 @@ hr.dotted-line-reference {
     background-position-y: 0px;
     background-size: 320%;
   }
+}
 
+@media screen and (min-width: 650px) {
+  .choose-sub-section nav .flex-nav {
+    margin: 0;
+    width: 250px;
+  }
 }
 
 @media screen and (min-width: 700px) {
   /* Tablet */
 
-  .text-container {
-    
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-  }
-  
-  .sub-category-summary
-   {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+  .choose-sub-section nav .flex-nav {
+    margin: 0;
+    width: 350px;
   }
 
   .sub-category {
-    /* background: lightblue; */
-    margin: 0 auto;
-    margin: 50px;
+    background: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px auto;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 25px;
     border: 1px solid #1d2951;
+  }
 
+  .text-container {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-  
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .sub-category-summary {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
   }
 
   .sub-category-summary.voice {
@@ -972,11 +964,11 @@ hr.dotted-line-reference {
     background-position-y: -100px;  
     background-size: 200%;
   }
-
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   /* Tablet Extended */
+
   .sub-category-summary.voice {
     background-position-x: 0;
     background-position-y: 0;
@@ -997,6 +989,13 @@ hr.dotted-line-reference {
     background-size: 100%;
   }
 
+}
+
+@media screen and (min-width: 1050px) {
+  .choose-sub-section nav .flex-nav {
+    margin: 0;
+    width: 250px;
+  }
 }
 
 @media screen and (min-width: 1260px) {
@@ -1030,7 +1029,6 @@ hr.dotted-line-reference {
 
 .example-description {
   line-height: 30px;
-
 
   margin: 0px 30px;
   object-position: center;
@@ -1078,7 +1076,7 @@ hr.dotted-line-reference {
 
   width: 100%;
   height: 100%;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .polaroid > .inner {
@@ -1266,15 +1264,50 @@ hr.dotted-line-reference {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  
     justify-content: center;
-  
-  
-    padding: 5px;
-  
     border-radius: 10px;
-  
     margin: 40px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .category-example {
+    background: whitesmoke;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 5px; */
+  }
+
+  .example-description {
+    display: block;
+    margin: 0px 30px;
+    object-position: center;
+    width: 40%;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  .example-description p.example-heading {
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+  
+  .example-description p.video-name {
+    font-weight: 600;
+    font-size: 90%;
+  }
+  
+  .example-description a {
+    text-decoration: underline;
+  }
+  
+  .example-description a:hover {
+    text-decoration: none;
   }
 }
 
@@ -1285,7 +1318,7 @@ hr.dotted-line-example {
   opacity: 0.5;
 }
 
-/* To top.... */
+/* ====== To Top - Links ====== */
 
 
 .sub-category .to-top {
