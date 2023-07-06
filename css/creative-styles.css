@@ -799,7 +799,6 @@ hr.dotted-line-reference {
 
 .top-level-category {
   margin: 20px;
-
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -883,20 +882,13 @@ hr.dotted-line-reference {
 
 .sub-category-summary.media {
   background-image: url(../images/reaper.jpeg);
-  /* background-position-x: 0px;
-  background-position-y: 300px;   */
-    /*change for mobile sizing ? */
-
   background-size: 100%;
-
 }
 
 .sub-category-summary.print {
   background-image: url(../images/print_card.jpeg);
   background-position-x: 0px;
   background-position-y: 500px;  
-    /*change for mobile sizing ? */
-
   background-size: 100%;
 
 }
@@ -942,7 +934,6 @@ hr.dotted-line-reference {
   }
 
   .sub-category-summary.foundational-things {
-
     background-size: 320%;
   }
 }
@@ -1057,8 +1048,6 @@ hr.dotted-line-reference {
 }
 
 .category-example {
-  /* background-color: whitesmoke; */
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1114,13 +1103,11 @@ hr.dotted-line-reference {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   border-radius: 5px;
-  /* height: fit-content; */
 
   display: block;
 
   margin: 1em 0.5em;
   text-align: center;
-
 
   width: 100%;
   height: 100%;
@@ -1202,18 +1189,12 @@ hr.dotted-line-reference {
   font-weight: 400;
 }
 
-
 .raw-audio {
   padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* .raw-audio > .custom-controls {
-  display: none;
-} */
-
 
 @media screen and (max-width: 370px) {
   /* Extra Narrow only */
@@ -1241,6 +1222,7 @@ hr.dotted-line-reference {
   .polaroid.mobile {
     background-color: transparent;
   }
+
   .polaroid.mobile .inner {
     border-radius: 0px;
     border: none;
@@ -1264,6 +1246,7 @@ hr.dotted-line-reference {
     line-height: 26px;
   }
 
+  /* Customize the Audio Player - with some help from ChatGPT */
   .raw-audio,
   .polaroid.mobile .inner {
     padding: 0 !important;
@@ -1274,73 +1257,23 @@ hr.dotted-line-reference {
     -webkit-appearance: none;
     color: darkgray;
   }
-
   audio::-webkit-media-controls-panel {
     background-color: darkgray;
   }
-  
   /* Change the base player color for Firefox */
   audio::-moz-range-track {
     background-color: darkgray;
   }
-  
   /* Change the base player color for Edge and IE */
   audio::-ms-fill-lower,
   audio::-ms-fill-upper {
     background-color: darkgray;
   }
-
   .raw-audio > audio::-webkit-media-controls-time-remaining-display,
   .raw-audio > audio::-webkit-media-controls-current-time-display,
   .raw-audio > audio::-webkit-media-controls-elapsed-time-display {
     display: none;
   }
-
-  /* .raw-audio > audio {
-    display: none;
-  }
-
-  .raw-audio > .custom-controls {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 40px;
-    background-color: #f2f2f2;
-    padding: 5px;
-  }
-  
-  .play-button {
-    background-color: pink;
-    color: #1d2951;
-    border: none;
-    padding: 15px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .progress-bar {
-    flex-grow: 1;
-    height: 10px;
-    background-color: #ccc;
-    margin: 0 10px;
-  } */
-
-  /* .regular-caption {
-    background-color: #f5f5f5;
-    margin: 0 auto;
-    padding: 10px;
-    width: 100%; 
-  }
-
-  .regular-caption p {
-    font-size: 16px;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: bold;
-    color: #1d2951;
-    letter-spacing: 3px;
-    line-height: 26px;
-  } */
-
 }
 
 
@@ -1351,7 +1284,6 @@ hr.dotted-line-reference {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 10px;
-    margin: 40px;
     padding: 5px;
   }
 }
@@ -1359,13 +1291,6 @@ hr.dotted-line-reference {
 @media screen and (min-width: 1200px) {
   .category-example {
     background: whitesmoke;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 40px;
-    padding: 5px; */
   }
 
   .example-description {
@@ -1404,7 +1329,6 @@ hr.dotted-line-example {
 }
 
 /* ====== To Top - Links ====== */
-
 
 .sub-category .to-top,
 .references .to-top {
