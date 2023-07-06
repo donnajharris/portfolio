@@ -362,6 +362,31 @@ header .overview h2 {
   padding-top: 35px;
 }
 
+header .category-summary blockquote {
+  color: #1d2951;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 14px;
+  text-align: center;
+  opacity: 0.75;
+
+  width: 85%;
+  margin: 0 auto;
+}
+
+header .category-summary figcaption,
+header .category-summary cite {
+  color: #1d2951;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  text-align: center;
+  opacity: 0.75;
+}
+
 header .overview .text-wrapper {
   line-height: 30px;
   font-size: 18px;
@@ -369,7 +394,6 @@ header .overview .text-wrapper {
 
 header .overview .text-wrapper p {
   text-align: center;
-
 }
 
 @media screen and (max-width: 370px) {
@@ -382,6 +406,10 @@ header .overview .text-wrapper p {
   /* Tablet */
   header .overview {
     padding: 0;
+  }
+
+  header .overview h2 {
+    padding-bottom: 5px;
   }
 }
 
@@ -666,10 +694,8 @@ hr.dotted-line-reference {
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
-
-  /* line-height: 22px; */
   text-align: left;
-  /* font-size: 12px; */
+  font-size: 16px;
 }
 
 
@@ -681,40 +707,6 @@ hr.dotted-line-reference {
   }
 
 }
-
-
-
-/*
-.top-level-category h2 {
-  font-size: 38px;
-  text-align: center;
-  margin: 0 auto;
-
-  font-family: 'Alkatra', sans-serif;
-
-  margin-bottom: -15px;
-
-  color: #1d2951;
-
-} 
-
-
-
-
-.top-level-category-summary p {
-  width: 95%;
-
-  margin: 0 auto;
-  margin-top: 25px;
-
-  line-height: 22px;
-  text-align: left;
-  font-size: 12px;
-}
-
-*/
-
-
 
 .choose-sub-section {
   background-color: #fff;
@@ -828,9 +820,7 @@ hr.dotted-line-reference {
   color: #1d2951;
 }
 
-
-
-/* background images */
+/* Sub-category background images */
 
 .sub-category-summary.piano {
   background-image: url(../images/steinway_piano.jpeg);
