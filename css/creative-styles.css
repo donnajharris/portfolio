@@ -216,9 +216,14 @@ header nav  > .flex-nav a:hover {
 
 @media screen and (min-width: 850px) {
   /* Desktop */
-  
+
   header nav > .flex-nav a {
     font-size: 16px;
+    padding: 14px;
+  }
+
+  header nav > .flex-nav a:hover,
+  header nav > .flex-nav a:active {
     padding: 14px;
   }
 }
