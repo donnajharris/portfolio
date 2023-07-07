@@ -33,7 +33,7 @@ h2 {
 }
 
 main {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .main-wrapper {
@@ -124,7 +124,6 @@ header .contact li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
   max-width: 1100px;
   margin: 0 auto;
   padding: 10px 10px 20px 10px;
@@ -502,6 +501,7 @@ img.logo {
 }
 
 .code-container  {
+  padding-top: 25px;
   padding-bottom: 25px;
   vertical-align: center;
 }
@@ -599,13 +599,15 @@ header nav > .flex-nav.creative a {
   background-color: #fff;
   color: #1d2951;
   border-color: #1d2951;
+  text-decoration: underline !important;
 }
 
 header nav > .flex-nav.creative a:hover {
   background-color: #fff;
   color: #1d2951;
-  border-color: pink;
+  border-color: #1d2951;
   border-style: dashed;
+  text-decoration: none !important;
 }
 
 @media screen and (max-width: 540px) {
@@ -690,6 +692,14 @@ header nav > .flex-nav.creative a:hover {
 
   header nav > .flex-nav {
     width: 20%;
+  }
+
+  header nav > .flex-nav.android {
+    width: 25%;
+  }
+
+  header nav > .flex-nav.compare-tool {
+    width: 16.6%;
   }
 }
 

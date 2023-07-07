@@ -7,31 +7,29 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Oxygen:wght@300;600;700&display=swap" rel="stylesheet">
-
-      <title>Donna J. Harris ~ Android Development Summary</title>
+      <title>Android Development Summary ~ Donna J. Harris Technical Portfolio</title>
     </head>
     <body>
       <header>
-        <h1>Donna J. Harris</h1>
+        <h1><a href="./index.html">Donna J. Harris</a></h1>
         <nav>
-          <div class="flex-nav"><a href="technical.html#code-portfolio">Coding</a></div>
-          <div class="flex-nav"><a href="technical.html#test-portfolio">Testing</a></div>
-          <div class="flex-nav"><a href="technical.html#work">Work</a></div>
-          <div class="flex-nav"><a href="technical.html#education">Education</a></div>
-          <div class="flex-nav"><a href="technical.html#references">References</a></div>
+          <div class="flex-nav android"><a href="./technical.html">&lt; Go Back</a></div>
+          <div class="flex-nav android"><a href="#coding">Coding</a></div>
+          <div class="flex-nav android"><a href="#testing">Testing</a></div>
+          <div class="flex-nav android"><a href="#commits">Commit History</a></div>
         </nav>
       </header>
       <main>
         <section class="dinearound">
           <h2>Developing Dine Around</h2>
-          <img class="logo" src="./cp670s21fp/DineAroundAppIcon.jpg" alt="Dine Around app logo includes a cheeseburger and a Caesar."><p><span class="punch-up">Dine Around</span> was built as an Android development course final project. Our team of five built an app for tracking favourite restaurants, coffee shops, and bars.</p>
+          <img class="logo" src="./cp670s21fp/DineAroundAppIcon.jpeg" alt="Dine Around app logo includes a cheeseburger and a Caesar."><p><span class="punch-up">Dine Around</span> was built as an Android development course final project. Our team of five built an app for tracking favourite restaurants, coffee shops, and bars.</p>
           <p>My responsibilities and my confidence grew throughout the duration of the project.</p>
           <p>I volunteered to take care of the app logo (created by combining and editing two Ballicon icons), which proved to be a precursor to handling the design and implementation of the app's lists of "Places" and "Favourite Places".</p>
           <p>With helpful guidance from a professionally-experiened team member, I was introduced to techniques for developing the main list of places. Quite quickly, I was able to <span class="punch-up">contribute independently and effectively</span>, designing and implementing the list layout and functionality, obtaining regular feedback from the team.</p>
           <p>I successfully built out my features and understood how other components would need to integrate. We worked together to connect the pieces and troubleshoot any issues that arose.</p>
           <p>Unfortunately, <span class="punch-up">the repository is not public at this time</span>. What follows provides some insights into the app as well as my involvmenet in development and testing.</p>
  
-          <h3>Places Lists</h3>
+          <h3 id="coding">Places Lists</h3>
           <div class="code-container">
             <ul class="code-example">
               <li>Code Examples:</li>
@@ -42,8 +40,8 @@
           <div class="img-displayer">
             <p class="center-description"><span class="punch-up">All Places:</span> These sample &quot;All Places&quot; lists show restaurants, coffee shops, and bars with various metadata, including ratings and favourites, open status and distance, if nearby.</p>
             <div class="app-img-container">
-              <img src="./cp670s21fp/all_places_ui_1.png" alt="An example of the Dine Around places list, showing three places, including one to avoid, one 5-star rating, one unrated, one marked as a favourite, two closing soon, and one closed.">
-              <img src="./cp670s21fp/all_places_ui_2.png" alt="An example of the Dine Around places list, showing three places, including one nearby, one 4.5-star rating, one 5-star rating, one unrated, two marked as a favourite, two closing soon, and one open now.">
+              <img src="./cp670s21fp/all_places_ui_1.jpeg" alt="An example of the Dine Around places list, showing three places, including one to avoid, one 5-star rating, one unrated, one marked as a favourite, two closing soon, and one closed.">
+              <img src="./cp670s21fp/all_places_ui_2.jpeg" alt="An example of the Dine Around places list, showing three places, including one nearby, one 4.5-star rating, one 5-star rating, one unrated, two marked as a favourite, two closing soon, and one open now.">
             </div>
           </div>
           <div class="img-displayer">
@@ -55,8 +53,8 @@
           <div class="img-displayer">
             <p class="center-description">The <span class="punch-up">All Places</span> and <span class="punch-up">Favourite Places</span> lists provide guidance by default whenever there are no results to display in the list.</p>
             <div class="app-img-container">
-              <img src="./cp670s21fp/no_places_to_display_ui.png" alt="The Dine Around All Places list as it appears when empty. There are suggestions regarding why there are no items in the list.">
-              <img src="./cp670s21fp/no_faves_to_display_ui.png" alt="The Dine Around Favourite Places list as it appears when empty. There are suggestions regarding why there are no items in the list.">
+              <img src="./cp670s21fp/no_places_to_display_ui.jpeg" alt="The Dine Around All Places list as it appears when empty. There are suggestions regarding why there are no items in the list.">
+              <img src="./cp670s21fp/no_faves_to_display_ui.jpeg" alt="The Dine Around Favourite Places list as it appears when empty. There are suggestions regarding why there are no items in the list.">
             </div>
           </div>
 
@@ -71,7 +69,7 @@
           <p>My role was to ensure that all strings were labelled and translated accordingly. I provided the French for the app and much of the English.</p>
           <p>The <span class="punch-up">different languages impacted the UI layout</span>, as some languages have longer or shorter words and phrases than others. It was an interesting challenge to update the layout for this purpose. The VS Code image above of the place_item.xml layout shows the test strings used towards the end of the project, including the longest words and phrases explicitly used by the application.</p>
 
-          <h2>Testing Dine Around</h2>
+          <h2 id="testing">Testing Dine Around</h2>
           <p>While there was much manual regression and feature testing all throughout the project, there was a requirement to provide unit testing in the codebase.</p>
           <p>A number of helper classes containing business logic were relatively well isolated. As a result, these could be tested directly, making them good candidates for code-level test automation.</p>
           <p>I provided tests for the code I wrote, as well as some other helper classes. Below, I include test code and the file under test for these instances.</p>
@@ -103,7 +101,7 @@
             </ul>
           </div>
               
-          <h3>Related Commit History</h3>
+          <h3 id="commits">Related Commit History</h3>
 
           <p>Screenshots from GitHub of the commit history for the project files mentioned here are included below. These screenshots provide <span class="punch-up">evidence of my ongoing project development activity</span> throughout the duration of the project and show some indication of my activities.</p>
           <div class="img-displayer">
