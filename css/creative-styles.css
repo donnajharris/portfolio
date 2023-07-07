@@ -458,53 +458,66 @@ header .overview .text-wrapper p {
   background-color: #f8f8f8;
 }
 
-.main-wrapper p {
+.choose-sub-portfolio {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 30px;
+
+  border: 3px #1d2951 double;
+  border-radius: 15px;
+
+  background-color: #fff;
+
+  overflow: hidden;
+}
+
+.choose-sub-portfolio p {
   margin: 0 auto;
   padding: 30px;
-  background-color: #fff;
+
   line-height: 30px;
   text-align: center;
   letter-spacing: 3px;
   font-size: 18px;
 }
 
-nav.choose-sub-portfolio {
+.choose-sub-portfolio nav {
   margin: 0 auto;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-bottom: 30px;
+
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  overflow: hidden;
+
   justify-content: center;
   align-items: center;
-  border: 3px #1d2951 double;
-  border-radius: 15px;
-  background-color: #fff;
 }
 
-nav.choose-sub-portfolio .flex-nav a {
-  margin: 15px;
-  width: 150px;
-  height: 150px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.choose-sub-portfolio nav .flex-nav a {
   border-radius: 20px;
   border: 1px #1d2951dd solid;
   background-color: #f8f8f8;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
   font-family: 'Alkatra', sans-serif;
   font-size: 20px;
   letter-spacing: 3px;
   text-decoration: none;
+
+  margin: 15px;
+
+  width: 150px;
+  height: 150px;
 }
 
-nav.choose-sub-portfolio .flex-nav:hover a:hover {
+.choose-sub-portfolio nav .flex-nav:hover a:hover {
   border: 1px #f8f8f8 solid;
   background-color: #1d2951;
   color: #f8f8f8;
@@ -513,18 +526,18 @@ nav.choose-sub-portfolio .flex-nav:hover a:hover {
 @media screen and (min-width: 700px) {
   /* Tablet */
 
-  nav.choose-sub-portfolio {
+  .choose-sub-portfolio {
     padding-bottom: 50px;
     border: none;
   }
 
-  .main-wrapper p {
+  .choose-sub-portfolio p {
     font-weight: 600;
     font-size: 22px;
     padding-top: 80px;
   }
 
-  nav.choose-sub-portfolio .flex-nav a {  
+  .choose-sub-portfolio nav .flex-nav a {  
     margin: 15px;
     width: 170px;
     height: 170px;
@@ -533,7 +546,7 @@ nav.choose-sub-portfolio .flex-nav:hover a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  nav.choose-sub-portfolio .flex-nav a {  
+  .choose-sub-portfolio nav .flex-nav a {  
     margin: 15px;
     width: 250px;
     height: 250px;
