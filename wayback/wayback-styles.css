@@ -119,3 +119,9 @@ footer a:hover {
     font-size: 14px;
   }
 }
+
+.external-link::after {
+  font: var(--fa-font-solid);
+  content: "  \f08e";
+  font-size: 80%;
+}
