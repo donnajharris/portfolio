@@ -42,13 +42,12 @@ main {
   padding-bottom: 40px;
 }
 
-
 /* === Header === */
 
 header {
   background-color: #e7feff;
   color: #1d2951;
-  padding: 0px 40px;  
+  padding: 0px 40px;
 }
 
 header h1 {
@@ -76,7 +75,7 @@ header .bio {
   background-color: #e7feff;
 }
 
-.contact-container  {
+.contact-container {
   background-color: #e7feff;
   padding-bottom: 25px;
 }
@@ -97,7 +96,7 @@ header .contact li {
 
 @media screen and (min-width: 900px) {
   /* Desktop */
-  
+
   header .contact {
     min-width: 400px;
     width: 50%;
@@ -112,14 +111,14 @@ header .contact li {
   padding-left: 30px;
 }
 
-.portfolio, 
+.portfolio,
 .work-experience,
 .education {
   font-size: 16px;
 }
 
-.portfolio-item, 
-.work-item, 
+.portfolio-item,
+.work-item,
 .education-item {
   display: flex;
   flex-direction: row;
@@ -129,8 +128,8 @@ header .contact li {
   padding: 10px 10px 20px 10px;
 }
 
-.portfolio-item .portfolio-header, 
-.work-item .work-header, 
+.portfolio-item .portfolio-header,
+.work-item .work-header,
 .education-item .education-header {
   width: 100%;
   max-width: 300px;
@@ -143,27 +142,27 @@ header .contact li {
   border-top: #1b1b1b 1.5px solid;
 }
 
-.portfolio-item .portfolio-header h4, 
-.work-item .work-header h3, 
+.portfolio-item .portfolio-header h3,
+.work-item .work-header h3,
 .education-item .education-header h3 {
   font-size: 24px;
   border-bottom: #708090 0.5px solid;
   padding-bottom: 20px;
 }
 
-.portfolio-item .portfolio-header h4 .abbrev, 
-.education-item .education-header h3 .abbrev  {
+.portfolio-item .portfolio-header h3 .abbrev,
+.education-item .education-header h3 .abbrev {
   font-size: 18px;
 }
 
 .work-details > ul > li > .course-id,
 .work-details > ul > li > ul > li > .course-id,
-.work-details > ul > li > ul > li > .program { 
+.work-details > ul > li > ul > li > .program {
   font-size: 14px;
 }
 
-.portfolio-item .portfolio-header .portfolio-item-type, 
-.work-item .work-header .location, 
+.portfolio-item .portfolio-header .portfolio-item-type,
+.work-item .work-header .location,
 .education-item .education-header .location {
   font-size: 18px;
   font-weight: 600;
@@ -173,8 +172,8 @@ header .contact li {
   margin-top: -15px;
 }
 
-.portfolio-item .portfolio-header p, 
-.work-item .work-header p, 
+.portfolio-item .portfolio-header p,
+.work-item .work-header p,
 .education-item .education-header p {
   font-size: 14px;
   line-height: 24px;
@@ -184,16 +183,16 @@ header .contact li {
   font-size: 16px;
 }
 
-.portfolio-item .portfolio-header h4, 
-.portfolio-item .portfolio-header p, 
-.work-item .work-header h3, 
-.work-item .work-header p, 
-.education-item .education-header h3, 
+.portfolio-item .portfolio-header h3,
+.portfolio-item .portfolio-header p,
+.work-item .work-header h3,
+.work-item .work-header p,
+.education-item .education-header h3,
 .education-item .education-header p {
   text-align: right;
 }
 
-.portfolio-item .portfolio-details, 
+.portfolio-item .portfolio-details,
 .work-item .work-details {
   width: 100%;
   max-width: 700px;
@@ -202,16 +201,16 @@ header .contact li {
   border-left: #1b1b1b 10px solid;
 }
 
-.portfolio-item .portfolio-details ul, 
-.work-item .work-details ul, 
+.portfolio-item .portfolio-details ul,
+.work-item .work-details ul,
 .education-item .education-details ul {
   margin: 0;
   padding-left: 60px;
   padding-right: 20px;
 }
 
-.portfolio-item .portfolio-details li, 
-.work-item .work-details li, 
+.portfolio-item .portfolio-details li,
+.work-item .work-details li,
 .education-item .education-details li {
   line-height: 28px;
   font-size: 16px;
@@ -237,6 +236,14 @@ header .contact li {
 
 .work-item .achievements p {
   margin-left: 20px;
+}
+
+.work-item .work-details > .note {
+  margin: 8px 20px 20px 60px;
+  padding: 6px 12px;
+  border-left: 3px solid #708090;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .portfolio-item .portfolio-details .portfolio-samples {
@@ -302,10 +309,10 @@ header .contact li {
 }
 
 .portfolio-samples::before {
-  content: "🔗 ";
+  content: '🔗 ';
 }
 
-.education-item .education-details  {
+.education-item .education-details {
   width: 100%;
   max-width: 700px;
   border-left: #1b1b1b 10px solid;
@@ -330,7 +337,6 @@ header .contact li {
 .education-item .education-details .course-details a {
   color: #000f89;
 }
-
 
 /* === References === */
 
@@ -376,7 +382,7 @@ header .contact li {
 }
 
 .see-also::before {
-  content: "⏩ ";
+  content: '⏩ ';
 }
 
 .note {
@@ -426,14 +432,16 @@ footer li {
   text-align: center;
 }
 
-footer a, footer a:hover, footer a:visited, footer a:active {
+footer a,
+footer a:hover,
+footer a:visited,
+footer a:active {
   color: #f8f8ff;
 }
 
 footer a:hover {
   text-decoration: none;
 }
-
 
 /* === BNA Compare Case Study === */
 
@@ -464,7 +472,6 @@ footer a:hover {
   line-height: 28px;
 }
 
-
 /* === Dine Around / Android Summary === */
 
 .dinearound {
@@ -478,6 +485,14 @@ footer a:hover {
   font-size: 30px;
   font-family: 'Alkatra', sans-serif;
   letter-spacing: 5px;
+}
+
+.dinearound h3.testing-subheading {
+  padding-top: 0;
+  border-top: 0;
+  font-size: 1em;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
 }
 
 .dinearound p {
@@ -500,7 +515,7 @@ img.logo {
   width: 20%;
 }
 
-.code-container  {
+.code-container {
   padding-top: 25px;
   padding-bottom: 25px;
   vertical-align: center;
@@ -555,7 +570,6 @@ img.logo {
   line-height: 28px;
 }
 
-
 /* === Creative Portfolio Link === */
 /* Adapted from: https://codepen.io/bhautikbharadava/pen/OdPzdW */
 
@@ -569,7 +583,7 @@ header nav {
   flex-wrap: wrap;
 }
 
-header nav > .flex-nav  {
+header nav > .flex-nav {
   width: 50%;
   min-width: 180px;
 }
@@ -586,7 +600,7 @@ header nav > .flex-nav a {
   letter-spacing: 4px;
 }
 
-header nav  > .flex-nav a:hover {
+header nav > .flex-nav a:hover {
   color: #1d2951;
   text-decoration: none;
   background-color: #f8f8f8;
@@ -626,7 +640,7 @@ header nav > .flex-nav.creative a:hover {
   header nav > .flex-nav.creative {
     display: none;
   }
- 
+
   header .creative-button-container {
     display: block;
     position: absolute;
@@ -634,7 +648,7 @@ header nav > .flex-nav.creative a:hover {
     right: 15px;
     opacity: 0.95;
   }
-  
+
   header .creative-portfolio-button {
     display: inline-block;
     padding: 10px 20px;
@@ -643,10 +657,10 @@ header nav > .flex-nav.creative a:hover {
     transform: rotate(5deg);
     transition: all 1s;
   }
-  
+
   header .creative-portfolio-button:after,
   header .creative-portfolio-button:before {
-    content: " ";
+    content: ' ';
     width: 10px;
     height: 10px;
     position: absolute;
@@ -665,7 +679,7 @@ header nav > .flex-nav.creative a:hover {
     border-bottom: 3px dotted #1d2951;
     border-right: 3px dotted #1d2951;
   }
-  
+
   header .creative-portfolio-button:hover {
     transform: rotate(0deg);
     background-color: #e7feff;
@@ -703,8 +717,47 @@ header nav > .flex-nav.creative a:hover {
   }
 }
 
-.external-link::after {
+a[href^='http://']::after,
+a[href^='https://']::after,
+a[href^='//']::after {
   font: var(--fa-font-solid);
-  content: "  \f08e";
+  content: '\f08e';
   font-size: 80%;
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
+/* Keyboard focus and motion preferences */
+a:focus-visible {
+  outline: 3px solid #c45200;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skip link appears when reached by keyboard. */
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: -10000px;
+  z-index: 10000;
+  padding: 10px 16px;
+  border: 2px solid #1d2951;
+  border-radius: 4px;
+  background: #f8f8f8;
+  color: #1d2951;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
 }

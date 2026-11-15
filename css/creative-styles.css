@@ -24,10 +24,14 @@ a:active {
   text-decoration: none;
 }
   
-.external-link::after {
+a[href^="http://"]::after,
+a[href^="https://"]::after,
+a[href^="//"]::after {
   font: var(--fa-font-solid);
-  content: "  \f08e";
+  content: "\f08e";
   font-size: 80%;
+  display: inline-block;
+  margin-left: 0.25em;
 }
 
 .punch-up {
@@ -1414,4 +1418,43 @@ hr.dotted-line-example {
   padding: 12px;
   border:  1px pink solid;
   border-radius: 5px;
+}
+
+/* Keyboard focus and motion preferences */
+a:focus-visible {
+  outline: 3px solid #c45200;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+  }
+}
+
+.media-access-note {
+  max-width: 68rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+/* Skip link appears when reached by keyboard. */
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: -10000px;
+  z-index: 10000;
+  padding: 10px 16px;
+  border: 2px solid #1d2951;
+  border-radius: 4px;
+  background: #f8f8f8;
+  color: #1d2951;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 12px;
 }
