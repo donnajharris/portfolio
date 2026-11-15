@@ -156,9 +156,18 @@ header .contact li {
 }
 
 .work-details > ul > li > .course-id,
-.work-details > ul > li > ul > li > .course-id,
-.work-details > ul > li > ul > li > .program {
+.work-details > ul > li > ul > li > .course-id {
   font-size: 14px;
+}
+
+.work-details > ul > li > ul > li > .program {
+  font-size: 16px;
+}
+
+.work-details .program .note {
+  margin: 4px 0 0;
+  font-size: 13px;
+  line-height: 2;
 }
 
 .portfolio-item .portfolio-header .portfolio-item-type,
@@ -238,8 +247,8 @@ header .contact li {
   margin-left: 20px;
 }
 
-.work-item .work-details > .note {
-  margin: 8px 20px 20px 60px;
+.work-item .work-details > ul > li > .note {
+  margin: 8px 20px 4px 0;
   padding: 6px 12px;
   border-left: 3px solid #708090;
   font-size: 14px;
