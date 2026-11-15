@@ -569,7 +569,9 @@ img.logo {
   margin: 10px;
   border-radius: 10px;
   width: 100%;
-  min-width: 500px;
+  max-width: calc(100% - 20px);
+  height: auto;
+  min-width: 0;
 }
 
 .center-description {

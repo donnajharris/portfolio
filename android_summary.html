@@ -14,8 +14,8 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
       <header>
         <h1><a href="./index.html">Donna J. Harris</a></h1>
-        <nav>
-          <div class="flex-nav android"><a href="./technical.html">&lt; Go Back</a></div>
+        <nav aria-label="Android summary navigation">
+          <div class="flex-nav android"><a href="./technical.html">&lt; Back to Technical Portfolio</a></div>
           <div class="flex-nav android"><a href="#coding">Coding</a></div>
           <div class="flex-nav android"><a href="#testing">Testing</a></div>
           <div class="flex-nav android"><a href="#commits">Commit History</a></div>
@@ -40,23 +40,23 @@
             </ul>
           </div>
           <div class="img-displayer">
-            <p class="center-description"><span class="punch-up">All Places:</span> These sample &quot;All Places&quot; lists show restaurants, coffee shops, and bars with various metadata, including ratings and favourites, open status and distance, if nearby.</p>
+            <p class="center-description"><span class="punch-up">All Places:</span> These sample &quot;All Places&quot; lists show restaurants, coffee shops, and bars with ratings, favourites, open status and distance, if nearby. The first example includes a place to avoid, a five-star rating, an unrated place, two places closing soon, and one closed place. The second includes a nearby place, ratings of four-and-a-half and five stars, an unrated place, two favourites, one open place, and two closed places.</p>
             <div class="app-img-container">
-              <img src="./cp670s21fp/all_places_ui_1.jpeg" alt="An example of the Dine Around places list, showing three places, including one to avoid, one 5-star rating, one unrated, one marked as a favourite, two closing soon, and one closed.">
-              <img src="./cp670s21fp/all_places_ui_2.jpeg" alt="An example of the Dine Around places list, showing three places, including one nearby, one 4.5-star rating, one 5-star rating, one unrated, two marked as a favourite, two closing soon, and one open now.">
+              <img src="./cp670s21fp/all_places_ui_1.jpeg" alt="All Places list, first example: a place to avoid and a closed place.">
+              <img src="./cp670s21fp/all_places_ui_2.jpeg" alt="All Places list, second example: a nearby place and an open place.">
             </div>
           </div>
           <div class="img-displayer">
             <p class="center-description"><span class="punch-up">place_item.xml</span> defines the card layout for the All Places and Favourite Places lists. This screenshot of VS Code shows the XML file and resulting card layout using sample text.</p>
             <div class="code-img-container">
-              <img src="./cp670s21fp/place_item_xml_VSCode.png" alt="VS Code open to show the place_item.xml file and the resulting layout, with sample text">
+              <img src="./cp670s21fp/place_item_xml_VSCode.png" alt="VS Code showing place_item.xml beside its sample card layout.">
             </div>
           </div>
           <div class="img-displayer">
-            <p class="center-description">The <span class="punch-up">All Places</span> and <span class="punch-up">Favourite Places</span> lists provide guidance by default whenever there are no results to display in the list.</p>
+            <p class="center-description">The <span class="punch-up">All Places</span> and <span class="punch-up">Favourite Places</span> lists provide guidance when there are no results. All Places suggests using the Add button or adjusting search filters. Favourite Places suggests marking a place as a favourite or adjusting search filters.</p>
             <div class="app-img-container">
-              <img src="./cp670s21fp/no_places_to_display_ui.jpeg" alt="The Dine Around All Places list as it appears when empty. There are suggestions regarding why there are no items in the list.">
-              <img src="./cp670s21fp/no_faves_to_display_ui.jpeg" alt="The Dine Around Favourite Places list as it appears when empty. There are suggestions regarding why there are no items in the list.">
+              <img src="./cp670s21fp/no_places_to_display_ui.jpeg" alt="Empty All Places list with guidance for finding places.">
+              <img src="./cp670s21fp/no_faves_to_display_ui.jpeg" alt="Empty Favourite Places list with guidance for adding favourites.">
             </div>
           </div>
 
@@ -85,7 +85,7 @@
           <div class="code-container">
             <ul class="code-example">
               <li>Tested by:</li>
-              <li><a href="./cp670s21fp/TimeHelper.java" target="_blank">TimeHelper.java</a></li>
+              <li><a href="./cp670s21fp/TimeHelperUnitTests.java" target="_blank">TimeHelperUnitTests.java</a></li>
             </ul>
           </div>
 
@@ -104,67 +104,7 @@
           </div>
               
           <h3 id="commits">Related Commit History</h3>
-
-          <p>Screenshots from GitHub of the commit history for the project files mentioned here are included below. These screenshots provide <span class="punch-up">evidence of my ongoing project development activity</span> throughout the duration of the project and show some indication of my activities.</p>
-          <div class="img-displayer">
-            <p class="center-description">Commit History for <span class="punch-up">PlacesListAdapter.java</span></p>
-            <div class="code-img-container">
-              <img src="./cp670s21fp/PlacesListAdapter_commit_history_1.png" alt="Page 1 of 6: Commit history for PlacesListAdapter.java">
-              <img src="./cp670s21fp/PlacesListAdapter_commit_history_2.png" alt="Page 2 of 6: Commit history for PlacesListAdapter.java">
-              <img src="./cp670s21fp/PlacesListAdapter_commit_history_3.png" alt="Page 3 of 6: Commit history for PlacesListAdapter.java">
-              <img src="./cp670s21fp/PlacesListAdapter_commit_history_4.png" alt="Page 4 of 6: Commit history for PlacesListAdapter.java">
-              <img src="./cp670s21fp/PlacesListAdapter_commit_history_5.png" alt="Page 5 of 6: Commit history for PlacesListAdapter.java">
-              <img src="./cp670s21fp/PlacesListAdapter_commit_history_6.png" alt="Page 6 of 6: Commit history for PlacesListAdapter.java">
-            </div>
-          </div>
-          <div class="img-displayer">
-            <p class="center-description">Commit History for <span class="punch-up">place_item.xml</span></p>
-            <div class="code-img-container">
-              <img src="./cp670s21fp/place_item_xml_commit_history_1.png" alt="Page 1 of 2: Commit history for place_item.xml">
-              <img src="./cp670s21fp/place_item_xml_commit_history_2.png" alt="Page 2 of 2: Commit history for place_item.xml">
-            </div>
-          </div>
-          <div class="img-displayer">
-            <p class="center-description">Commit History for <span class="punch-up">strings.xml (French)</span></p>
-            <div class="code-img-container">
-              <img src="./cp670s21fp/French_strings_xml_commit_history_1.png" alt="Page 1 of 2: Commit history for strings.xml">
-              <img src="./cp670s21fp/French_strings_xml_commit_history_2.png" alt="Page 2 of 2: Commit history for strings.xml">
-            </div>
-          </div>
-          <div class="img-displayer">
-            <p class="center-description">Commit History for <span class="punch-up">TimeHelper.java</span></p>
-            <div class="code-img-container">
-              <img src="./cp670s21fp/TimeHelper_commit_history.png" alt="Page 1 of 1: Commit history for TimeHelper.java">
-            </div>
-          </div>
-          <div class="img-displayer">
-            <p class="center-description">Commit History for <span class="punch-up">TimeHelperUnitTests.java</span></p>
-            <div class="code-img-container">
-              <img src="./cp670s21fp/TimeHelperUnitTests_commit_history_1.png" alt="Page 1 of 2: Commit history for TimeHelperUnitTests.java">
-              <img src="./cp670s21fp/TimeHelperUnitTests_commit_history_2.png" alt="Page 2 of 2: Commit history for TimeHelperUnitTests.java">
-            </div>
-          </div>
-          <div class="img-displayer">
-            <p class="center-description">Commit History for <span class="punch-up">PlaceDayHourHelper.java</span></p>
-            <div class="code-img-container">
-              <img src="./cp670s21fp/PlaceDayHourHelper_commit_history_1.png" alt="Page 1 of 2: Commit history for PlaceDayHourHelper.java">
-              <img src="./cp670s21fp/PlaceDayHourHelper_commit_history_2.png" alt="Page 1 of 2: Commit history for PlaceDayHourHelper.java">
-            </div>
-          </div>
-          <div class="img-displayer">
-            <p class="center-description">Commit History for <span class="punch-up">PlaceDayHourHelperUnitTests.java</span></p>
-            <div class="code-img-container">
-              <img src="./cp670s21fp/PlaceDayHourHelperUnitTests_commit_history_1.png" alt="Page 1 of 2: Commit history for PlaceDayHourHelperUnitTests.java">
-              <img src="./cp670s21fp/PlaceDayHourHelperUnitTests_commit_history_2.png" alt="Page 2 of 2: Commit history for PlaceDayHourHelperUnitTests.java">
-            </div>
-          </div>
-          <div class="img-displayer">
-            <p class="center-description">Commit History for <span class="punch-up">PlaceDayHourIntegrationTests.java</span></p>
-            <div class="code-img-container">
-              <img src="./cp670s21fp/PlaceDayHourIntegrationTests_commit_history_1.png" alt="Page 1 of 2: Commit history for PlaceDayHourIntegrationTests.java">
-              <img src="./cp670s21fp/PlaceDayHourIntegrationTests_commit_history_2.png" alt="Page 2 of 2: Commit history for PlaceDayHourIntegrationTests.java">
-            </div>
-          </div>
+          <p>These GitHub screenshots document changes to the places list, layout, language support, and testing files during the Dine Around project. <a href="./android_commit_history.html">Explore the Dine Around commit history</a> for file-by-file summaries and screenshots.</p>
         </section>
       </main>
       <footer>

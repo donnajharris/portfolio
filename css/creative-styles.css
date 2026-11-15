@@ -416,12 +416,12 @@ header .overview h2 {
 header .category-summary blockquote {
   color: #1d2951;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 3px;
-  line-height: 14px;
+  line-height: 1.5;
   text-align: center;
-  opacity: 0.75;
+  opacity: 1;
 
   width: 85%;
   margin: 0 auto;
@@ -435,11 +435,11 @@ header .category-summary figcaption,
 header .category-summary cite {
   color: #1d2951;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 9px;
+  font-size: 14px;
   letter-spacing: 2px;
-  line-height: 14px;
+  line-height: 1.5;
   text-align: center;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 header .overview .text-wrapper {
@@ -1112,20 +1112,21 @@ nav.choose-sub-section .flex-nav:hover a:hover {
   text-align: left;
 }
 
-.example-description p.example-heading {
+.example-description h4.example-heading {
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 110%;
 }
 
-.example-description p.video-name {
+.example-description p.example-heading {
   font-weight: 400;
   font-size: 90%;
-  font-style: italic;
+  letter-spacing: normal;
 }
 
-.example-description p.video-name::before {
-  content: '- ';
+.example-description h4.video-name {
+  font-weight: 600;
+  font-size: 110%;
 }
 
 .example-description a {
@@ -1364,14 +1365,14 @@ nav.choose-sub-section .flex-nav:hover a:hover {
     text-align: left;
   }
   
-  .example-description p.example-heading {
+  .example-description h4.example-heading {
     font-weight: 900;
     letter-spacing: 3px;
   }
   
-  .example-description p.video-name {
+  .example-description h4.video-name {
     font-weight: 600;
-    font-size: 90%;
+    font-size: 110%;
   }
   
   .example-description a {
