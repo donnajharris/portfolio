@@ -154,14 +154,11 @@ footer a:hover {
   }
 }
 
-a[href^="http://"]::after,
-a[href^="https://"]::after,
-a[href^="//"]::after {
+.external-link-icon::after {
   font: var(--fa-font-solid);
-  content: '\f08e';
+  content: '\00a0\f08e';
   font-size: 80%;
-  display: inline-block;
-  margin-left: 0.25em;
+  white-space: nowrap;
 }
 /* Keyboard focus and motion preferences */
 a:focus-visible {

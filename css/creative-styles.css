@@ -24,14 +24,11 @@ a:active {
   text-decoration: none;
 }
 
-a[href^='http://']::after,
-a[href^='https://']::after,
-a[href^='//']::after {
+.external-link-icon::after {
   font: var(--fa-font-solid);
-  content: '\f08e';
+  content: '\00a0\f08e';
   font-size: 80%;
-  display: inline-block;
-  margin-left: 0.25em;
+  white-space: nowrap;
 }
 
 .punch-up {
@@ -1110,13 +1107,18 @@ nav.choose-sub-section .flex-nav:hover a:hover {
 
 .example-description p.example-heading {
   font-weight: 400;
-  font-size: 90%;
-  letter-spacing: normal;
+  font-size: 80%;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 1.35;
+  margin: 0 0 1rem;
 }
 
 .example-description h4.video-name {
   font-weight: 600;
   font-size: 110%;
+  line-height: 1.35;
+  margin: 0;
 }
 
 .example-description .media-file-link {
